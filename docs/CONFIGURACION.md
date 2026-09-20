@@ -27,7 +27,13 @@ He seguido la [documentación de conexión de Atlas](https://www.mongodb.com/doc
 
 Obtendré el token de lectura de la API en la configuración de mi cuenta de TMDB y lo guardaré en `TMDB_READ_TOKEN`, dentro de `backend/.env`. No utilizaré una variable `VITE_` para este secreto: las variables del cliente se incluyen en el código servido al navegador.
 
-Todavía no he implementado la importación ni la consulta de plataformas. Comprobaré sus respuestas y completaré las atribuciones antes de mostrar esos datos.
+He implementado el importador y la consulta de plataformas en el backend. Para revisar el catálogo sin escribir en Atlas ejecuto `npm run catalog:preview`; para importarlo ejecuto `npm run catalog:import`. Este último comando comprueba que la base de destino sea `expediente_x`.
+
+Recojo las temporadas ordinarias en inglés, español y alemán y valido todos los documentos antes de iniciar la escritura. Actualizo los campos de TMDB mediante su identificador único, sin sustituir las imágenes propias. Si falla la descarga, no inicio la importación. La escritura por lotes no es una transacción: si Atlas falla durante la escritura puede quedar una importación parcial, que puedo completar repitiendo el comando.
+
+El endpoint `/api/watch-providers?country=ES` acepta `ES`, `DE`, `GB` y `US`. Mantengo una caché temporal en memoria de una hora y distingo una consulta sin ofertas de un fallo de la fuente. Todavía tengo pendiente conectar la pantalla de plataformas y completar las atribuciones visuales antes de mostrar estos datos.
+
+Sin `TMDB_READ_TOKEN`, el importador se detiene con `TMDB_NOT_CONFIGURED`. No he consultado ni importado todavía datos reales de TMDB.
 
 ## Mis recursos de Cloudinary
 

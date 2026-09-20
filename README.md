@@ -25,7 +25,7 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 ## Estado actual
 
-**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y cinco pruebas de la API. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y el despliegue.
+**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y doce pruebas de la API y los servicios. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y el despliegue.
 
 Puedo abrir el inicio y navegar por las pantallas. El catálogo muestra un aviso mientras no conecte la base de datos; la sección de plataformas está identificada como pendiente. No he validado todavía el recorrido completo con episodios reales.
 
@@ -55,7 +55,7 @@ Mantengo esta lista como alcance de la entrega. He preparado las pantallas y la 
 | Cloudinary | Alojaré recursos visuales propios o con permiso de reutilización. |
 | TMDB | Consultaré el catálogo, las traducciones disponibles y las plataformas. |
 
-He elegido **TMDB como fuente principal prevista** por el alcance multilingüe. Para la disponibilidad utilizaré sus datos de JustWatch y aplicaré las atribuciones correspondientes. Todavía tengo pendiente configurar el acceso y comprobar las respuestas para la serie.
+He elegido **TMDB como fuente principal prevista** por el alcance multilingüe. Para la disponibilidad utilizaré sus datos de JustWatch y aplicaré las atribuciones correspondientes. He implementado el importador y la consulta de plataformas en el backend. Tengo pendiente configurar el token y comprobar las respuestas reales para la serie.
 
 Durante la exploración inicial también comprobé TVmaze: devolvió 218 registros de episodios en 11 temporadas. Mantengo esa comprobación en la memoria como antecedente, sin confundirla con una integración terminada de TMDB.
 
@@ -83,6 +83,15 @@ npm run build
 npm test
 npm run format:check
 ```
+
+Cuando complete `TMDB_READ_TOKEN`, revisaré el catálogo sin escribir y después lo importaré:
+
+```bash
+npm run catalog:preview
+npm run catalog:import
+```
+
+La importación solo permite la base `expediente_x`, actualiza por identificador de TMDB y conserva los recursos visuales propios. Todavía no la he ejecutado con datos reales.
 
 La compilación genera `frontend/dist`. Mantengo las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
 

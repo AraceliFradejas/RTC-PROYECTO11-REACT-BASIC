@@ -166,3 +166,16 @@ El 20 de septiembre de 2026 he preparado `backend/.env` a partir de mi configura
 He comprobado una conexión real con Mongoose, un comando `ping` y una consulta de lectura a la colección `episodes`. Las comprobaciones han respondido correctamente y el recuento es de cero documentos. No he importado episodios ni modificado colecciones de proyectos anteriores.
 
 Mantengo tanto `.env` como `backend/.env` excluidos de Git. No incluyo credenciales, nombres de host ni cadenas de conexión en las evidencias públicas. Mi siguiente paso es configurar el token de lectura de TMDB y preparar la importación del catálogo.
+
+
+## 16. Mi importador y la consulta de plataformas
+
+He preparado un cliente de TMDB que envía el token mediante cabecera, limita la espera y devuelve errores controlados. No publico respuestas que puedan revelar credenciales.
+
+Mi importador verifica la serie `4087` por su identificador y nombre original, excluye especiales y solicita cada temporada en los tres idiomas. Uno las traducciones por identificador de episodio, valido los documentos y después actualizo la base `expediente_x`. Conservo los campos de recursos visuales propios. La escritura no es transaccional; puedo repetir la importación para completar un fallo parcial sin crear duplicados por identificador.
+
+He añadido una consulta de plataformas por país con modalidades de suscripción, compra, alquiler, acceso gratuito y anuncios. Mantengo la fecha de consulta y la atribución a JustWatch mediante TMDB, con una caché en memoria de una hora. Todavía no he conectado esta respuesta a la pantalla de disponibilidad.
+
+He ejecutado doce pruebas correctas: las cinco iniciales y siete sobre ausencia de token, cabecera de autenticación, traducciones, serie y temporadas, actualizaciones, caché y errores de disponibilidad. Utilizo datos de prueba aislados, no episodios ni proveedores publicados.
+
+He ejecutado también `npm run catalog:preview`: se ha detenido con `TMDB_NOT_CONFIGURED` porque todavía no he completado el token de lectura. Esta comprobación confirma la detección de configuración incompleta; no es una importación exitosa ni una validación del catálogo real. Mi siguiente paso depende de configurar ese token en `backend/.env`.
