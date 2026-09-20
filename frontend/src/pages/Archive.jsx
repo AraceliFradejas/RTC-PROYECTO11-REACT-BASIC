@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { usePreferences } from '../context/Preferences';
 import { useApi } from '../hooks/useApi';
 import EpisodeCard from '../components/EpisodeCard';
@@ -11,7 +11,9 @@ const normalize = (text) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 export default function Archive({ onlyFavorites = false }) {
-  const { t, language, favorites } = usePreferences();
+  const { t, language, favorites, watched } = usePreferences();
+  const navigate = useNavigate();
+  const [viewing, setViewing] = useState('');
   const [query, setQuery] = useState('');
   const [season, setSeason] = useState('');
   const request = useApi(`/api/episodes?lang=${language}`);
@@ -22,15 +24,35 @@ export default function Archive({ onlyFavorites = false }) {
   const filtered = episodes.filter(
     (episode) =>
       (!onlyFavorites || favorites.includes(episode.id)) &&
+      (!viewing ||
+        (viewing === 'watched'
+          ? watched.includes(episode.id)
+          : !watched.includes(episode.id))) &&
       (!season || episode.season === Number(season)) &&
       normalize(episode.title).includes(normalize(query.trim())),
   );
+  const watchedCount = episodes.filter((episode) =>
+    watched.includes(episode.id),
+  ).length;
   return (
     <section className="page">
       <p className="eyebrow">
         {t.name} / {onlyFavorites ? t.favorites : t.archive}
       </p>
       <h1>{onlyFavorites ? t.favoriteTitle : t.catalogTitle}</h1>
+      {request.status === 'success' && episodes.length > 0 && (
+        <div className="progress-panel">
+          <label htmlFor="viewing-progress">
+            {t.progress}: {watchedCount} / {episodes.length}
+          </label>
+          <progress
+            id="viewing-progress"
+            value={watchedCount}
+            max={episodes.length}
+          />
+          <small>{t.localProgress}</small>
+        </div>
+      )}
       <div className="filters">
         <label>
           {t.search}
@@ -52,6 +74,14 @@ export default function Archive({ onlyFavorites = false }) {
             ))}
           </select>
         </label>
+        <label>
+          {t.viewing}
+          <select value={viewing} onChange={(e) => setViewing(e.target.value)}>
+            <option value="">{t.allViewing}</option>
+            <option value="watched">{t.watched}</option>
+            <option value="pending">{t.pending}</option>
+          </select>
+        </label>
       </div>
       {onlyFavorites && favorites.length === 0 ? (
         <div className="state-panel">
@@ -65,6 +95,18 @@ export default function Archive({ onlyFavorites = false }) {
           <RequestState {...request} />
           {request.status === 'success' && (
             <>
+              {filtered.length > 0 && (
+                <button
+                  className="button secondary"
+                  onClick={() => {
+                    const episode =
+                      filtered[Math.floor(Math.random() * filtered.length)];
+                    navigate(`/expedientes/${episode.id}`);
+                  }}
+                >
+                  {t.random}
+                </button>
+              )}
               <p className="result-count" role="status">
                 {filtered.length} {t.results}
               </p>

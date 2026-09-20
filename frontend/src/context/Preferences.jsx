@@ -24,6 +24,13 @@ export function PreferencesProvider({ children }) {
       (v) => Array.isArray(v) && v.every((id) => typeof id === 'string'),
     ),
   );
+  const [watched, setWatched] = useState(() =>
+    readPreference(
+      'archivo.watched',
+      [],
+      (v) => Array.isArray(v) && v.every((id) => typeof id === 'string'),
+    ),
+  );
   const [country, setCountry] = useState(() =>
     readPreference('archivo.country', 'ES', (v) =>
       ['ES', 'DE', 'GB', 'US'].includes(v),
@@ -40,15 +47,24 @@ export function PreferencesProvider({ children }) {
     try {
       localStorage.setItem('archivo.language', JSON.stringify(language));
       localStorage.setItem('archivo.favorites', JSON.stringify(favorites));
+      localStorage.setItem('archivo.watched', JSON.stringify(watched));
       localStorage.setItem('archivo.country', JSON.stringify(country));
       setStorageError(false);
     } catch {
       setStorageError(true);
     }
-  }, [language, favorites, country]);
+  }, [language, favorites, country, watched]);
 
   function toggleFavorite(id) {
     setFavorites((current) =>
+      current.includes(id)
+        ? current.filter((item) => item !== id)
+        : [...current, id],
+    );
+  }
+
+  function toggleWatched(id) {
+    setWatched((current) =>
       current.includes(id)
         ? current.filter((item) => item !== id)
         : [...current, id],
@@ -61,6 +77,8 @@ export function PreferencesProvider({ children }) {
         language,
         setLanguage,
         favorites,
+        watched,
+        toggleWatched,
         toggleFavorite,
         country,
         setCountry,

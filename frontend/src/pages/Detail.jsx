@@ -5,8 +5,10 @@ import { useApi } from '../hooks/useApi';
 import RequestState from '../components/RequestState';
 
 function EpisodeContent({ episode }) {
-  const { t, language, favorites, toggleFavorite } = usePreferences();
+  const { t, language, favorites, toggleFavorite, watched, toggleWatched } =
+    usePreferences();
   const [revealed, setRevealed] = useState(false);
+  const seen = watched.includes(episode.id);
   const saved = favorites.includes(episode.id);
   return (
     <article className="detail-paper">
@@ -25,6 +27,13 @@ function EpisodeContent({ episode }) {
         onClick={() => toggleFavorite(episode.id)}
       >
         {saved ? t.remove : t.add}
+      </button>
+      <button
+        className="watched-toggle"
+        aria-pressed={seen}
+        onClick={() => toggleWatched(episode.id)}
+      >
+        {seen ? `✓ ${t.markUnwatched}` : t.markWatched}
       </button>
       <div className="synopsis">
         <button

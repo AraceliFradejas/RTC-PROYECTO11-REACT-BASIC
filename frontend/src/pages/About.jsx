@@ -9,6 +9,26 @@ export default function About() {
       <blockquote className="personal-quote">{t.quote}</blockquote>
       <p>{t.unofficial}</p>
       <p className="signature">{t.author}</p>
+      <aside className="source-credits" aria-label="TMDB">
+        <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">
+          <img
+            src="/tmdb-logo.svg"
+            alt="The Movie Database (TMDB)"
+            width="245"
+            height="18"
+          />
+        </a>
+        <p lang="en">
+          This product uses the TMDB API but is not endorsed or certified by
+          TMDB.
+        </p>
+        <p>
+          <a href="https://www.justwatch.com/" target="_blank" rel="noreferrer">
+            JustWatch
+          </a>{' '}
+          · TMDB
+        </p>
+      </aside>
     </section>
   );
 }

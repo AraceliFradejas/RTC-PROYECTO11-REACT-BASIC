@@ -2,7 +2,9 @@ import { Link } from 'react-router';
 import { usePreferences } from '../context/Preferences';
 
 export default function EpisodeCard({ episode }) {
-  const { t, language, favorites, toggleFavorite } = usePreferences();
+  const { t, language, favorites, toggleFavorite, watched, toggleWatched } =
+    usePreferences();
+  const seen = watched.includes(episode.id);
   const saved = favorites.includes(episode.id);
   return (
     <article className="episode-card">
@@ -15,6 +17,13 @@ export default function EpisodeCard({ episode }) {
           {t.original} {episode.titleLanguage.toUpperCase()}
         </small>
       )}
+      <button
+        className="watched-toggle"
+        aria-pressed={seen}
+        onClick={() => toggleWatched(episode.id)}
+      >
+        {seen ? `✓ ${t.markUnwatched}` : t.markWatched}
+      </button>
       <div className="card-actions">
         <Link to={`/expedientes/${episode.id}`}>
           {t.open} <span aria-hidden="true">↗</span>
