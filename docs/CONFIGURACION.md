@@ -37,7 +37,7 @@ Sin `TMDB_READ_TOKEN`, el importador se detiene con `TMDB_NOT_CONFIGURED`. He co
 
 ## Mis recursos de Cloudinary
 
-Utilizo las variables de Cloudinary en mi script local de subida firmada. He preparado 35 imágenes generadas con IA y copias WebP de respaldo. Explico la preparación y los comandos en [Mis imágenes](IMAGENES.md). La subida real depende de completar las tres variables privadas en `backend/.env`.
+Utilizo las variables de Cloudinary en mi script local de subida firmada. He preparado 35 imágenes generadas con IA y copias WebP de respaldo. Explico la preparación y los comandos en [Mis imágenes](IMAGENES.md). Mantengo las tres variables privadas en `backend/.env`. Mi primer intento de subida devuelve HTTP 403 por falta del permiso `create`; debo utilizar una clave con permiso de subida.
 
 ## Mis comprobaciones
 

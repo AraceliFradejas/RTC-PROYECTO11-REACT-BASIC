@@ -22,7 +22,7 @@ He preparado `npm run images:upload` como revisión sin subida. Con las variable
 
 Firmo cada petición en el script local y nunca envío la clave secreta al frontend. Guardo en el manifiesto las URL públicas y los identificadores de los recursos, con una copia local de respaldo si falla la entrega remota. El script guarda el avance después de cada imagen y evita sobrescribir recursos existentes. No necesito añadir estas credenciales a Vercel para mostrar las imágenes.
 
-La subida real todavía está pendiente de completar la configuración de Cloudinary.
+He intentado la subida con mi configuración local, pero Cloudinary ha respondido HTTP 403 porque la clave no tiene el permiso `create`. No he subido ninguna imagen todavía. Mantengo activas las copias optimizadas de Vercel hasta corregir los permisos de la clave.
 
 ## Mis atribuciones
 

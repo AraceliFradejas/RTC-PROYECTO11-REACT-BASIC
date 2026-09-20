@@ -246,3 +246,5 @@ He sustituido el motivo de la portada por la panorámica de Mulder y Scully. He 
 He preparado un script de subida firmada a Cloudinary y una copia local de respaldo. La configuración y subida real siguen pendientes; no doy por alojadas las imágenes en Cloudinary hasta comprobar sus URL.
 
 He comprobado visualmente la portada en Chrome en escritorio y en una vista móvil de 390 × 844 píxeles: en móvil sitúo la imagen encima del texto para conservar los rostros y la legibilidad. He compilado la interfaz y he comprobado que los 35 archivos del manifiesto existen.
+
+He publicado la nueva interfaz y he comprobado que `/personajes`, la imagen de portada, el retrato de Scully y la ilustración de la temporada 11 responden con HTTP 200; las imágenes se sirven como WebP. He intentado después la subida a Cloudinary, que se ha detenido con HTTP 403 por falta del permiso `create` en la clave. No he publicado credenciales ni doy la subida por completada.
