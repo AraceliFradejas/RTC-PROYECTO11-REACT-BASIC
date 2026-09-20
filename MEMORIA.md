@@ -190,3 +190,23 @@ He configurado la instalación con `npm ci`, la compilación con `npm run build`
 He comprobado respuestas HTTP 200 con el HTML de mi aplicación en `/`, `/expedientes`, `/mi-historia` y `/donde-ver`. También he comprobado el inicio renderizado en Chrome. La verificación HTTP acredita la entrega de la interfaz, no el funcionamiento completo del catálogo.
 
 No he publicado credenciales ni conectado el backend de producción. Mantengo el catálogo y las plataformas identificados como pendientes. Utilizaré esta URL pública en mi solicitud de acceso a la API de TMDB.
+
+## 18. Mi catálogo real y el seguimiento de episodios
+
+He configurado el token de TMDB y he ejecutado primero la revisión sin escritura. He recibido 218 episodios de 11 temporadas, con título y sinopsis no vacíos en cada idioma solicitado. Esta comprobación mide presencia de texto; no sustituye una revisión lingüística completa.
+
+Mi primera ejecución de importación se detuvo porque la URI no indicaba `expediente_x`. He añadido el nombre de la base manteniendo las credenciales y he repetido el comando: he creado 218 documentos. He comprobado las respuestas de catálogo y detalle en los tres idiomas y las plataformas en ES, DE, GB y US.
+
+He conectado «Dónde verla» a mi API y muestro modalidades, fecha y atribución a JustWatch mediante TMDB. He incluido en «Mi historia» el logotipo oficial y el aviso de independencia requerido por TMDB. No deduzco idiomas de audio ni disponibilidad de todas las temporadas a partir de las ofertas de la serie.
+
+He añadido el estado `watched`, su persistencia local, una barra de progreso y el filtro de vistos y pendientes. Cuento solo los identificadores que siguen presentes en el catálogo. El botón aleatorio elige entre los resultados de mis filtros. Mantengo separados favoritos y visionado.
+
+En Chrome he marcado «Piloto» como visto, he recargado y he comprobado que el progreso continúa en 1/218. Al buscar «piloto» he obtenido un resultado; el botón aleatorio ha abierto `/expedientes/283988`. He guardado el episodio como favorito y he revelado su sinopsis real. He compilado la interfaz y han pasado las doce pruebas del backend.
+
+He preparado la función del backend para Vercel. Todavía no doy por verificados sus datos en producción: necesito completar las variables privadas y comprobar las respuestas del despliegue.
+
+He añadido una prueba del adaptador de Vercel sin credenciales: compruebo salud, catálogo no disponible y ruta inexistente. Mi conjunto actual suma trece pruebas correctas.
+
+He revisado el detalle en una vista móvil de 390 × 844 píxeles. Conservo esta captura real con la sinopsis oculta, el favorito guardado y el episodio visto:
+
+![Mi detalle móvil de Piloto](docs/screenshots/detalle-piloto.png)

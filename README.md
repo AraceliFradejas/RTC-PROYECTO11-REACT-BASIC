@@ -25,11 +25,11 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 ## Estado actual
 
-**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y doce pruebas de la API y los servicios. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y la publicación del backend. He publicado una primera versión de la interfaz en Vercel.
+**Ya consulto un catálogo real de 218 episodios y 11 temporadas.** He importado los datos de TMDB en MongoDB Atlas, con títulos y sinopsis disponibles en español, inglés y alemán. He conectado la pantalla de plataformas por país y he añadido favoritos, progreso de visionado y selección aleatoria entre los resultados filtrados.
 
-Puedo abrir el inicio y navegar por las pantallas. El catálogo muestra un aviso mientras no conecte la base de datos; la sección de plataformas está identificada como pendiente. No he validado todavía el recorrido completo con episodios reales.
+He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las trece pruebas del backend pasan. Tengo pendiente completar Cloudinary y verificar el backend en producción.
 
-Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). **Mi primera web pública:** [XFiles Archive](https://xfiles-archive.vercel.app/). He comprobado el inicio y el acceso directo a las rutas de archivo, historia y disponibilidad. El catálogo y las plataformas siguen pendientes de completar.
+Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). Distingo esta publicación de la integración local: todavía estoy preparando las variables privadas y la comprobación del servidor en Vercel.
 
 ## Qué quiero construir
 
@@ -41,7 +41,7 @@ Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradeja
 - Consultaré dónde ver la serie según el país seleccionado.
 - Utilizaré la web en móvil, tableta y escritorio, con navegación por teclado y controles accesibles.
 
-Mantengo esta lista como alcance de la entrega. He preparado las pantallas y la lógica inicial de filtros, favoritos y sinopsis; tengo pendientes su validación con el catálogo real, el progreso de visionado y el expediente aleatorio.
+He implementado estas funciones. Guardo favoritos y episodios vistos en este navegador; no los sincronizo entre dispositivos. El caso aleatorio respeta mi búsqueda y los filtros de temporada y visionado. Continúo revisando la experiencia responsive antes de la entrega.
 
 ## Tecnologías y fuentes
 
@@ -55,7 +55,7 @@ Mantengo esta lista como alcance de la entrega. He preparado las pantallas y la 
 | Cloudinary | Alojaré recursos visuales propios o con permiso de reutilización. |
 | TMDB | Consultaré el catálogo, las traducciones disponibles y las plataformas. |
 
-He elegido **TMDB como fuente principal prevista** por el alcance multilingüe. Para la disponibilidad utilizaré sus datos de JustWatch y aplicaré las atribuciones correspondientes. He implementado el importador y la consulta de plataformas en el backend. Tengo pendiente configurar el token y comprobar las respuestas reales para la serie.
+Utilizo **TMDB como fuente principal** y sus datos de JustWatch para consultar plataformas. Muestro país, modalidad y fecha de consulta, e incluyo las atribuciones en «Mi historia». He comprobado las respuestas reales para España, Alemania, Reino Unido y Estados Unidos.
 
 Durante la exploración inicial también comprobé TVmaze: devolvió 218 registros de episodios en 11 temporadas. Mantengo esa comprobación en la memoria como antecedente, sin confundirla con una integración terminada de TMDB.
 
@@ -84,22 +84,23 @@ npm test
 npm run format:check
 ```
 
-Cuando complete `TMDB_READ_TOKEN`, revisaré el catálogo sin escribir y después lo importaré:
+Con `TMDB_READ_TOKEN` configurado, reviso el catálogo sin escribir y después lo importo:
 
 ```bash
 npm run catalog:preview
 npm run catalog:import
 ```
 
-La importación solo permite la base `expediente_x`, actualiza por identificador de TMDB y conserva los recursos visuales propios. Todavía no la he ejecutado con datos reales.
+La importación solo permite la base `expediente_x`, actualiza por identificador de TMDB y conserva los recursos visuales propios. He ejecutado la importación real: 218 episodios nuevos.
 
 La compilación genera `frontend/dist`. Mantengo las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
 
-He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xfiles` y el dominio `xfiles-archive.vercel.app`. He reservado las rutas `/api/` para la futura publicación del backend. Los servicios externos y sus secretos todavía no están configurados en Vercel.
+He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xfiles` y el dominio `xfiles-archive.vercel.app`. He preparado una función en `api/index.js` para servir mi API bajo el mismo dominio y reutilizar la conexión a Atlas. Los servicios externos y sus secretos todavía no están configurados en Vercel.
 
 ## Documentación
 
 - En mi [memoria](MEMORIA.md) explico la motivación, los requisitos, las decisiones y el plan de validación.
+- En mi [registro de recursos](docs/RECURSOS.md) identifico fuentes y atribuciones.
 - En mi [documento de concepto](docs/CONCEPTO.md) recojo la exploración inicial y el alcance previsto.
 
 ## Recursos y autoría
@@ -107,6 +108,12 @@ He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xf
 Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico, independiente y no oficial. No tengo vinculación con los titulares de Expediente X ni presento los materiales de terceros como propios.
 
 Registraré la procedencia, autoría y licencia de los recursos utilizados. Alojar una imagen en Cloudinary no sustituye su permiso de uso. Mantengo el material docente de referencia fuera de Git y GitHub.
+
+### Mi detalle móvil con datos reales
+
+He comprobado la ficha de «Piloto» en una vista de 390 × 844 píxeles. En esta captura mantengo la sinopsis oculta y el episodio marcado como favorito y visto.
+
+![Mi expediente de Piloto en móvil](docs/screenshots/detalle-piloto.png)
 
 ### Primera evidencia visual
 
