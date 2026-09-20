@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { PreferencesProvider } from './context/Preferences';
 import Layout from './components/Layout';
+import Characters from './pages/Characters';
 import Home from './pages/Home';
 import Archive from './pages/Archive';
 import Detail from './pages/Detail';
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
               path="favoritos"
               element={<Archive key="favorites" onlyFavorites />}
             />
+            <Route path="personajes" element={<Characters />} />
             <Route path="peliculas" element={<Movies />} />
             <Route path="peliculas/:id" element={<MovieDetail />} />
             <Route path="donde-ver" element={<Watch />} />

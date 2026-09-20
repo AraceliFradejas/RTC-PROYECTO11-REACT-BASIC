@@ -15,3 +15,6 @@ dist/
 coverage/
 playwright-report/
 test-results/
+
+# Conservo los PNG originales localmente; publico las copias optimizadas.
+frontend/public/images/

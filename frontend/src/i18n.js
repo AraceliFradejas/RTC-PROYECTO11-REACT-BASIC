@@ -1,5 +1,20 @@
 export const messages = {
   es: {
+    characters: 'Personajes',
+    agentsTitle: 'Mulder y Scully. Dos formas de buscar.',
+    agentsIntro:
+      'Vuelvo a los dos agentes que me enseñaron a mirar cada expediente desde más de un punto de vista.',
+    aiArt: 'Imagen generada con IA · Inspiración no oficial',
+    seasonsTitle: 'Recorro las temporadas',
+    mulderText:
+      'Sigo a Fox Mulder en su búsqueda de respuestas: lo inexplicable merece una investigación, incluso cuando las pruebas parecen imposibles. Su curiosidad abre los expedientes que otros cerrarían.',
+    scullyText:
+      'Con Dana Scully examino las pruebas, las explicaciones científicas y las preguntas que aún no tienen respuesta. Su mirada crítica acompaña a Mulder y pone a prueba cada hipótesis.',
+    mottosTitle: 'Las frases que llevo conmigo',
+    mottosNote:
+      'Conservo estas frases como guiños al universo de la serie, sin atribuirlas a un diálogo concreto.',
+    truth: 'La verdad está ahí fuera.',
+    trust: 'No confíes en nadie.',
     movies: 'Películas',
     movieTitle: 'Mis expedientes en la gran pantalla',
     movieIntro:
@@ -87,6 +102,21 @@ export const messages = {
       'No puedo guardar mis preferencias en este navegador. Los cambios durarán mientras mantenga abierta la página.',
   },
   en: {
+    characters: 'Characters',
+    agentsTitle: 'Mulder and Scully. Two ways of searching.',
+    agentsIntro:
+      'I return to the two agents who taught me to look at each case from more than one perspective.',
+    aiArt: 'AI-generated image · Unofficial interpretation',
+    seasonsTitle: 'I explore the seasons',
+    mulderText:
+      'I follow Fox Mulder in his search for answers: the unexplained deserves investigation, even when the evidence seems impossible. His curiosity opens the cases others would close.',
+    scullyText:
+      'With Dana Scully, I examine evidence, scientific explanations and questions that remain unanswered. Her critical perspective accompanies Mulder and tests every hypothesis.',
+    mottosTitle: 'The words I carry with me',
+    mottosNote:
+      'I keep these phrases as nods to the world of the series, without attributing them to a specific line of dialogue.',
+    truth: 'The truth is out there.',
+    trust: 'Trust no one.',
     movies: 'Films',
     movieTitle: 'My files on the big screen',
     movieIntro:
@@ -173,6 +203,21 @@ export const messages = {
       'I cannot save preferences in this browser. Changes will last while this page stays open.',
   },
   de: {
+    characters: 'Figuren',
+    agentsTitle: 'Mulder und Scully. Zwei Wege zur Wahrheit.',
+    agentsIntro:
+      'Ich kehre zu den beiden Agenten zurück, die mir gezeigt haben, jeden Fall aus mehr als einer Perspektive zu betrachten.',
+    aiArt: 'KI-generiertes Bild · Inoffizielle Interpretation',
+    seasonsTitle: 'Ich erkunde die Staffeln',
+    mulderText:
+      'Ich begleite Fox Mulder auf seiner Suche nach Antworten: Das Unerklärliche verdient eine Untersuchung, selbst wenn die Beweise unmöglich erscheinen. Seine Neugier öffnet die Akten, die andere schließen würden.',
+    scullyText:
+      'Mit Dana Scully untersuche ich Beweise, wissenschaftliche Erklärungen und offene Fragen. Ihr kritischer Blick begleitet Mulder und stellt jede Hypothese auf die Probe.',
+    mottosTitle: 'Die Worte, die mich begleiten',
+    mottosNote:
+      'Ich bewahre diese Sätze als Anspielungen auf die Welt der Serie, ohne sie einem bestimmten Dialog zuzuordnen.',
+    truth: 'Die Wahrheit ist irgendwo da draußen.',
+    trust: 'Vertraue niemandem.',
     movies: 'Filme',
     movieTitle: 'Meine Akten auf der großen Leinwand',
     movieIntro:

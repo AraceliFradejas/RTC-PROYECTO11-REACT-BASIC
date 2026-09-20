@@ -1,3 +1,4 @@
+import Artwork from '../components/Artwork';
 import { Link } from 'react-router';
 import { usePreferences } from '../context/Preferences';
 
@@ -5,7 +6,12 @@ export default function Home() {
   const { t } = usePreferences();
   return (
     <>
-      <section className="hero">
+      <section className="hero cinematic-hero">
+        <Artwork
+          asset="xfiles-assets/hero-mulder-scully"
+          className="hero-art"
+          eager
+        />
         <div className="hero-copy">
           <p className="eyebrow">{t.eyebrow}</p>
           <h1>{t.hero}</h1>
@@ -14,22 +20,7 @@ export default function Home() {
             {t.enter} <span aria-hidden="true">↗</span>
           </Link>
         </div>
-        <div className="dossier" aria-hidden="true">
-          <span className="dossier-tab">XF / 001</span>
-          <div className="dossier-page">
-            <div className="stamp">{t.name}</div>
-            <div className="evidence-art">
-              <span className="beam" />
-              <span className="silhouette" />
-            </div>
-            <div className="redaction long" />
-            <div className="redaction" />
-            <div className="dossier-bottom">
-              <span>10.09.1993</span>
-              <span>×</span>
-            </div>
-          </div>
-        </div>
+        <span className="art-caption">{t.aiArt}</span>
       </section>
       <section className="features" aria-label={t.archive}>
         {[
@@ -45,6 +36,17 @@ export default function Home() {
             <p>{body}</p>
           </Link>
         ))}
+      </section>
+      <section className="agents-preview page">
+        <div>
+          <p className="eyebrow">{t.characters}</p>
+          <h2>{t.agentsTitle}</h2>
+          <p>{t.agentsIntro}</p>
+          <Link className="button secondary" to="/personajes">
+            {t.characters} ↗
+          </Link>
+        </div>
+        <Artwork asset="xfiles-coleccion-extra/07-juntos-bajo-la-lluvia" />
       </section>
       <section className="author-note">
         <p className="eyebrow">{t.note}</p>

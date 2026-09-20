@@ -1,3 +1,4 @@
+import Artwork from '../components/Artwork';
 import { useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { usePreferences } from '../context/Preferences';
@@ -15,6 +16,14 @@ function EpisodeContent({ episode }) {
       <p className="eyebrow">
         {t.season} {episode.season} / {t.episode} {episode.number}
       </p>
+      <figure className="detail-art">
+        <Artwork
+          asset={`xfiles-temporadas/temporada-${String(episode.season).padStart(2, '0')}`}
+        />
+        <figcaption>
+          {t.aiArt} · {t.season} {episode.season}
+        </figcaption>
+      </figure>
       <h1 lang={episode.titleLanguage}>{episode.title}</h1>
       {episode.titleLanguage !== language && (
         <p>

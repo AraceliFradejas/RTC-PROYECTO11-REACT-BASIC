@@ -1,3 +1,4 @@
+import Artwork from '../components/Artwork';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { usePreferences } from '../context/Preferences';
@@ -52,6 +53,31 @@ export default function Archive({ onlyFavorites = false }) {
           />
           <small>{t.localProgress}</small>
         </div>
+      )}
+      {!onlyFavorites && seasons.length > 0 && (
+        <section className="season-browser" aria-label={t.seasonsTitle}>
+          <h2>{t.seasonsTitle}</h2>
+          <p className="art-note">{t.aiArt}</p>
+          <div className="season-strip">
+            {seasons.map((number) => (
+              <button
+                key={number}
+                className="season-tile"
+                aria-pressed={season === String(number)}
+                onClick={() =>
+                  setSeason(season === String(number) ? '' : String(number))
+                }
+              >
+                <Artwork
+                  asset={`xfiles-temporadas/temporada-${String(number).padStart(2, '0')}`}
+                />
+                <span>
+                  {t.season} {number}
+                </span>
+              </button>
+            ))}
+          </div>
+        </section>
       )}
       <div className="filters">
         <label>

@@ -4,3 +4,6 @@ Solucíon
 node_modules
 .env
 **/.env
+
+# Conservo los PNG originales localmente; publico las copias optimizadas.
+frontend/public/images/

@@ -1,3 +1,4 @@
+import Artwork from '../components/Artwork';
 import { story } from '../content/story';
 import { usePreferences } from '../context/Preferences';
 export default function About() {
@@ -9,6 +10,10 @@ export default function About() {
       <h1>{personal.title}</h1>
       <p className="intro">{personal.intro}</p>
       <blockquote className="personal-quote">{personal.quote}</blockquote>
+      <figure className="memory-art">
+        <Artwork asset="xfiles-coleccion-extra/17-juntos-en-el-tren" />
+        <figcaption>{t.aiArt}</figcaption>
+      </figure>
       <div className="personal-story">
         {personal.sections.map(([title, paragraphs], index) => (
           <section key={index} aria-labelledby={`memory-${index}`}>

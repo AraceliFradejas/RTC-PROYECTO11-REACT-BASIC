@@ -32,6 +32,7 @@ export default function Layout() {
         <nav aria-label={t.archive}>
           <NavLink to="/expedientes">{t.archive}</NavLink>
           <NavLink to="/favoritos">{t.favorites}</NavLink>
+          <NavLink to="/personajes">{t.characters}</NavLink>
           <NavLink to="/peliculas">{t.movies}</NavLink>
           <NavLink to="/donde-ver">{t.watch}</NavLink>
         </nav>
