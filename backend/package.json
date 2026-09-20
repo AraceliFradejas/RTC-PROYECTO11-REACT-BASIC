@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "node --watch --env-file-if-exists=.env src/server.js",
     "start": "node --env-file-if-exists=.env src/server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "catalog:preview": "node --env-file-if-exists=.env scripts/import-episodes.js",
+    "catalog:import": "node --env-file-if-exists=.env scripts/import-episodes.js --apply"
   },
   "dependencies": {
     "express": "^5.2.1",

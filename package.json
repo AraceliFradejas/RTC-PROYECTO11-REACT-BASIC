@@ -15,8 +15,10 @@
     "build": "npm run build -w frontend",
     "test": "npm run test -w backend",
     "start": "npm run start -w backend",
-    "format": "prettier --write frontend/src backend/src backend/test frontend/vite.config.js",
-    "format:check": "prettier --check frontend/src backend/src backend/test frontend/vite.config.js"
+    "format": "prettier --write frontend/src backend/src backend/test backend/scripts frontend/vite.config.js",
+    "format:check": "prettier --check frontend/src backend/src backend/test backend/scripts frontend/vite.config.js",
+    "catalog:preview": "npm run catalog:preview -w backend",
+    "catalog:import": "npm run catalog:import -w backend"
   },
   "devDependencies": {
     "concurrently": "^10.0.5",
