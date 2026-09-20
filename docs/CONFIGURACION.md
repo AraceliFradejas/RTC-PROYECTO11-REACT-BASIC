@@ -8,7 +8,9 @@ Abro `http://127.0.0.1:5173`. Mi servidor utiliza por defecto el puerto `3001`; 
 
 ## Mi conexión con Atlas
 
-Todavía no he configurado una conexión real. Para hacerlo seguiré estos pasos:
+He verificado la conexión real a Atlas el 20 de septiembre de 2026: el ping y la consulta de lectura a `expediente_x` han respondido correctamente. La colección `episodes` devuelve cero documentos; todavía no he importado el catálogo. Guardo la configuración utilizada en `backend/.env`.
+
+Para reproducir la configuración sigo estos pasos:
 
 1. Entro en mi cuenta de MongoDB Atlas y elijo el proyecto y clúster que voy a utilizar. Puedo usar un clúster existente con una base independiente, sin modificar las colecciones de mis anteriores proyectos.
 2. Preparo la base `expediente_x` y un usuario de base de datos con permisos limitados a esa base. Para importar el catálogo necesitaré escritura; la consulta de la web solo requiere lectura.

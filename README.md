@@ -25,7 +25,7 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 ## Estado actual
 
-**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y cinco pruebas de la API. Todavía tengo pendientes la conexión a Atlas, la importación desde TMDB, Cloudinary y el despliegue.
+**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y cinco pruebas de la API. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y el despliegue.
 
 Puedo abrir el inicio y navegar por las pantallas. El catálogo muestra un aviso mientras no conecte la base de datos; la sección de plataformas está identificada como pendiente. No he validado todavía el recorrido completo con episodios reales.
 

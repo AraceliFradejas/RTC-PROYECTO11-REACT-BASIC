@@ -157,3 +157,12 @@ He implementado componentes con props, estados, efectos, rutas, enlaces y lectur
 - [IMDb: acceso a la API](https://data.imdb.com/documentation/api-documentation/getting-access/).
 - [IMDb: uso de sus datos](https://help.imdb.com/article/imdb/general-information/can-i-use-imdb-data-in-my-software/G5JTRESSHJBBHTGX).
 - [Cloudinary: subida de archivos](https://cloudinary.com/documentation/upload_images).
+
+
+## 15. Mi primera conexión a MongoDB Atlas
+
+El 20 de septiembre de 2026 he preparado `backend/.env` a partir de mi configuración local. La cadena no indicaba una base de datos, por lo que he añadido `expediente_x` como destino del proyecto y he conservado el archivo original.
+
+He comprobado una conexión real con Mongoose, un comando `ping` y una consulta de lectura a la colección `episodes`. Las comprobaciones han respondido correctamente y el recuento es de cero documentos. No he importado episodios ni modificado colecciones de proyectos anteriores.
+
+Mantengo tanto `.env` como `backend/.env` excluidos de Git. No incluyo credenciales, nombres de host ni cadenas de conexión en las evidencias públicas. Mi siguiente paso es configurar el token de lectura de TMDB y preparar la importación del catálogo.
