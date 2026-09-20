@@ -25,11 +25,11 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 ## Estado actual
 
-**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y doce pruebas de la API y los servicios. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y el despliegue.
+**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y doce pruebas de la API y los servicios. He verificado la conexión a Atlas y el acceso a la base `expediente_x`, que todavía no contiene episodios. Tengo pendientes la importación desde TMDB, Cloudinary y la publicación del backend. He publicado una primera versión de la interfaz en Vercel.
 
 Puedo abrir el inicio y navegar por las pantallas. El catálogo muestra un aviso mientras no conecte la base de datos; la sección de plataformas está identificada como pendiente. No he validado todavía el recorrido completo con episodios reales.
 
-Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Añadiré el enlace de la web cuando tenga un despliegue comprobado.
+Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). **Mi primera web pública:** [XFiles Archive](https://xfiles-archive.vercel.app/). He comprobado el inicio y el acceso directo a las rutas de archivo, historia y disponibilidad. El catálogo y las plataformas siguen pendientes de completar.
 
 ## Qué quiero construir
 
@@ -95,7 +95,7 @@ La importación solo permite la base `expediente_x`, actualiza por identificador
 
 La compilación genera `frontend/dist`. Mantengo las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
 
-Mi objetivo es desplegar en **Vercel**, verificar las rutas al recargar y entregar el repositorio público. Incorporaré enlaces y capturas cuando haya comprobado cada paso.
+He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xfiles` y el dominio `xfiles-archive.vercel.app`. He reservado las rutas `/api/` para la futura publicación del backend. Los servicios externos y sus secretos todavía no están configurados en Vercel.
 
 ## Documentación
 

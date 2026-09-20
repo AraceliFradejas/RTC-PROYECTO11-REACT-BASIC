@@ -10,7 +10,7 @@
 | Repositorio | [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC) |
 | Inicio de esta memoria | 20 de septiembre de 2026 |
 | Estado | He preparado la base ejecutable; tengo pendientes los servicios externos. |
-| Despliegue | Tengo previsto utilizar Vercel; aún no dispongo de una URL verificada. |
+| Despliegue | [Mi interfaz inicial en Vercel](https://xfiles-archive.vercel.app/); backend pendiente. |
 
 ## 2. Contexto y motivación
 
@@ -179,3 +179,14 @@ He añadido una consulta de plataformas por país con modalidades de suscripció
 He ejecutado doce pruebas correctas: las cinco iniciales y siete sobre ausencia de token, cabecera de autenticación, traducciones, serie y temporadas, actualizaciones, caché y errores de disponibilidad. Utilizo datos de prueba aislados, no episodios ni proveedores publicados.
 
 He ejecutado también `npm run catalog:preview`: se ha detenido con `TMDB_NOT_CONFIGURED` porque todavía no he completado el token de lectura. Esta comprobación confirma la detección de configuración incompleta; no es una importación exitosa ni una validación del catálogo real. Mi siguiente paso depende de configurar ese token en `backend/.env`.
+
+
+## 17. Mi primer despliegue de la interfaz
+
+He publicado la interfaz en **https://xfiles-archive.vercel.app/**, vinculando el repositorio de GitHub y su rama `main` al proyecto `xfiles` de Vercel. El nombre exacto `xfiles.vercel.app` ya estaba asignado a otro proyecto; he elegido `xfiles-archive.vercel.app` y he conservado una redirección desde el dominio automático inicial.
+
+He configurado la instalación con `npm ci`, la compilación con `npm run build` y la salida `frontend/dist`. He añadido reglas para abrir directamente las rutas de React, reservando `/api/` para el backend.
+
+He comprobado respuestas HTTP 200 con el HTML de mi aplicación en `/`, `/expedientes`, `/mi-historia` y `/donde-ver`. También he comprobado el inicio renderizado en Chrome. La verificación HTTP acredita la entrega de la interfaz, no el funcionamiento completo del catálogo.
+
+No he publicado credenciales ni conectado el backend de producción. Mantengo el catálogo y las plataformas identificados como pendientes. Utilizaré esta URL pública en mi solicitud de acceso a la API de TMDB.

@@ -45,4 +45,4 @@ He reservado las variables de Cloudinary en la plantilla, pero todavía no las u
 - Ejecuto `npm test` para comprobar los contratos HTTP de mi API con datos de prueba aislados.
 - Ejecuto `npm run format:check` para revisar el formato del código.
 
-He previsto Vercel como siguiente entorno, pero todavía no he configurado el despliegue. Mi arranque actual es local; no lo presento como una publicación terminada.
+He publicado la interfaz en [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/). Vercel utiliza `npm ci`, `npm run build` y `frontend/dist`, con las rutas de la SPA declaradas en `vercel.json`. El backend y las variables privadas siguen siendo locales. Tengo pendiente publicarlos; esta primera web muestra el catálogo no disponible y la sección de plataformas en preparación.
