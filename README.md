@@ -29,7 +29,7 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 **Ya consulto un catálogo real de 218 episodios y 11 temporadas.** He importado los datos de TMDB en MongoDB Atlas, con títulos y sinopsis disponibles en español, inglés y alemán. He conectado la pantalla de plataformas por país y he añadido favoritos, progreso de visionado y selección aleatoria entre los resultados filtrados.
 
-He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las quince pruebas del backend pasan. He conectado el backend en producción. He integrado mis imágenes generadas con IA y una sección de Mulder y Scully. Tengo pendiente completar la subida de los recursos a Cloudinary.
+He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las quince pruebas del backend pasan. He conectado el backend en producción. He integrado mis imágenes generadas con IA y una sección de Mulder y Scully. He subido las 35 imágenes a Cloudinary y conservo copias optimizadas de respaldo.
 
 Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). He comprobado en producción la conexión a Atlas, los 218 episodios, el detalle y las plataformas de TMDB.
 

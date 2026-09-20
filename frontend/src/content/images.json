@@ -1,177 +1,247 @@
 {
   "xfiles-assets/bosque-ovni": {
-    "src": "/art/xfiles-assets/bosque-ovni.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929186/rtc-proyecto11/xfiles-assets/bosque-ovni.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-assets/bosque-ovni.webp",
+    "publicId": "rtc-proyecto11/xfiles-assets/bosque-ovni"
   },
   "xfiles-assets/hero-mulder-scully": {
-    "src": "/art/xfiles-assets/hero-mulder-scully.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929186/rtc-proyecto11/xfiles-assets/hero-mulder-scully.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-assets/hero-mulder-scully.webp",
+    "publicId": "rtc-proyecto11/xfiles-assets/hero-mulder-scully"
   },
   "xfiles-assets/mulder": {
-    "src": "/art/xfiles-assets/mulder.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929187/rtc-proyecto11/xfiles-assets/mulder.webp",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "localSrc": "/art/xfiles-assets/mulder.webp",
+    "publicId": "rtc-proyecto11/xfiles-assets/mulder"
   },
   "xfiles-assets/scully": {
-    "src": "/art/xfiles-assets/scully.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929188/rtc-proyecto11/xfiles-assets/scully.webp",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "localSrc": "/art/xfiles-assets/scully.webp",
+    "publicId": "rtc-proyecto11/xfiles-assets/scully"
   },
   "xfiles-coleccion-extra/01-agentes-en-el-coche": {
-    "src": "/art/xfiles-coleccion-extra/01-agentes-en-el-coche.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929189/rtc-proyecto11/xfiles-coleccion-extra/01-agentes-en-el-coche.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/01-agentes-en-el-coche.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/01-agentes-en-el-coche"
   },
   "xfiles-coleccion-extra/02-investigacion-en-el-faro": {
-    "src": "/art/xfiles-coleccion-extra/02-investigacion-en-el-faro.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929190/rtc-proyecto11/xfiles-coleccion-extra/02-investigacion-en-el-faro.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/02-investigacion-en-el-faro.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/02-investigacion-en-el-faro"
   },
   "xfiles-coleccion-extra/03-cafe-de-madrugada": {
-    "src": "/art/xfiles-coleccion-extra/03-cafe-de-madrugada.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929190/rtc-proyecto11/xfiles-coleccion-extra/03-cafe-de-madrugada.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/03-cafe-de-madrugada.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/03-cafe-de-madrugada"
   },
   "xfiles-coleccion-extra/04-carretera-luz-inexplicable": {
-    "src": "/art/xfiles-coleccion-extra/04-carretera-luz-inexplicable.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929191/rtc-proyecto11/xfiles-coleccion-extra/04-carretera-luz-inexplicable.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/04-carretera-luz-inexplicable.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/04-carretera-luz-inexplicable"
   },
   "xfiles-coleccion-extra/05-mulder-cintas-y-grabadora": {
-    "src": "/art/xfiles-coleccion-extra/05-mulder-cintas-y-grabadora.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929192/rtc-proyecto11/xfiles-coleccion-extra/05-mulder-cintas-y-grabadora.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/05-mulder-cintas-y-grabadora.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/05-mulder-cintas-y-grabadora"
   },
   "xfiles-coleccion-extra/06-scully-microscopio": {
-    "src": "/art/xfiles-coleccion-extra/06-scully-microscopio.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929192/rtc-proyecto11/xfiles-coleccion-extra/06-scully-microscopio.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/06-scully-microscopio.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/06-scully-microscopio"
   },
   "xfiles-coleccion-extra/07-juntos-bajo-la-lluvia": {
-    "src": "/art/xfiles-coleccion-extra/07-juntos-bajo-la-lluvia.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929193/rtc-proyecto11/xfiles-coleccion-extra/07-juntos-bajo-la-lluvia.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/07-juntos-bajo-la-lluvia.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/07-juntos-bajo-la-lluvia"
   },
   "xfiles-coleccion-extra/08-cabana-aislada": {
-    "src": "/art/xfiles-coleccion-extra/08-cabana-aislada.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929194/rtc-proyecto11/xfiles-coleccion-extra/08-cabana-aislada.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/08-cabana-aislada.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/08-cabana-aislada"
   },
   "xfiles-coleccion-extra/09-mulder-observatorio": {
-    "src": "/art/xfiles-coleccion-extra/09-mulder-observatorio.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929194/rtc-proyecto11/xfiles-coleccion-extra/09-mulder-observatorio.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/09-mulder-observatorio.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/09-mulder-observatorio"
   },
   "xfiles-coleccion-extra/10-scully-en-el-muelle": {
-    "src": "/art/xfiles-coleccion-extra/10-scully-en-el-muelle.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929195/rtc-proyecto11/xfiles-coleccion-extra/10-scully-en-el-muelle.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/10-scully-en-el-muelle.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/10-scully-en-el-muelle"
   },
   "xfiles-coleccion-extra/11-bosque-sin-agentes": {
-    "src": "/art/xfiles-coleccion-extra/11-bosque-sin-agentes.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929195/rtc-proyecto11/xfiles-coleccion-extra/11-bosque-sin-agentes.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/11-bosque-sin-agentes.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/11-bosque-sin-agentes"
   },
   "xfiles-coleccion-extra/12-oficina-del-sotano": {
-    "src": "/art/xfiles-coleccion-extra/12-oficina-del-sotano.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929196/rtc-proyecto11/xfiles-coleccion-extra/12-oficina-del-sotano.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/12-oficina-del-sotano.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/12-oficina-del-sotano"
   },
   "xfiles-coleccion-extra/13-motel-en-la-niebla": {
-    "src": "/art/xfiles-coleccion-extra/13-motel-en-la-niebla.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929197/rtc-proyecto11/xfiles-coleccion-extra/13-motel-en-la-niebla.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/13-motel-en-la-niebla.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/13-motel-en-la-niebla"
   },
   "xfiles-coleccion-extra/14-antena-y-cielo-extrano": {
-    "src": "/art/xfiles-coleccion-extra/14-antena-y-cielo-extrano.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929197/rtc-proyecto11/xfiles-coleccion-extra/14-antena-y-cielo-extrano.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/14-antena-y-cielo-extrano.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/14-antena-y-cielo-extrano"
   },
   "xfiles-coleccion-extra/15-expediente-sobre-la-mesa": {
-    "src": "/art/xfiles-coleccion-extra/15-expediente-sobre-la-mesa.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929198/rtc-proyecto11/xfiles-coleccion-extra/15-expediente-sobre-la-mesa.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/15-expediente-sobre-la-mesa.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/15-expediente-sobre-la-mesa"
   },
   "xfiles-coleccion-extra/16-puerta-del-hangar": {
-    "src": "/art/xfiles-coleccion-extra/16-puerta-del-hangar.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929199/rtc-proyecto11/xfiles-coleccion-extra/16-puerta-del-hangar.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/16-puerta-del-hangar.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/16-puerta-del-hangar"
   },
   "xfiles-coleccion-extra/17-juntos-en-el-tren": {
-    "src": "/art/xfiles-coleccion-extra/17-juntos-en-el-tren.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929199/rtc-proyecto11/xfiles-coleccion-extra/17-juntos-en-el-tren.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/17-juntos-en-el-tren.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/17-juntos-en-el-tren"
   },
   "xfiles-coleccion-extra/18-juntos-al-amanecer": {
-    "src": "/art/xfiles-coleccion-extra/18-juntos-al-amanecer.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929200/rtc-proyecto11/xfiles-coleccion-extra/18-juntos-al-amanecer.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-coleccion-extra/18-juntos-al-amanecer.webp",
+    "publicId": "rtc-proyecto11/xfiles-coleccion-extra/18-juntos-al-amanecer"
   },
   "xfiles-temporadas/extra-mulder": {
-    "src": "/art/xfiles-temporadas/extra-mulder.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929200/rtc-proyecto11/xfiles-temporadas/extra-mulder.webp",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "localSrc": "/art/xfiles-temporadas/extra-mulder.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/extra-mulder"
   },
   "xfiles-temporadas/extra-scully": {
-    "src": "/art/xfiles-temporadas/extra-scully.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929201/rtc-proyecto11/xfiles-temporadas/extra-scully.webp",
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "localSrc": "/art/xfiles-temporadas/extra-scully.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/extra-scully"
   },
   "xfiles-temporadas/temporada-01": {
-    "src": "/art/xfiles-temporadas/temporada-01.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929202/rtc-proyecto11/xfiles-temporadas/temporada-01.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-01.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-01"
   },
   "xfiles-temporadas/temporada-02": {
-    "src": "/art/xfiles-temporadas/temporada-02.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929202/rtc-proyecto11/xfiles-temporadas/temporada-02.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-02.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-02"
   },
   "xfiles-temporadas/temporada-03": {
-    "src": "/art/xfiles-temporadas/temporada-03.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929203/rtc-proyecto11/xfiles-temporadas/temporada-03.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-03.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-03"
   },
   "xfiles-temporadas/temporada-04": {
-    "src": "/art/xfiles-temporadas/temporada-04.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929203/rtc-proyecto11/xfiles-temporadas/temporada-04.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-04.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-04"
   },
   "xfiles-temporadas/temporada-05": {
-    "src": "/art/xfiles-temporadas/temporada-05.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929204/rtc-proyecto11/xfiles-temporadas/temporada-05.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-05.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-05"
   },
   "xfiles-temporadas/temporada-06": {
-    "src": "/art/xfiles-temporadas/temporada-06.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929205/rtc-proyecto11/xfiles-temporadas/temporada-06.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-06.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-06"
   },
   "xfiles-temporadas/temporada-07": {
-    "src": "/art/xfiles-temporadas/temporada-07.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929206/rtc-proyecto11/xfiles-temporadas/temporada-07.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-07.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-07"
   },
   "xfiles-temporadas/temporada-08": {
-    "src": "/art/xfiles-temporadas/temporada-08.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929206/rtc-proyecto11/xfiles-temporadas/temporada-08.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-08.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-08"
   },
   "xfiles-temporadas/temporada-09": {
-    "src": "/art/xfiles-temporadas/temporada-09.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929207/rtc-proyecto11/xfiles-temporadas/temporada-09.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-09.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-09"
   },
   "xfiles-temporadas/temporada-10": {
-    "src": "/art/xfiles-temporadas/temporada-10.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929208/rtc-proyecto11/xfiles-temporadas/temporada-10.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-10.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-10"
   },
   "xfiles-temporadas/temporada-11": {
-    "src": "/art/xfiles-temporadas/temporada-11.webp",
+    "src": "https://res.cloudinary.com/hjhszqql/image/upload/f_auto,q_auto/v1789929209/rtc-proyecto11/xfiles-temporadas/temporada-11.webp",
     "width": 1600,
-    "height": 900
+    "height": 900,
+    "localSrc": "/art/xfiles-temporadas/temporada-11.webp",
+    "publicId": "rtc-proyecto11/xfiles-temporadas/temporada-11"
   }
 }
