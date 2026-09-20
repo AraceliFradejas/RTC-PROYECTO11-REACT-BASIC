@@ -29,7 +29,7 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las trece pruebas del backend pasan. Tengo pendiente completar Cloudinary y verificar el backend en producción.
 
-Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). Distingo esta publicación de la integración local: todavía estoy preparando las variables privadas y la comprobación del servidor en Vercel.
+Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). Distingo esta publicación de la integración local: la API ya responde en Vercel y devuelve errores controlados hasta que configure las variables privadas de producción.
 
 ## Qué quiero construir
 

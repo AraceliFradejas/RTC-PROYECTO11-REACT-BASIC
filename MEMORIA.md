@@ -210,3 +210,9 @@ He añadido una prueba del adaptador de Vercel sin credenciales: compruebo salud
 He revisado el detalle en una vista móvil de 390 × 844 píxeles. Conservo esta captura real con la sinopsis oculta, el favorito guardado y el episodio visto:
 
 ![Mi detalle móvil de Piloto](docs/screenshots/detalle-piloto.png)
+
+### Mi comprobación del despliegue de este avance
+
+He publicado los commits `0425b4e`, `7ecb395` y `afc3299` en `main`. Vercel ha confirmado el despliegue correcto. He comprobado el dominio público: `/api/health` devuelve HTTP 200 con `database: unavailable`; el catálogo devuelve HTTP 503 con `CATALOG_UNAVAILABLE` y las plataformas HTTP 503 con `TMDB_NOT_CONFIGURED`. La ruta directa `/expedientes/283988` sirve la interfaz con HTTP 200.
+
+Estas respuestas confirman que mi función y sus rutas están desplegadas. Todavía no acreditan la conexión de producción con Atlas y TMDB: las dos variables privadas siguen pendientes de configurar. He cancelado un intento de autenticación de Vercel CLI que abrió el navegador predeterminado y he mantenido la sesión existente de Chrome.
