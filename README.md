@@ -25,7 +25,9 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 ## Estado actual
 
-**Estoy en la fase de definición y documentación inicial.** He elegido la temática, las tecnologías y el alcance de la primera versión. Todavía no he implementado la aplicación, conectado los servicios ni realizado el despliegue.
+**He preparado la primera base ejecutable.** Tengo React y Express, navegación con React Router, interfaz en español, inglés y alemán, preferencias locales y un modelo de episodios para MongoDB. He comprobado la compilación y cinco pruebas de la API. Todavía tengo pendientes la conexión a Atlas, la importación desde TMDB, Cloudinary y el despliegue.
+
+Puedo abrir el inicio y navegar por las pantallas. El catálogo muestra un aviso mientras no conecte la base de datos; la sección de plataformas está identificada como pendiente. No he validado todavía el recorrido completo con episodios reales.
 
 Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Añadiré el enlace de la web cuando tenga un despliegue comprobado.
 
@@ -39,7 +41,7 @@ Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradeja
 - Consultaré dónde ver la serie según el país seleccionado.
 - Utilizaré la web en móvil, tableta y escritorio, con navegación por teclado y controles accesibles.
 
-Estas funcionalidades representan mi alcance previsto; todavía no las presento como terminadas.
+Mantengo esta lista como alcance de la entrega. He preparado las pantallas y la lógica inicial de filtros, favoritos y sinopsis; tengo pendientes su validación con el catálogo real, el progreso de visionado y el expediente aleatorio.
 
 ## Tecnologías y fuentes
 
@@ -65,7 +67,24 @@ Separaré el idioma del país de reproducción: podré leer la web en alemán y 
 
 ## Desarrollo local y despliegue
 
-Todavía no dispongo de comandos de instalación ni variables definitivas: los documentaré cuando prepare y compruebe la estructura ejecutable. Mantendré las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
+Utilizo **Node.js 22.12 o superior**. Desde la raíz del repositorio ejecuto:
+
+```bash
+npm ci
+npm run dev
+```
+
+Abro la interfaz en `http://127.0.0.1:5173` y la API en `http://127.0.0.1:3001/api/health`. Vite redirige las peticiones `/api` al backend durante el desarrollo. Si cambio el puerto del backend, actualizo también ese destino en `frontend/vite.config.js`.
+
+Para conectar los servicios preparo `backend/.env` a partir de [mi plantilla](backend/.env.example). He documentado los pasos en [Configuración local](docs/CONFIGURACION.md). La aplicación puede arrancar sin credenciales; en ese caso no sirve el catálogo.
+
+```bash
+npm run build
+npm test
+npm run format:check
+```
+
+La compilación genera `frontend/dist`. Mantengo las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
 
 Mi objetivo es desplegar en **Vercel**, verificar las rutas al recargar y entregar el repositorio público. Incorporaré enlaces y capturas cuando haya comprobado cada paso.
 
@@ -79,6 +98,12 @@ Mi objetivo es desplegar en **Vercel**, verificar las rutas al recargar y entreg
 Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico, independiente y no oficial. No tengo vinculación con los titulares de Expediente X ni presento los materiales de terceros como propios.
 
 Registraré la procedencia, autoría y licencia de los recursos utilizados. Alojar una imagen en Cloudinary no sustituye su permiso de uso. Mantengo el material docente de referencia fuera de Git y GitHub.
+
+### Primera evidencia visual
+
+He revisado la pantalla del archivo en alemán en una vista móvil de 390 × 844 píxeles. La captura refleja el estado real de esta fase: todavía tengo pendiente la conexión del catálogo.
+
+![Mi archivo móvil en alemán, todavía sin conexión al catálogo](docs/screenshots/inicio/archivo-movil-de.png)
 
 ### Fuentes técnicas
 

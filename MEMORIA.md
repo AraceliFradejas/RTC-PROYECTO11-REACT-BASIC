@@ -9,7 +9,7 @@
 | Módulo | 7 · Frontend con React |
 | Repositorio | [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC) |
 | Inicio de esta memoria | 20 de septiembre de 2026 |
-| Estado | He definido el alcance; tengo pendiente la implementación. |
+| Estado | He preparado la base ejecutable; tengo pendientes los servicios externos. |
 | Despliegue | Tengo previsto utilizar Vercel; aún no dispongo de una URL verificada. |
 
 ## 2. Contexto y motivación
@@ -101,11 +101,19 @@ Comprobaré la búsqueda, los filtros, las fichas, los favoritos y su persistenc
 
 Revisaré los tres idiomas, la independencia del país, el teclado, el foco, la lectura y la ausencia de desbordamientos en distintos tamaños de pantalla. Antes de entregar ejecutaré los comandos de comprobación que incorpore al proyecto y verificaré las rutas del despliegue.
 
-**Todavía no he ejecutado pruebas funcionales:** no hay aplicación implementada. Añadiré los resultados y sus límites cuando pueda reproducirlos.
+He ejecutado `npm run build` correctamente y cinco pruebas de API con `npm test`: ausencia de conexión, idioma alternativo de la sinopsis, consulta por identificador, parámetros inválidos y episodio inexistente. Para las respuestas con datos utilizo dobles de prueba: no representan una conexión real a Atlas.
+
+He revisado en Chrome el inicio en escritorio, el cambio a alemán, la conservación de España como país y el archivo a 390 × 844 píxeles. El aviso de catálogo no disponible corresponde a una respuesta HTTP 503 controlada. Tengo pendiente comprobar todos los recorridos con datos reales, el resto de tamaños y el despliegue.
 
 ## 11. Evidencias y capturas
 
-Todavía no incluyo capturas de una aplicación o servicios que no he configurado. Prepararé estas evidencias conforme avance:
+He incorporado mi primera captura real de la interfaz. No incluyo todavía capturas de Atlas, Cloudinary o Vercel porque no he conectado esos servicios.
+
+![Mi archivo de Akte X en móvil, con el aviso de catálogo no disponible](docs/screenshots/inicio/archivo-movil-de.png)
+
+He capturado esta página desde Chrome con emulación de 390 × 844 píxeles. Documenta mi primera base visual, no un catálogo terminado.
+
+Completaré las siguientes evidencias conforme avance:
 
 | Evidencia | Qué documentaré |
 | --- | --- |
@@ -126,7 +134,19 @@ Mantendré commits en castellano asociados a cambios reales y revisables. Actual
 
 ## 13. Próximos pasos
 
-Primero prepararé la estructura ejecutable de frontend y backend. Después configuraré los servicios, verificaré el catálogo y desarrollaré la navegación y los componentes. Finalmente completaré las traducciones, las comprobaciones responsive, las capturas y el despliegue.
+He preparado la estructura ejecutable y la navegación. Mi siguiente paso es configurar Atlas y TMDB, importar los episodios y comprobar las fichas, los filtros y los favoritos con datos reales. Después completaré los recursos visuales de Cloudinary, el progreso, la disponibilidad, las traducciones del catálogo y el despliegue.
+
+## 13.1. Mi primera base ejecutable
+
+He organizado el proyecto en dos espacios de trabajo npm: `frontend` y `backend`. Arranco ambos con `npm run dev`. He separado las páginas, los componentes, las preferencias y las peticiones en React; en Express he separado el arranque, la conexión y el modelo de episodios.
+
+He utilizado un efecto para las peticiones y cancelo la solicitud cuando abandono la vista. He preparado estados para búsqueda, temporada, favoritos, idioma, país y visibilidad de sinopsis. Mantengo separados el idioma del título y el de la sinopsis cuando falta alguna traducción.
+
+He creado el motivo decorativo de la portada con CSS. No es una fotografía de la serie ni un recurso ya alojado en Cloudinary. Las tipografías de esta primera versión se cargan desde Google Fonts.
+
+### Mi estado de los requisitos tras este avance
+
+He implementado componentes con props, estados, efectos, rutas, enlaces y lectura del parámetro `id`. He realizado peticiones HTTP reales entre frontend y backend, aunque el catálogo responde con indisponibilidad hasta conectar Atlas. No doy por cumplida todavía la recogida de datos externos ni la validación de todos los requisitos de la entrega.
 
 ## 14. Fuentes consultadas
 
