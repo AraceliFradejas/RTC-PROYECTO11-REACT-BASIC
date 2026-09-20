@@ -45,7 +45,7 @@ He reservado las variables de Cloudinary en la plantilla, pero todavía no las u
 - Ejecuto `npm test` para comprobar los contratos HTTP de mi API con datos de prueba aislados.
 - Ejecuto `npm run format:check` para revisar el formato del código.
 
-He publicado la interfaz en [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/). Vercel utiliza `npm ci`, `npm run build` y `frontend/dist`, con las rutas de la SPA declaradas en `vercel.json`. El backend y las variables privadas siguen siendo locales. Tengo pendiente publicarlos; hasta completar la configuración privada, el catálogo y las plataformas no estarán disponibles en producción.
+He publicado la interfaz en [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/). Vercel utiliza `npm ci`, `npm run build` y `frontend/dist`, con las rutas de la SPA declaradas en `vercel.json`. He publicado también el backend y he configurado las dos variables como secretos de Production. He comprobado que el catálogo y las plataformas responden con datos reales.
 
 ## Mi backend en Vercel
 
@@ -54,3 +54,7 @@ He preparado `api/index.js` y la reescritura de `/api/:path*`. La función utili
 Configuro `MONGODB_URI` (con la base `expediente_x`) y `TMDB_READ_TOKEN` como variables privadas del proyecto `xfiles` en Vercel, para Production. No uso el prefijo `VITE_`. Después despliego y compruebo `/api/health`, `/api/episodes?lang=es` y `/api/watch-providers?country=ES`. La configuración local no se copia automáticamente a Vercel.
 
 He seguido la [documentación de funciones Node.js de Vercel](https://vercel.com/docs/functions/runtimes/node-js) y sus [reescrituras de rutas](https://vercel.com/docs/routing/rewrites).
+
+He comprobado la conexión tras autorizar permanentemente `0.0.0.0/0` en la lista de red de este proyecto de Atlas. Esta regla permite intentar conexiones desde cualquier IPv4; mantengo la autenticación obligatoria. Es una decisión explícita para admitir las direcciones dinámicas de Vercel.
+
+Las películas utilizan `/api/movies?lang=es` y `/api/movies/:id?lang=es`, con los mismos tres idiomas que el catálogo. Las consulto directamente en TMDB mediante el servidor; no añado esos registros a la colección de episodios.

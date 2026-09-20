@@ -216,3 +216,15 @@ He revisado el detalle en una vista móvil de 390 × 844 píxeles. Conservo esta
 He publicado los commits `0425b4e`, `7ecb395` y `afc3299` en `main`. Vercel ha confirmado el despliegue correcto. He comprobado el dominio público: `/api/health` devuelve HTTP 200 con `database: unavailable`; el catálogo devuelve HTTP 503 con `CATALOG_UNAVAILABLE` y las plataformas HTTP 503 con `TMDB_NOT_CONFIGURED`. La ruta directa `/expedientes/283988` sirve la interfaz con HTTP 200.
 
 Estas respuestas confirman que mi función y sus rutas están desplegadas. Todavía no acreditan la conexión de producción con Atlas y TMDB: las dos variables privadas siguen pendientes de configurar. He cancelado un intento de autenticación de Vercel CLI que abrió el navegador predeterminado y he mantenido la sesión existente de Chrome.
+
+## 19. Mi conexión de producción y las películas
+
+He guardado exclusivamente `MONGODB_URI` y `TMDB_READ_TOKEN` como secretos de Production en el proyecto `xfiles` de Vercel y he desplegado de nuevo. He eliminado el archivo temporal usado para importarlos; conservo mi configuración local ignorada por Git.
+
+TMDB ha respondido correctamente, pero Atlas rechazaba el acceso porque solo permitía mi IP local. He decidido autorizar de forma permanente `0.0.0.0/0` para admitir las conexiones de Vercel. Conozco que permite intentos de conexión desde cualquier IPv4; no elimina la autenticación. Tras aplicar la regla, he comprobado `/api/health` con `database: connected`, el catálogo español con 218 episodios y el detalle alemán de «Gezeichnet», todos con HTTP 200.
+
+He ampliado el proyecto con las dos películas: «Expediente X: Enfréntate al futuro» (1998, TMDB 846) y «Expediente X: Creer es la clave» (2008, TMDB 8836). He verificado sus datos en los tres idiomas y he creado listado y ruta parametrizada. Solicito los datos desde mi backend con caché de una hora y conservo las sinopsis ocultas inicialmente. Mantengo el recuento de episodios independiente.
+
+He añadido dos pruebas sobre caché, consultas simultáneas, idioma de reserva y validación de rutas. Las quince pruebas pasan y la interfaz compila. He comprobado en Chrome el listado local de las dos películas con sus años y duraciones.
+
+Estoy generando imágenes con IA inspiradas en la serie y sus temporadas para incorporarlas a mis recursos visuales. Todavía no las he integrado. Las identificaré como imágenes generadas con IA y no oficiales, y registraré su procedencia antes de publicarlas en Cloudinary.

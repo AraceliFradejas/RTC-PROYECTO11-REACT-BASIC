@@ -27,9 +27,9 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 **Ya consulto un catálogo real de 218 episodios y 11 temporadas.** He importado los datos de TMDB en MongoDB Atlas, con títulos y sinopsis disponibles en español, inglés y alemán. He conectado la pantalla de plataformas por país y he añadido favoritos, progreso de visionado y selección aleatoria entre los resultados filtrados.
 
-He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las trece pruebas del backend pasan. Tengo pendiente completar Cloudinary y verificar el backend en producción.
+He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las quince pruebas del backend pasan. He conectado el backend en producción. Tengo pendiente incorporar mis recursos visuales en Cloudinary.
 
-Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). Distingo esta publicación de la integración local: la API ya responde en Vercel y devuelve errores controlados hasta que configure las variables privadas de producción.
+Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). He comprobado en producción la conexión a Atlas, los 218 episodios, el detalle y las plataformas de TMDB.
 
 ## Qué quiero construir
 
@@ -39,6 +39,7 @@ Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradeja
 - Podré ocultar o revelar las sinopsis para evitar spoilers.
 - Descubriré un episodio al azar.
 - Consultaré dónde ver la serie según el país seleccionado.
+- Exploraré como extra las dos películas, con sus fichas en tres idiomas.
 - Utilizaré la web en móvil, tableta y escritorio, con navegación por teclado y controles accesibles.
 
 He implementado estas funciones. Guardo favoritos y episodios vistos en este navegador; no los sincronizo entre dispositivos. El caso aleatorio respeta mi búsqueda y los filtros de temporada y visionado. Continúo revisando la experiencia responsive antes de la entrega.
@@ -58,6 +59,10 @@ He implementado estas funciones. Guardo favoritos y episodios vistos en este nav
 Utilizo **TMDB como fuente principal** y sus datos de JustWatch para consultar plataformas. Muestro país, modalidad y fecha de consulta, e incluyo las atribuciones en «Mi historia». He comprobado las respuestas reales para España, Alemania, Reino Unido y Estados Unidos.
 
 Durante la exploración inicial también comprobé TVmaze: devolvió 218 registros de episodios en 11 temporadas. Mantengo esa comprobación en la memoria como antecedente, sin confundirla con una integración terminada de TMDB.
+
+## Mis películas como contenido extra
+
+He añadido `/peliculas` y `/peliculas/:id` para las películas de 1998 y 2008. Consulto sus datos en TMDB desde mi backend, con una caché de una hora, duración, traducciones, sinopsis ocultable y enlace a la fuente. Mantengo el progreso de visionado reservado a los episodios.
 
 ## Idiomas
 
@@ -95,7 +100,7 @@ La importación solo permite la base `expediente_x`, actualiza por identificador
 
 La compilación genera `frontend/dist`. Mantengo las credenciales en archivos locales ignorados por Git y en variables privadas del servidor.
 
-He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xfiles` y el dominio `xfiles-archive.vercel.app`. He preparado una función en `api/index.js` para servir mi API bajo el mismo dominio y reutilizar la conexión a Atlas. Los servicios externos y sus secretos todavía no están configurados en Vercel.
+He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xfiles` y el dominio `xfiles-archive.vercel.app`. He preparado una función en `api/index.js` para servir mi API bajo el mismo dominio y reutilizar la conexión a Atlas. He configurado `MONGODB_URI` y `TMDB_READ_TOKEN` como secretos de Production en Vercel. He autorizado la regla permanente `0.0.0.0/0` en Atlas para permitir las conexiones de Vercel; la autenticación de la base continúa siendo obligatoria.
 
 ## Documentación
 
