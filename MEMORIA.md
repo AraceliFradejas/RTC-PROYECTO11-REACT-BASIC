@@ -16,7 +16,7 @@
 
 He elegido Expediente X porque siempre me ha encantado la serie. Tras trabajar con temáticas swifties en proyectos anteriores, quiero trasladar otra de mis aficiones al desarrollo de una interfaz con React.
 
-Recuerdo haber visto la octava temporada en un canal alemán, donde la serie se titulaba Akte X. Por ese motivo quiero incluir el alemán junto al español y el inglés. No identifico el canal porque todavía no he concretado ese dato.
+Recuerdo haber visto la novena temporada en un canal alemán, donde la serie se titulaba Akte X. Por ese motivo quiero incluir el alemán junto al español y el inglés. No identifico el canal porque todavía no he concretado ese dato.
 
 Quiero crear la sensación de consultar un archivo de casos. Utilizaré una dirección visual basada en documentos, carpetas, sellos y anotaciones, con guiños que acompañen la navegación sin dificultar la lectura.
 
@@ -228,3 +228,11 @@ He ampliado el proyecto con las dos películas: «Expediente X: Enfréntate al f
 He añadido dos pruebas sobre caché, consultas simultáneas, idioma de reserva y validación de rutas. Las quince pruebas pasan y la interfaz compila. He comprobado en Chrome el listado local de las dos películas con sus años y duraciones.
 
 Estoy generando imágenes con IA inspiradas en la serie y sus temporadas para incorporarlas a mis recursos visuales. Todavía no las he integrado. Las identificaré como imágenes generadas con IA y no oficiales, y registraré su procedencia antes de publicarlas en Cloudinary.
+
+## 20. Mi historia como centro del proyecto
+
+He desarrollado «Mi historia» a partir de mis recuerdos: el relato de mi hermano sobre «Anasazi», las cintas VHS, las guías, Internet en la UCM, las emisiones de madrugada, los DVD, mi viaje a Londres, el cine con Diego y los nueve minutos de mi reloj. Los presento como vivencias personales, sin convertir mis recuerdos de fechas o emisiones en una cronología documental de la serie.
+
+He corregido mi referencia inicial a la octava temporada: en mi relato más detallado recuerdo haber visto la novena en un canal alemán por satélite. He actualizado esa referencia en los tres idiomas y en la documentación.
+
+He organizado la página en seis recuerdos, con encabezados y párrafos que puedo leer también en inglés y alemán. Conservo la versión castellana en [Mi historia](docs/MI-HISTORIA.md). Mantengo los créditos de TMDB y JustWatch al final de la página.

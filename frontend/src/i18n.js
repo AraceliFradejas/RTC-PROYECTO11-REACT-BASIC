@@ -31,7 +31,7 @@ export const messages = {
     enter: 'Abrir el archivo',
     note: 'Nota de la autora',
     quote:
-      'Todo empezó con una serie. Incluso llegué a ver su octava temporada en un canal alemán: Akte X. Este es mi pequeño homenaje a aquella curiosidad.',
+      'Todo empezó un verano, cuando mi hermano me contó «Anasazi». Después llegaron los VHS, mis primeras búsquedas en Internet y un reloj nueve minutos adelantado. Expediente X es parte de mi vida.',
     author: 'Araceli Fradejas Muñoz',
     explore: 'Sigo las pistas',
     exploreText: 'Busco un episodio y recorro sus temporadas.',
@@ -118,7 +118,7 @@ export const messages = {
     enter: 'Open the archive',
     note: 'A note from the author',
     quote:
-      'It all started with a series. I even watched its eighth season on a German channel: Akte X. This is my small tribute to that curiosity.',
+      'It all started one summer, when my brother told me about “Anasazi”. Then came VHS tapes, my first Internet searches and a watch set nine minutes fast. The X-Files is part of my life.',
     author: 'Araceli Fradejas Muñoz',
     explore: 'I follow the clues',
     exploreText: 'I search for an episode and explore the seasons.',
@@ -205,7 +205,7 @@ export const messages = {
     enter: 'Archiv öffnen',
     note: 'Eine Notiz der Autorin',
     quote:
-      'Alles begann mit einer Serie. Die achte Staffel habe ich sogar auf einem deutschen Sender gesehen: Akte X. Dies ist meine kleine Hommage an diese Neugier.',
+      'Alles begann eines Sommers, als mein Bruder mir von „Anasazi“ erzählte. Dann kamen VHS-Kassetten, meine ersten Internetsuchen und eine Uhr, die neun Minuten vorging. Akte X ist ein Teil meines Lebens.',
     author: 'Araceli Fradejas Muñoz',
     explore: 'Ich folge den Spuren',
     exploreText: 'Ich suche eine Folge und erkunde die Staffeln.',

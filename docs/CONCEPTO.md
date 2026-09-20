@@ -40,7 +40,7 @@ Estas funciones son una propuesta de alcance, todavía no una implementación. S
 
 ## Mi ampliación del alcance
 
-He decidido incorporar MongoDB Atlas, una API propia con Express y Cloudinary. También he elegido tres idiomas: español, inglés y alemán. Recuerdo haber visto la temporada 8 en un canal alemán con el título «Akte X»; quiero que esa experiencia personal forme parte del origen del proyecto, sin atribuirla a un canal que todavía no he identificado.
+He decidido incorporar MongoDB Atlas, una API propia con Express y Cloudinary. También he elegido tres idiomas: español, inglés y alemán. Recuerdo haber visto la temporada 9 en un canal alemán con el título «Akte X»; quiero que esa experiencia personal forme parte del origen del proyecto, sin atribuirla a un canal que todavía no he identificado.
 
 ### Mi arquitectura prevista
 

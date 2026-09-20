@@ -11,5 +11,5 @@
 - Elijo la temática a partir de mis gustos confirmados, sin dar por conocidas preferencias que no he indicado.
 - He elegido Expediente X como temática: quiero un archivo de episodios y casos con guiños a la serie e identidad visual propia.
 - Incluyo una API propia con Express y MongoDB Atlas, y utilizo Cloudinary para mis recursos visuales autorizados.
-- Preparo la web en español, inglés y alemán, incluyendo «Expediente X», «The X-Files» y «Akte X» en cada versión. Mi recuerdo de ver la temporada 8 en un canal alemán forma parte de la motivación personal que he confirmado.
+- Preparo la web en español, inglés y alemán, incluyendo «Expediente X», «The X-Files» y «Akte X» en cada versión. Mi recuerdo de ver la temporada 9 en un canal alemán forma parte de la motivación personal que he confirmado.
 - Incorporo una sección para consultar dónde ver la serie por país. Mantengo independientes el idioma de la interfaz y el país de disponibilidad; indico fuente y fecha de consulta y no invento plataformas ni idiomas de audio.

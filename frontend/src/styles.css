@@ -699,3 +699,22 @@ label {
 .detail-paper > .watched-toggle {
   display: block;
 }
+
+.personal-story {
+  max-width: 68ch;
+  margin: 3rem auto;
+}
+.personal-story section {
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
+}
+.personal-story h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.3;
+  margin: 0.6rem 0 1.25rem;
+}
+.personal-story p {
+  color: var(--muted);
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}

@@ -1,12 +1,27 @@
+import { story } from '../content/story';
 import { usePreferences } from '../context/Preferences';
 export default function About() {
-  const { t } = usePreferences();
+  const { t, language } = usePreferences();
+  const personal = story[language];
   return (
     <section className="page narrow">
       <p className="eyebrow">{t.about}</p>
-      <h1>{t.aboutTitle}</h1>
-      <p className="intro">{t.aboutBody}</p>
-      <blockquote className="personal-quote">{t.quote}</blockquote>
+      <h1>{personal.title}</h1>
+      <p className="intro">{personal.intro}</p>
+      <blockquote className="personal-quote">{personal.quote}</blockquote>
+      <div className="personal-story">
+        {personal.sections.map(([title, paragraphs], index) => (
+          <section key={index} aria-labelledby={`memory-${index}`}>
+            <span className="eyebrow" aria-hidden="true">
+              0{index + 1}
+            </span>
+            <h2 id={`memory-${index}`}>{title}</h2>
+            {paragraphs.map((paragraph, number) => (
+              <p key={number}>{paragraph}</p>
+            ))}
+          </section>
+        ))}
+      </div>
       <p>{t.unofficial}</p>
       <p className="signature">{t.author}</p>
       <aside className="source-credits" aria-label="TMDB">
