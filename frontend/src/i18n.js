@@ -1,5 +1,11 @@
 export const messages = {
   es: {
+    movies: 'Películas',
+    movieTitle: 'Mis expedientes en la gran pantalla',
+    movieIntro:
+      'Amplío mi archivo con las dos películas de la serie. Las consulto por separado de mi progreso de episodios.',
+    backMovies: 'Volver a las películas',
+    movieOpen: 'Abrir película',
     progress: 'Mi progreso',
     watched: 'Visto',
     markWatched: 'Marcar como visto',
@@ -81,6 +87,12 @@ export const messages = {
       'No puedo guardar mis preferencias en este navegador. Los cambios durarán mientras mantenga abierta la página.',
   },
   en: {
+    movies: 'Films',
+    movieTitle: 'My files on the big screen',
+    movieIntro:
+      'I expand my archive with the two films from the series. I keep them separate from my episode progress.',
+    backMovies: 'Back to films',
+    movieOpen: 'Open film',
     progress: 'My progress',
     watched: 'Watched',
     markWatched: 'Mark as watched',
@@ -161,6 +173,12 @@ export const messages = {
       'I cannot save preferences in this browser. Changes will last while this page stays open.',
   },
   de: {
+    movies: 'Filme',
+    movieTitle: 'Meine Akten auf der großen Leinwand',
+    movieIntro:
+      'Ich ergänze mein Archiv um die beiden Filme zur Serie. Ich halte sie von meinem Fortschritt bei den Folgen getrennt.',
+    backMovies: 'Zurück zu den Filmen',
+    movieOpen: 'Film öffnen',
     progress: 'Mein Fortschritt',
     watched: 'Gesehen',
     markWatched: 'Als gesehen markieren',

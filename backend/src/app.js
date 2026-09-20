@@ -4,6 +4,8 @@ import { Episode } from './models/Episode.js';
 import { createTmdbClient, SourceError } from './services/tmdb.js';
 import { createProvidersService, countries } from './services/providers.js';
 
+import { createMoviesService, movieIds } from './services/movies.js';
+
 const languages = ['es', 'en', 'de'];
 
 export function presentEpisode(episode, language) {
@@ -28,6 +30,7 @@ export function createApp({
   ready = databaseReady,
   episodes = Episode,
   providers = createProvidersService(createTmdbClient()),
+  movies = createMoviesService(createTmdbClient()),
 } = {}) {
   const app = express();
   app.disable('x-powered-by');
@@ -40,6 +43,21 @@ export function createApp({
     if (!countries.includes(country))
       return res.status(400).json({ code: 'INVALID_COUNTRY' });
     res.json(await providers(country));
+  });
+
+  app.use('/api/movies', (req, res, next) => {
+    if (req.query.lang && !languages.includes(req.query.lang))
+      return res.status(400).json({ code: 'INVALID_LANGUAGE' });
+    next();
+  });
+  app.get('/api/movies', async (req, res) => {
+    res.json({ movies: await movies(req.query.lang || 'es') });
+  });
+  app.get('/api/movies/:id', async (req, res) => {
+    if (!movieIds.some((id) => String(id) === req.params.id))
+      return res.status(404).json({ code: 'MOVIE_NOT_FOUND' });
+    const data = await movies(req.query.lang || 'es');
+    res.json(data.find((movie) => movie.id === req.params.id));
   });
 
   app.use('/api/episodes', (req, res, next) => {
