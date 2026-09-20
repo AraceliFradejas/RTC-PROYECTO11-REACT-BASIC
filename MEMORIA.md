@@ -236,3 +236,13 @@ He desarrollado «Mi historia» a partir de mis recuerdos: el relato de mi herma
 He corregido mi referencia inicial a la octava temporada: en mi relato más detallado recuerdo haber visto la novena en un canal alemán por satélite. He actualizado esa referencia en los tres idiomas y en la documentación.
 
 He organizado la página en seis recuerdos, con encabezados y párrafos que puedo leer también en inglés y alemán. Conservo la versión castellana en [Mi historia](docs/MI-HISTORIA.md). Mantengo los créditos de TMDB y JustWatch al final de la página.
+
+## 21. Mis imágenes y los personajes principales
+
+He revisado las 35 imágenes que he generado y he preparado versiones WebP, manteniendo intactos mis PNG. Las copias optimizadas suman 2,75 MB frente a unos 67,6 MB de originales. No envío los PNG a GitHub ni a Vercel.
+
+He sustituido el motivo de la portada por la panorámica de Mulder y Scully. He incorporado un selector visual de las once temporadas, una ilustración identificada en el detalle y una imagen de ambiente en mi historia. He añadido `/personajes`, con los dos retratos y textos en los tres idiomas, además de los dos lemas que forman parte de mis recuerdos. No los atribuyo a un diálogo concreto.
+
+He preparado un script de subida firmada a Cloudinary y una copia local de respaldo. La configuración y subida real siguen pendientes; no doy por alojadas las imágenes en Cloudinary hasta comprobar sus URL.
+
+He comprobado visualmente la portada en Chrome en escritorio y en una vista móvil de 390 × 844 píxeles: en móvil sitúo la imagen encima del texto para conservar los rostros y la legibilidad. He compilado la interfaz y he comprobado que los 35 archivos del manifiesto existen.

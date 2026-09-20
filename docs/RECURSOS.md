@@ -9,4 +9,4 @@
 
 Incluyo el aviso requerido: “This product uses the TMDB API but is not endorsed or certified by TMDB.”
 
-Tengo pendiente incorporar recursos en Cloudinary. Registraré su procedencia y permiso de reutilización antes de publicarlos. La disponibilidad de una imagen en una API no equivale a una licencia general para cualquier uso.
+He integrado mis imágenes generadas con IA en portada, temporadas, personajes e historia; explico la selección y preparación en [Mis imágenes](IMAGENES.md). Tengo pendiente completar su subida a Cloudinary. Registraré su procedencia y permiso de reutilización antes de publicarlos. La disponibilidad de una imagen en una API no equivale a una licencia general para cualquier uso.

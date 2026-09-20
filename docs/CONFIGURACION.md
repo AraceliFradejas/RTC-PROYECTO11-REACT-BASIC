@@ -37,7 +37,7 @@ Sin `TMDB_READ_TOKEN`, el importador se detiene con `TMDB_NOT_CONFIGURED`. He co
 
 ## Mis recursos de Cloudinary
 
-He reservado las variables de Cloudinary en la plantilla, pero todavía no las utiliza el código. Las completaré cuando prepare la integración con recursos cuya reutilización haya comprobado.
+Utilizo las variables de Cloudinary en mi script local de subida firmada. He preparado 35 imágenes generadas con IA y copias WebP de respaldo. Explico la preparación y los comandos en [Mis imágenes](IMAGENES.md). La subida real depende de completar las tres variables privadas en `backend/.env`.
 
 ## Mis comprobaciones
 
