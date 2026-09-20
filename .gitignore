@@ -1,0 +1,17 @@
+# Mantengo el material de referencia fuera del repositorio.
+[Ss]olucion/
+[Ss]olución/
+[Ss]olucíon/
+
+# Excluyo dependencias, compilaciones y archivos locales.
+node_modules/
+dist/
+.vercel/
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+coverage/
+playwright-report/
+test-results/
