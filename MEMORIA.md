@@ -597,7 +597,7 @@ He conectado una consulta para España, Alemania, Reino Unido y Estados Unidos. 
 
 ### Recursos e identidad visual
 
-He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He incorporado 35 imágenes generadas con la herramienta de imágenes de Codex, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
+He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He incorporado 35 imágenes generadas con IA, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
 
 Sirvo las imágenes desde Cloudinary y utilizo copias locales si falla la carga remota. Conservo los PNG originales fuera de Git y del despliegue. Documento la preparación y subida en [Mis imágenes](docs/IMAGENES.md).
 

@@ -9,4 +9,4 @@
 
 Incluyo el aviso requerido: “This product uses the TMDB API but is not endorsed or certified by TMDB.”
 
-He integrado 35 imágenes generadas con la herramienta de imágenes de Codex en portada, temporadas, personajes y escenas de ambiente. En [Mis imágenes](IMAGENES.md) explico cuáles utilizo en la interfaz, su preparación y su procedencia. Las he subido a Cloudinary y conservo copias WebP locales de respaldo. Son interpretaciones no oficiales inspiradas en la serie; no les atribuyo una licencia de los titulares de Expediente X.
+He integrado 35 imágenes generadas con IA en portada, temporadas, personajes y escenas de ambiente. En [Mis imágenes](IMAGENES.md) explico cuáles utilizo en la interfaz, su preparación y su procedencia. Las he subido a Cloudinary y conservo copias WebP locales de respaldo. Son interpretaciones no oficiales inspiradas en la serie; no les atribuyo una licencia de los titulares de Expediente X.

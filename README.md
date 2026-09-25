@@ -212,7 +212,7 @@ Guardo los valores privados en `backend/.env` y en la configuración del servido
 
 He importado 218 episodios de TMDB, excluyendo especiales y uniendo las traducciones por identificador. La importación valida los documentos y solo admite la base `expediente_x`; actualiza datos sin sustituir los recursos visuales propios. Explico la recuperación de una importación parcial en la [memoria](MEMORIA.md#7-datos-y-normalización).
 
-He preparado 35 imágenes generadas con la herramienta de imágenes de Codex. Las copias WebP ocupan aproximadamente 2,75 MB frente a los 67,6 MB de PNG originales. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
+He preparado 35 imágenes generadas con IA. Las copias WebP ocupan aproximadamente 2,75 MB frente a los 67,6 MB de PNG originales. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
 
 ## Idiomas
 
@@ -488,7 +488,7 @@ I keep private values in `backend/.env` and the deployed server configuration. I
 
 I imported 218 episodes from TMDB, excluding specials and joining translations by identifier. The importer validates the documents and only accepts the `expediente_x` database. It updates source data without replacing my own visual assets. I explain recovery from a partial import in my [report](MEMORIA.md#7-datos-y-normalización).
 
-I prepared 35 images generated with the image tool integrated into Codex. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
+I prepared 35 AI-generated images. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
 
 ### Languages
 

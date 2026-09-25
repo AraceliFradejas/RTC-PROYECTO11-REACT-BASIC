@@ -26,6 +26,4 @@ He completado la subida de las 35 imágenes a Cloudinary. La clave estaba activa
 
 ## Mis atribuciones
 
-He generado las 35 imágenes con la **herramienta de imágenes integrada de Codex**, como recogen los archivos de instrucciones que conservo junto a los originales (`PROMPTS.md` y `LEEME-Y-PROMPTS.md`). Esos archivos no especifican la versión del modelo.
-
 Identifico las imágenes como «Imagen generada con IA · Inspiración no oficial». No atribuyo estas composiciones a los titulares de la serie ni les asigno una licencia de terceros que no he comprobado. Conservo la procedencia de los recursos separada de los datos y créditos de TMDB.
