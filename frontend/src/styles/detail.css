@@ -1,0 +1,62 @@
+.detail-paper .eyebrow {
+  color: #4c5d36;
+  letter-spacing: 0.08em;
+}
+.detail-paper :focus-visible {
+  outline-color: #52661d;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.detail-paper {
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(24px, 5vw, 65px);
+}
+.synopsis {
+  border-top: 1px solid #a6ad98;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+.synopsis p {
+  max-width: 750px;
+  line-height: 1.85;
+}
+.text-button {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  padding: 12px 0;
+  min-height: 44px;
+}
+.watched-toggle {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  padding: 0.6rem 0.8rem;
+  font: inherit;
+  cursor: pointer;
+  margin: 0.8rem 0;
+}
+.watched-toggle[aria-pressed='true'] {
+  background: #d4ea83;
+  color: #182118;
+}
+.detail-paper > .watched-toggle {
+  display: block;
+}
+.detail-art,
+.memory-art {
+  margin: 0 0 2rem;
+}
+.detail-art img,
+.memory-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.detail-art figcaption {
+  color: #4b584e;
+}

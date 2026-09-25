@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import Synopsis from '../components/Synopsis';
 import { Link, useParams } from 'react-router';
 import { usePreferences } from '../context/Preferences';
 import { useApi } from '../hooks/useApi';
@@ -35,7 +35,6 @@ export default function Movies() {
 
 function MovieContent({ movie }) {
   const { t, language } = usePreferences();
-  const [revealed, setRevealed] = useState(false);
   return (
     <article className="detail-paper">
       <p className="eyebrow">
@@ -48,26 +47,10 @@ function MovieContent({ movie }) {
           {t.original} {movie.titleLanguage.toUpperCase()}
         </p>
       )}
-      <div className="synopsis">
-        <button
-          className="text-button"
-          aria-expanded={revealed}
-          aria-controls="movie-synopsis"
-          onClick={() => setRevealed(!revealed)}
-        >
-          {revealed ? t.hide : t.reveal}
-        </button>
-        <div id="movie-synopsis" hidden={!revealed}>
-          {movie.summary && movie.summaryLanguage !== language && (
-            <small>
-              {t.original} {movie.summaryLanguage.toUpperCase()}
-            </small>
-          )}
-          <p lang={movie.summary ? movie.summaryLanguage : language}>
-            {movie.summary || t.noSummary}
-          </p>
-        </div>
-      </div>
+      <Synopsis
+        summary={movie.summary}
+        summaryLanguage={movie.summaryLanguage}
+      />
       <a href={movie.sourceUrl} target="_blank" rel="noreferrer">
         {t.source} ↗
       </a>

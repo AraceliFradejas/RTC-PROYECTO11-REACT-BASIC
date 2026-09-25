@@ -2,6 +2,9 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import { messages } from '../i18n';
 
 const PreferencesContext = createContext(null);
+const toggleSelection = (items, id) =>
+  items.includes(id) ? items.filter((item) => item !== id) : [...items, id];
+
 function readPreference(key, fallback, validate) {
   try {
     const value = JSON.parse(localStorage.getItem(key));
@@ -41,6 +44,12 @@ export function PreferencesProvider({ children }) {
   useEffect(() => {
     document.documentElement.lang = language;
     document.title = `${messages[language].name} · ${messages[language].subtitle}`;
+    document.querySelector('meta[name="description"]').content =
+      messages[language].intro;
+    document.querySelector('meta[property="og:title"]').content =
+      document.title;
+    document.querySelector('meta[property="og:description"]').content =
+      messages[language].intro;
   }, [language]);
 
   useEffect(() => {
@@ -56,19 +65,11 @@ export function PreferencesProvider({ children }) {
   }, [language, favorites, country, watched]);
 
   function toggleFavorite(id) {
-    setFavorites((current) =>
-      current.includes(id)
-        ? current.filter((item) => item !== id)
-        : [...current, id],
-    );
+    setFavorites((current) => toggleSelection(current, id));
   }
 
   function toggleWatched(id) {
-    setWatched((current) =>
-      current.includes(id)
-        ? current.filter((item) => item !== id)
-        : [...current, id],
-    );
+    setWatched((current) => toggleSelection(current, id));
   }
 
   return (

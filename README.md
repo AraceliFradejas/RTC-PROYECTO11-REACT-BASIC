@@ -52,7 +52,7 @@ He diseñado la web como un archivo de investigación: carpetas, sellos, anotaci
 
 ## Estado actual
 
-Mi archivo reúne **218 episodios y 11 temporadas**, importados de TMDB en MongoDB Atlas. Incluye favoritos, progreso de visionado, disponibilidad por país, las dos películas y una sección de Mulder y Scully. Para el diseño utilizo 35 recursos visuales alojados en Cloudinary, con copias WebP locales de respaldo.
+Mi archivo reúne **218 episodios y 11 temporadas**, importados de TMDB en MongoDB Atlas. Incluye favoritos, progreso de visionado, disponibilidad por país, las dos películas y una sección de Mulder y Scully. Para el diseño utilizo 16 recursos visuales alojados en Cloudinary, con copias WebP locales de respaldo.
 
 En la revisión del **25 de septiembre de 2026** he comprobado el repositorio público, la conexión a Atlas en producción, el catálogo en los tres idiomas y las consultas de plataformas para España, Alemania, Reino Unido y Estados Unidos. Las quince pruebas del backend, la compilación y el formato han pasado. He revisado manualmente los recorridos principales y conservo dieciséis capturas actuales.
 
@@ -139,7 +139,8 @@ frontend/src/
   hooks/        # Peticiones, cancelación y reintentos
   content/      # Historia y manifiesto de imágenes
   i18n.js       # Textos de la interfaz en ES, EN y DE
-  styles.css    # Estilos y adaptación responsive
+  styles/       # Estilos por sección, con sus reglas responsive
+  styles.css    # Entrada que importa las hojas de estilos
 backend/src/
   models/       # Episodios y traducciones
   services/     # Catálogo, TMDB, películas y plataformas
@@ -212,7 +213,7 @@ Guardo los valores privados en `backend/.env` y en la configuración del servido
 
 He importado 218 episodios de TMDB, excluyendo especiales y uniendo las traducciones por identificador. La importación valida los documentos y solo admite la base `expediente_x`; actualiza datos sin sustituir los recursos visuales propios. Explico la recuperación de una importación parcial en la [memoria](MEMORIA.md#7-datos-y-normalización).
 
-He preparado 35 imágenes generadas con IA. Las copias WebP ocupan aproximadamente 2,75 MB frente a los 67,6 MB de PNG originales. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
+He seleccionado 16 de las 35 imágenes generadas con IA que preparé inicialmente. Las copias WebP utilizadas ocupan 984.500 bytes (0,98 MB). He retirado del repositorio y del despliegue las 19 copias que la interfaz no utiliza, ahorrando 1,76 MB. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
 
 ## Idiomas
 
@@ -328,7 +329,7 @@ I designed the website as an investigation archive, with folders, stamps, notes 
 
 ### Current status
 
-I have published a catalogue of **218 episodes across 11 seasons**, imported from TMDB into MongoDB Atlas. I have connected persistent favourites and viewing progress, availability by country, both films and a section dedicated to Mulder and Scully. I have prepared and uploaded 35 visual assets to Cloudinary, with local WebP fallback copies.
+I have published a catalogue of **218 episodes across 11 seasons**, imported from TMDB into MongoDB Atlas. I have connected persistent favourites and viewing progress, availability by country, both films and a section dedicated to Mulder and Scully. I use 16 visual assets hosted on Cloudinary, with local WebP fallback copies.
 
 During the review on **25 September 2026**, I checked the public repository, the production Atlas connection, the catalogue in all three languages and provider queries for Spain, Germany, the United Kingdom and the United States. All fifteen backend tests, the production build and the formatting check passed. I manually reviewed the main user journeys and retained sixteen current screenshots.
 
@@ -415,7 +416,8 @@ frontend/src/
   hooks/        # Requests, cancellation and retries
   content/      # Personal story and image manifest
   i18n.js       # Interface text in ES, EN and DE
-  styles.css    # Styles and responsive layout
+  styles/       # Styles by section, including responsive rules
+  styles.css    # Stylesheet entry point
 backend/src/
   models/       # Episodes and translations
   services/     # Catalogue, TMDB, films and providers
@@ -488,7 +490,7 @@ I keep private values in `backend/.env` and the deployed server configuration. I
 
 I imported 218 episodes from TMDB, excluding specials and joining translations by identifier. The importer validates the documents and only accepts the `expediente_x` database. It updates source data without replacing my own visual assets. I explain recovery from a partial import in my [report](MEMORIA.md#7-datos-y-normalización).
 
-I prepared 35 AI-generated images. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
+I selected 16 of the 35 AI-generated images I initially prepared. The WebP copies in use occupy 984,500 bytes (0.98 MB). I removed the 19 unused copies from the repository and deployment, saving 1.76 MB. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
 
 ### Languages
 

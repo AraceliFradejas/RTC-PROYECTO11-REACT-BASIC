@@ -115,7 +115,8 @@ frontend/src/
   pages/        Pantallas y rutas
   content/      Historia y manifiesto de imágenes
   i18n.js       Textos de interfaz en ES, EN y DE
-  styles.css    Estilos y adaptación responsive
+  styles/       Estilos por sección y adaptación responsive
+  styles.css    Entrada que importa las hojas de estilos
 backend/src/
   models/       Modelo de episodio
   services/     Catálogo, cliente TMDB, plataformas y películas
@@ -545,7 +546,7 @@ He utilizado el identificador de TMDB para actualizar episodios sin duplicarlos 
 
 ### Preparar imágenes para la web
 
-He pasado de 67.615.527 bytes de PNG originales a 2.745.710 bytes de copias WebP, aproximadamente un 96 % menos. Mantengo los originales fuera de Git y del despliegue. Registro dimensiones, cargo de forma diferida los recursos secundarios y conservo respaldo local para las imágenes remotas.
+La colección inicial de 35 imágenes ocupaba 2.745.710 bytes en WebP. En la revisión de entrega he retirado las 19 copias sin uso: publico 16 imágenes que suman 984.500 bytes. El script de preparación utiliza el manifiesto para no volver a incorporar las descartadas. Mantengo los originales fuera de Git y del despliegue. Registro dimensiones, cargo de forma diferida los recursos secundarios y conservo respaldo local para las imágenes remotas.
 
 La primera subida a Cloudinary encontró un problema de permisos. Lo resolví con una asignación temporal de Master Admin y la retiré después de subir los 35 recursos. La visualización pública utiliza sus URL y no requiere esa autorización. Documento el proceso en [Mis imágenes](docs/IMAGENES.md).
 
@@ -573,6 +574,21 @@ El trabajo con Atlas, TMDB y Cloudinary ha reforzado la separación entre datos,
 
 Finalmente, he aprendido a explicar lo que demuestra cada comprobación. Una captura muestra un estado visual; un recorrido manual acredita una interacción; una prueba automática verifica un comportamiento bajo unas condiciones concretas. Necesito las tres perspectivas para documentar con precisión el trabajo.
 
+### Revisión a partir de las correcciones de otros proyectos
+
+He aplicado las observaciones que también afectan a este archivo:
+
+- He repartido los estilos en siete hojas por responsabilidad y eliminado las reglas de la antigua carpeta decorativa. `styles.css` queda como entrada de las importaciones.
+- He separado filtros, resultados y selector de temporadas en componentes con props. `Archive` conserva los estados de búsqueda y filtros.
+- Comparto el componente `Synopsis` entre episodios y películas, y la operación de añadir o quitar identificadores entre favoritos y vistos.
+- He retirado 19 imágenes sin uso del manifiesto y de los archivos publicados. Conservo los originales locales y preparo solo las 16 imágenes utilizadas.
+- He añadido autoría y etiquetas Open Graph a las etiquetas SEO existentes. El título y la descripción se actualizan con el idioma elegido.
+- He declarado los botones de acción como `type="button"`. Mantengo JSX para construir la interfaz y el foco visible para navegar con teclado.
+
+Tras estos ajustes pasan las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en los tres idiomas: footer, temporada seleccionada, filtros, resultados vacíos y singulares, enlaces y sinopsis inicialmente oculta. También he comparado las declaraciones y media queries de los 162 selectores CSS activos y comprobado las 16 imágenes de la compilación. Estas comprobaciones de renderizado no simulan clics ni sustituyen una revisión visual en navegador, que queda pendiente para esta versión.
+
+Las observaciones sobre Unsplash y `populate` pertenecen a aplicaciones con otros datos. Aquí no utilizo Unsplash ni relaciones de documentos que necesiten `populate`. El importador ya rechaza identificadores de episodio duplicados y actualiza por identificador de TMDB.
+
 ## 15. Posibles mejoras
 
 - Añadir pruebas automatizadas del frontend para filtros, preferencias y cambios de ruta.
@@ -597,7 +613,7 @@ He conectado una consulta para España, Alemania, Reino Unido y Estados Unidos. 
 
 ### Recursos e identidad visual
 
-He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He incorporado 35 imágenes generadas con IA, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
+He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He seleccionado 16 imágenes generadas con IA de la colección inicial de 35, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
 
 Sirvo las imágenes desde Cloudinary y utilizo copias locales si falla la carga remota. Conservo los PNG originales fuera de Git y del despliegue. Documento la preparación y subida en [Mis imágenes](docs/IMAGENES.md).
 

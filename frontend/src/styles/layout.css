@@ -1,0 +1,126 @@
+.skip {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 10;
+  background: var(--accent);
+  color: var(--ink);
+  padding: 12px;
+}
+.skip:focus {
+  top: 12px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 27px 6%;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.brand small {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 6px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.brand-mark {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 3.2rem;
+  color: var(--accent);
+  line-height: 1;
+}
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-left: auto;
+  font-size: 0.87rem;
+}
+.header nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 9px 0;
+}
+.header nav a:hover,
+.header nav a.active {
+  color: var(--accent);
+}
+.language select {
+  padding: 8px;
+}
+footer {
+  border-top: 1px solid var(--line);
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 28px 6%;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+footer > a {
+  margin-left: auto;
+}
+.footer-x {
+  font: italic 2.5rem Georgia;
+  color: var(--accent);
+}
+@media (max-width: 900px) {
+  .header {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .header nav {
+    gap: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    padding: 20px 6%;
+  }
+  .brand {
+    font-size: 1.05rem;
+  }
+  .header nav {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+  .language {
+    margin-left: auto;
+  }
+  footer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .footer-x {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .header nav {
+    justify-content: flex-start;
+    column-gap: 1rem;
+    row-gap: 0;
+  }
+}

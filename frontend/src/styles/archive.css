@@ -1,0 +1,124 @@
+.filters {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.filters label:first-child {
+  flex: 1;
+}
+.filters label:last-child {
+  min-width: 210px;
+}
+.filters input {
+  width: 100%;
+}
+.result-count {
+  font:
+    0.75rem 'IBM Plex Mono',
+    monospace;
+  color: var(--muted);
+  margin: 28px 0;
+}
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.episode-card {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-top: 8px solid #b7b28e;
+  min-height: 220px;
+}
+.episode-card .eyebrow {
+  color: #4c5d36;
+  letter-spacing: 0.08em;
+}
+.episode-card h2 {
+  font-size: 1.5rem;
+}
+.card-actions {
+  margin-top: auto;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+.bookmark {
+  background: transparent;
+  border: 1px solid #79866d;
+  font-size: 1.5rem;
+  min-width: 44px;
+  min-height: 44px;
+}
+.episode-card :focus-visible {
+  outline-color: #52661d;
+}
+@media (max-width: 900px) {
+  .episode-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .filters {
+    flex-direction: column;
+  }
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.progress-panel {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+  max-width: 36rem;
+}
+.progress-panel progress {
+  width: 100%;
+  height: 0.7rem;
+  accent-color: #d4ea83;
+}
+.progress-panel small {
+  color: #b4bcb4;
+}
+.season-browser {
+  margin: 2rem 0;
+}
+.season-strip {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.4rem 0.2rem 1rem;
+  scroll-snap-type: x proximity;
+}
+.season-tile {
+  flex: 0 0 210px;
+  scroll-snap-align: start;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: #1b241e;
+  color: inherit;
+  text-align: left;
+}
+.season-tile img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+.season-tile span {
+  display: block;
+  padding: 0.8rem;
+}
+.season-tile[aria-pressed='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}

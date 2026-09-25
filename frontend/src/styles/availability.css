@@ -1,0 +1,23 @@
+.country-label {
+  max-width: 320px;
+}
+.availability {
+  margin-top: 32px;
+}
+.provider-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.provider-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.provider-list span,
+.provider-source {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

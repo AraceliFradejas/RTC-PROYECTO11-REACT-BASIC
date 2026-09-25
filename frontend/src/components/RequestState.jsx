@@ -15,7 +15,7 @@ export default function RequestState({ status, retry }) {
             : t.unavailable}
       </p>
       {status === 'error' && (
-        <button className="button secondary" onClick={retry}>
+        <button type="button" className="button secondary" onClick={retry}>
           {t.retry}
         </button>
       )}

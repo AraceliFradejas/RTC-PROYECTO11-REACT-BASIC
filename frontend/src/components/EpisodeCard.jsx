@@ -18,6 +18,7 @@ export default function EpisodeCard({ episode }) {
         </small>
       )}
       <button
+        type="button"
         className="watched-toggle"
         aria-pressed={seen}
         onClick={() => toggleWatched(episode.id)}
@@ -29,6 +30,7 @@ export default function EpisodeCard({ episode }) {
           {t.open} <span aria-hidden="true">↗</span>
         </Link>
         <button
+          type="button"
           className="bookmark"
           aria-label={saved ? t.remove : t.add}
           aria-pressed={saved}

@@ -1,9 +1,10 @@
-import Artwork from '../components/Artwork';
+import ArchiveFilters from '../components/archive/ArchiveFilters';
+import SeasonBrowser from '../components/archive/SeasonBrowser';
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { Link } from 'react-router';
 import { usePreferences } from '../context/Preferences';
 import { useApi } from '../hooks/useApi';
-import EpisodeCard from '../components/EpisodeCard';
+import ArchiveResults from '../components/archive/ArchiveResults';
 import RequestState from '../components/RequestState';
 
 const normalize = (text) =>
@@ -13,7 +14,6 @@ const normalize = (text) =>
     .toLowerCase();
 export default function Archive({ onlyFavorites = false }) {
   const { t, language, favorites, watched } = usePreferences();
-  const navigate = useNavigate();
   const [viewing, setViewing] = useState('');
   const [query, setQuery] = useState('');
   const [season, setSeason] = useState('');
@@ -55,60 +55,21 @@ export default function Archive({ onlyFavorites = false }) {
         </div>
       )}
       {!onlyFavorites && seasons.length > 0 && (
-        <section className="season-browser" aria-label={t.seasonsTitle}>
-          <h2>{t.seasonsTitle}</h2>
-          <p className="art-note">{t.aiArt}</p>
-          <div className="season-strip">
-            {seasons.map((number) => (
-              <button
-                key={number}
-                className="season-tile"
-                aria-pressed={season === String(number)}
-                onClick={() =>
-                  setSeason(season === String(number) ? '' : String(number))
-                }
-              >
-                <Artwork
-                  asset={`xfiles-temporadas/temporada-${String(number).padStart(2, '0')}`}
-                />
-                <span>
-                  {t.season} {number}
-                </span>
-              </button>
-            ))}
-          </div>
-        </section>
+        <SeasonBrowser
+          seasons={seasons}
+          season={season}
+          setSeason={setSeason}
+        />
       )}
-      <div className="filters">
-        <label>
-          {t.search}
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={t.searchPlaceholder}
-          />
-        </label>
-        <label>
-          {t.season}
-          <select value={season} onChange={(e) => setSeason(e.target.value)}>
-            <option value="">{t.all}</option>
-            {seasons.map((number) => (
-              <option key={number} value={number}>
-                {number}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          {t.viewing}
-          <select value={viewing} onChange={(e) => setViewing(e.target.value)}>
-            <option value="">{t.allViewing}</option>
-            <option value="watched">{t.watched}</option>
-            <option value="pending">{t.pending}</option>
-          </select>
-        </label>
-      </div>
+      <ArchiveFilters
+        query={query}
+        setQuery={setQuery}
+        season={season}
+        setSeason={setSeason}
+        seasons={seasons}
+        viewing={viewing}
+        setViewing={setViewing}
+      />
       {onlyFavorites && favorites.length === 0 ? (
         <div className="state-panel">
           <p>{t.noFavorites}</p>
@@ -120,32 +81,7 @@ export default function Archive({ onlyFavorites = false }) {
         <>
           <RequestState {...request} />
           {request.status === 'success' && (
-            <>
-              {filtered.length > 0 && (
-                <button
-                  className="button secondary"
-                  onClick={() => {
-                    const episode =
-                      filtered[Math.floor(Math.random() * filtered.length)];
-                    navigate(`/expedientes/${episode.id}`);
-                  }}
-                >
-                  {t.random}
-                </button>
-              )}
-              <p className="result-count" role="status">
-                {filtered.length} {filtered.length === 1 ? t.result : t.results}
-              </p>
-              {filtered.length ? (
-                <div className="episode-grid">
-                  {filtered.map((episode) => (
-                    <EpisodeCard key={episode.id} episode={episode} />
-                  ))}
-                </div>
-              ) : (
-                <p className="state-panel">{t.empty}</p>
-              )}
-            </>
+            <ArchiveResults episodes={filtered} />
           )}
         </>
       )}
