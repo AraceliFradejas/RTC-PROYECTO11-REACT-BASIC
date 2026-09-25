@@ -37,6 +37,7 @@ He creado un archivo de episodios con búsqueda, filtros, favoritos y progreso d
 - [Despliegue](#despliegue)
 - [Documentación](#documentación)
 - [Mis otros proyectos](#mis-otros-proyectos)
+- [Redes sociales](#redes-sociales)
 - [Aviso académico y autoría](#aviso-académico-y-autoría)
 
 ## Una historia personal
@@ -74,49 +75,51 @@ Guardo las preferencias en este navegador; no dispongo de cuentas ni sincronizac
 
 ## Recorrido visual
 
-He seleccionado ocho capturas para cada versión de este README, incluida la portada superior; reutilizo los mismos archivos originales en castellano e inglés. En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) incluyo las dieciséis actuales con la acción realizada, el resultado y su alcance; también conservo dos imágenes históricas para explicar la evolución.
+Presento primero la aplicación en escritorio para mostrar su diseño y sus secciones con más amplitud. He seleccionado **seis capturas de escritorio**, incluida la portada superior, y dos muestras complementarias de móvil y tableta. Reutilizo los mismos ocho archivos originales en la versión inglesa.
 
-### Buscar un expediente desde el móvil
+En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) conservo las dieciséis capturas actuales con la acción realizada, el resultado y su alcance. Las dos imágenes históricas de la memoria explican la evolución del proyecto.
 
-Al buscar Anasazi obtengo un único resultado. He probado también el título en minúsculas y la recuperación del catálogo al limpiar el campo. La captura corresponde a un área de 390 × 844 píxeles CSS.
+### Explorar el archivo en escritorio
 
-![Búsqueda móvil de Anasazi](docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png)
-
-### Abrir la ficha y conservar mis preferencias
-
-He marcado el episodio como favorito y visto, he recargado y ambos estados se han conservado. Después he revelado la sinopsis. La ficha utiliza el identificador `285317` de la ruta para consultar el episodio.
-
-![Detalle móvil de Anasazi con preferencias conservadas y sinopsis visible](docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png)
-
-### Consultar favoritos y progreso
-
-La selección guardada muestra Anasazi y el progreso 1 / 218. Reutilizo el archivo para representar favoritos y aplicar sus filtros. Al finalizar las pruebas he retirado los datos de prueba y comprobado el regreso a 0 / 218.
-
-![Favoritos y progreso en móvil](docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png)
-
-### Entender un resultado vacío
-
-En Favoritos, el filtro Pendientes excluye el único episodio porque ya estaba visto. Muestro un mensaje específico y no ofrezco abrir un caso aleatorio cuando la selección está vacía. He capturado este estado en tableta, a 768 × 1024 píxeles CSS.
-
-![Filtro sin resultados en tableta](docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png)
-
-### Leer en alemán y consultar España
-
-He cambiado a Akte X sin modificar el país. Después de recargar, la interfaz permanece en alemán y la consulta sigue correspondiendo a España. Muestro fuente y fecha junto a las ofertas.
-
-![Interfaz alemana con disponibilidad de España](docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png)
-
-### Explorar una temporada en escritorio
-
-Al seleccionar la temporada 2 obtengo 25 episodios. La página completa muestra los filtros, las ilustraciones y las tarjetas a 1440 × 900 píxeles CSS de área de visualización.
+Al seleccionar la temporada 2 obtengo 25 episodios. La captura completa permite recorrer los filtros, las ilustraciones de temporada y la cuadrícula de tarjetas. He utilizado un área de visualización de 1440 × 900 píxeles CSS para las capturas de escritorio de esta selección.
 
 ![Archivo de la temporada 2 en escritorio](docs/screenshots/entrega-2026-09-25/11-archivo-temporada2-escritorio-es.png)
 
-### Ampliar el archivo con las películas
+### Conocer a Mulder y Scully
 
-He incorporado las películas de 1998 y 2008 con datos de TMDB. Sus enlaces abren fichas propias y las mantengo separadas del progreso de episodios.
+La sección de personajes reúne los retratos y el contenido editorial de los dos protagonistas. He utilizado ilustraciones generadas con IA, identificadas como interpretaciones no oficiales, para mantener la identidad visual del archivo.
 
-![Listado de las dos películas](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
+![Mulder y Scully en la sección de personajes de escritorio](docs/screenshots/entrega-2026-09-25/12-personajes-escritorio-es.png)
+
+### Consultar las dos películas
+
+He incorporado las películas de 1998 y 2008 con datos de TMDB. El listado presenta ambas fichas y sus enlaces; las mantengo separadas del catálogo y del progreso de episodios.
+
+![Listado de películas en escritorio](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
+
+### Abrir el detalle de una película
+
+Desde el listado he abierto `/peliculas/846` y he comprobado los datos de la primera película, de 1998 y 121 minutos. Su ficha incluye una sinopsis ocultable y un enlace a la fuente. El identificador de la ruta determina el recurso que consulto en mi API.
+
+![Detalle de la primera película en escritorio](docs/screenshots/entrega-2026-09-25/14-detalle-pelicula-escritorio-es.png)
+
+### Recorrer mi historia y las atribuciones
+
+He dedicado una página a mi relación personal con Expediente X. La captura de página completa recoge el relato, las ilustraciones y los créditos de los recursos y las fuentes. La escena del tren es una interpretación de ficción, no una fotografía personal.
+
+![Mi historia y atribuciones en escritorio](docs/screenshots/entrega-2026-09-25/15-historia-atribuciones-escritorio-es.png)
+
+### Adaptación móvil: ficha y preferencias
+
+Como muestra responsive, incluyo la ficha de Anasazi a 390 × 844 píxeles CSS. He marcado el episodio como favorito y visto, he recargado y ambos estados se han conservado. Después he revelado la sinopsis. Presento esta imagen a un ancho reducido para que conserve su proporción de móvil dentro del README.
+
+<img src="docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png" alt="Ficha móvil de Anasazi con preferencias conservadas y sinopsis visible" width="340">
+
+### Adaptación a tableta: idioma y país independientes
+
+A 768 × 1024 píxeles CSS he cambiado a Akte X sin modificar el país. Después de recargar, la interfaz permanece en alemán y la consulta sigue correspondiendo a España. Muestro fuente y fecha junto a las ofertas.
+
+<img src="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png" alt="Interfaz alemana en tableta con disponibilidad de España" width="600">
 
 He conservado estas capturas reales del 25/09/2026 sin retocar. Son anteriores a la corrección del contador singular: el código publicado ya muestra «1 expediente», «1 case file» y «1 Fallakte». Los PNG representan páginas completas con densidad 2; su altura no corresponde a la altura del dispositivo emulado.
 
@@ -261,6 +264,10 @@ He configurado `MONGODB_URI` y `TMDB_READ_TOKEN` como variables privadas de Prod
 
 Este trabajo continúa mi aprendizaje después de [KelseTS Talks · Proyecto 10](https://github.com/AraceliFradejas/RTC-PROYECTO10-FULL-STACK-JAVASCRIPT). Conservo la misma forma de presentar el proyecto: motivación personal, funcionamiento, configuración y una memoria técnica con pruebas y capturas comentadas.
 
+## Redes sociales
+
+[GitHub](https://github.com/AraceliFradejas) · [LinkedIn](https://www.linkedin.com/in/araceli-fradejas-munoz-transformaciondigital/) · [X](https://x.com/AraceliFradejas) · [Medium](https://medium.com/@araceli.fradejas) · [YouTube](https://www.youtube.com/@aracelifradejasmunoz2758)
+
 ## Aviso académico y autoría
 
 Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico del máster Rock The Code · The Power Tech School. He desarrollado una aplicación independiente y no oficial, sin vinculación con los titulares de Expediente X.
@@ -306,6 +313,7 @@ I have built an episode archive with search, filters, favourites and viewing pro
 - [Deployment](#deployment)
 - [Documentation](#documentation)
 - [My other projects](#my-other-projects)
+- [Social links](#social-links)
 - [Academic notice and author](#academic-notice-and-author)
 
 ### A personal story
@@ -343,51 +351,51 @@ I store preferences in the current browser; I have not added accounts or cross-d
 
 ### Visual walkthrough
 
-I have selected eight screenshots for each language version of this README, including the homepage above. Both versions use the same original files. My [report's evidence section](MEMORIA.md#12-evidencias) includes all sixteen current screenshots, with the action performed, result and scope, plus two historical images elsewhere in the report to explain development.
+I present the desktop application first to give its layout and sections more room. I have selected **six desktop screenshots**, including the homepage above, and two complementary mobile and tablet examples. Both language versions reuse the same eight original files.
 
-The screenshots preserve the interface languages used during the review: Spanish and German in this selection. The English captions do not imply that the screenshots themselves show the English interface.
+My [report's evidence section](MEMORIA.md#12-evidencias) retains all sixteen current screenshots, with the action performed, result and scope. Two historical images elsewhere in the report explain the project's development. The screenshots preserve the Spanish and German interface text used during the review; their English captions do not change the language shown in the images.
 
-#### Searching for a case on mobile
+#### Exploring the archive on desktop
 
-Searching for Anasazi returns one result. I also checked the lowercase title and restored the full catalogue by clearing the field. The viewport was 390 × 844 CSS pixels.
-
-![Mobile search for Anasazi, in Spanish](docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png)
-
-#### Opening the detail and retaining preferences
-
-I marked the episode as a favourite and watched, reloaded the page and confirmed that both settings remained active. I then revealed the summary. The detail page uses the route identifier `285317` to request the episode.
-
-![Anasazi detail with saved preferences and visible summary, in Spanish](docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png)
-
-#### Checking favourites and progress
-
-The saved selection shows Anasazi and progress of 1 / 218. I reuse the archive page to display favourites and apply filters. After testing, I removed the test selections and confirmed a return to 0 / 218.
-
-![Mobile favourites and viewing progress, in Spanish](docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png)
-
-#### Understanding an empty result
-
-Within Favourites, the unwatched filter excludes the only episode because it has already been watched. I display a specific message and do not offer random selection from an empty set. I captured this state with a tablet viewport of 768 × 1024 CSS pixels.
-
-![Tablet filter with no results, in Spanish](docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png)
-
-#### Reading in German while checking Spain
-
-I switched to Akte X without changing the country. After reloading, the interface remained in German and the query still referred to Spain. I display the source and query date alongside the offers.
-
-![German interface with availability for Spain](docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png)
-
-#### Exploring a season on desktop
-
-Selecting season two returns 25 episodes. The full-page capture shows the filters, illustrations and cards with a viewport of 1440 × 900 CSS pixels.
+Selecting season two returns 25 episodes. The full-page capture shows the filters, season illustrations and card grid. I used a viewport of 1440 × 900 CSS pixels for the desktop screenshots in this selection.
 
 ![Season two archive on desktop, in Spanish](docs/screenshots/entrega-2026-09-25/11-archivo-temporada2-escritorio-es.png)
 
-#### Expanding the archive with films
+#### Meeting Mulder and Scully
 
-I added the 1998 and 2008 films using TMDB data. Their links open separate detail pages, and I keep them outside episode viewing progress.
+The characters section brings together portraits and editorial content about the two protagonists. I used AI-generated illustrations, identified as unofficial interpretations, to maintain the archive's visual identity.
 
-![Both films listed in the Spanish interface](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
+![Mulder and Scully on the desktop characters page, in Spanish](docs/screenshots/entrega-2026-09-25/12-personajes-escritorio-es.png)
+
+#### Browsing both films
+
+I added the 1998 and 2008 films using TMDB data. The list presents both cards and their links; I keep them separate from the episode catalogue and viewing progress.
+
+![Both films listed on desktop, in Spanish](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
+
+#### Opening a film detail page
+
+From the list, I opened `/peliculas/846` and checked the first film's data: 1998 and 121 minutes. Its detail page includes a summary that can be hidden and a source link. The route identifier determines which resource I request from my API.
+
+![First film detail page on desktop, in Spanish](docs/screenshots/entrega-2026-09-25/14-detalle-pelicula-escritorio-es.png)
+
+#### Reading my story and the credits
+
+I dedicated a page to my personal connection with The X-Files. The full-page capture includes the story, illustrations and credits for assets and sources. The train scene is a fictional interpretation, not a personal photograph.
+
+![My story and credits on desktop, in Spanish](docs/screenshots/entrega-2026-09-25/15-historia-atribuciones-escritorio-es.png)
+
+#### Mobile layout: episode detail and preferences
+
+As a responsive example, I include the Anasazi detail page at 390 × 844 CSS pixels. I marked the episode as a favourite and watched, reloaded and confirmed that both settings remained active. I then revealed the summary. I display this image at a reduced width to preserve its mobile proportions within the README.
+
+<img src="docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png" alt="Mobile Anasazi detail with saved preferences and a visible summary, in Spanish" width="340">
+
+#### Tablet layout: independent language and country
+
+At 768 × 1024 CSS pixels, I switched to Akte X without changing the country. After reloading, the interface remained in German and the query still referred to Spain. I display the source and query date alongside the offers.
+
+<img src="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png" alt="German tablet interface with availability for Spain" width="600">
 
 I have preserved these real screenshots from 25 September 2026 without retouching them. They predate the singular-counter correction: the published code now displays “1 expediente”, “1 case file” and “1 Fallakte”. The PNGs capture complete pages at a pixel density of 2; their height is not the height of the emulated device.
 
@@ -533,6 +541,10 @@ I maintain the following supporting documents in Spanish:
 ### My other projects
 
 This project continues my learning after [KelseTS Talks · Project 10](https://github.com/AraceliFradejas/RTC-PROYECTO10-FULL-STACK-JAVASCRIPT). I follow the same approach to presenting my work: personal motivation, application behaviour, setup instructions and a technical report with tests and annotated screenshots.
+
+### Social links
+
+[GitHub](https://github.com/AraceliFradejas) · [LinkedIn](https://www.linkedin.com/in/araceli-fradejas-munoz-transformaciondigital/) · [X](https://x.com/AraceliFradejas) · [Medium](https://medium.com/@araceli.fradejas) · [YouTube](https://www.youtube.com/@aracelifradejasmunoz2758)
 
 ### Academic notice and author
 
