@@ -33,6 +33,9 @@
 - [10. Resultados](#10-resultados)
 - [11. Evolución del desarrollo](#11-evolución-del-desarrollo)
 - [12. Evidencias](#12-evidencias)
+  - [Recorrido de escritorio](#recorrido-principal-en-escritorio)
+  - [Pruebas en móvil](#comprobaciones-complementarias-en-móvil)
+  - [Pruebas en tableta](#comprobaciones-complementarias-en-tableta)
 - [13. Dificultades y decisiones](#13-dificultades-y-decisiones)
 - [14. Qué he aprendido](#14-qué-he-aprendido)
 - [15. Posibles mejoras](#15-posibles-mejoras)
@@ -329,126 +332,72 @@ He comprobado muestras en Chrome mediante emulación responsive, no en dispositi
 
 Conservo el registro de los pasos y comprobaciones anteriores en [Historial de desarrollo](docs/HISTORIAL-DESARROLLO.md). Estas dos imágenes anteriores muestran etapas del trabajo y no representan la apariencia actual.
 
-### Primera interfaz alemana sin catálogo
+<details>
+<summary>Primera interfaz alemana sin catálogo · Captura histórica</summary>
 
 Esta captura histórica recoge la presentación en alemán cuando el catálogo todavía no estaba disponible. Me permite explicar que el mensaje de indisponibilidad formaba parte del desarrollo antes de completar la conexión; no la utilizo como evidencia de un error actual en producción.
 
-![Primera versión móvil en alemán sin catálogo, evidencia histórica](docs/screenshots/inicio/archivo-movil-de.png)
+<a href="docs/screenshots/inicio/archivo-movil-de.png"><img src="docs/screenshots/inicio/archivo-movil-de.png" alt="Primera versión móvil en alemán sin catálogo, evidencia histórica" width="340"></a>
 
-### Primera ficha de Piloto
+</details>
+
+<details>
+<summary>Primera ficha de Piloto · Captura histórica</summary>
 
 Conservo la ficha móvil de Piloto, con favorito y visionado, anterior a la integración visual definitiva. La comparo con la ficha actual de Anasazi para mostrar la evolución del contenido y de las ilustraciones sin sustituir las pruebas recientes por capturas antiguas.
 
-![Ficha móvil de Piloto durante el desarrollo, evidencia histórica](docs/screenshots/detalle-piloto.png)
+<a href="docs/screenshots/detalle-piloto.png"><img src="docs/screenshots/detalle-piloto.png" alt="Ficha móvil de Piloto durante el desarrollo, evidencia histórica" width="340"></a>
+
+</details>
 
 ## 12. Evidencias
 
-He tomado las siguientes dieciséis capturas de la aplicación publicada el **25 de septiembre de 2026**. Son páginas completas exportadas desde Chrome, sin retocar su contenido. Indico el área de visualización en píxeles CSS; los PNG tienen densidad 2 y una altura variable según la longitud de la página. Por ejemplo, un ancho móvil de 390 píxeles CSS produce un PNG de 780 píxeles de ancho.
+He tomado las siguientes dieciséis capturas de la aplicación publicada el **25 de septiembre de 2026**. Son páginas completas exportadas desde Chrome, sin retocar su contenido. Indico el área de visualización en píxeles CSS; los PNG tienen densidad 2 y una altura variable según la longitud de la página. Por ejemplo, el área de escritorio de 1440 × 900 píxeles CSS produce un PNG de 2880 píxeles de ancho y una altura que recoge toda la página.
 
 La [galería original](docs/screenshots/entrega-2026-09-25/README.md) conserva las dimensiones exactas de cada archivo. Aquí explico cada evidencia junto a su imagen para que pueda revisarse sin salir de la memoria.
 
 Las capturas son anteriores a la corrección de concordancia del contador. Por eso puede aparecer «1 expedientes» aunque el código publicado ya utiliza el singular. He conservado los originales y he documentado la corrección; no he alterado las imágenes para ocultarla.
 
+Presento primero el recorrido de **escritorio**, con siete capturas de portada, archivo, personajes, películas, historia y ruta inexistente. Después reúno las pruebas de **móvil y tableta** como evidencias complementarias del diseño responsive, la persistencia y los idiomas.
+
+Las imágenes de escritorio aprovechan el ancho del documento. Muestro las de móvil a 340 píxeles y las de tableta a 600 píxeles para conservar una lectura proporcionada. Estos tamaños de presentación no modifican los archivos ni el área de visualización utilizada en las pruebas; puedo abrir cada imagen para consultar el original completo.
+
+- [Recorrido principal en escritorio](#recorrido-principal-en-escritorio)
+- [Comprobaciones complementarias en móvil](#comprobaciones-complementarias-en-móvil)
+- [Comprobaciones complementarias en tableta](#comprobaciones-complementarias-en-tableta)
+
 | Evidencia | Pantalla | Idioma y área de visualización |
 | --- | --- | --- |
-| 12.1 | [Portada en móvil](docs/screenshots/entrega-2026-09-25/01-portada-movil-es.png) | ES · 390 × 844 |
-| 12.2 | [Búsqueda de Anasazi](docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png) | ES · 390 × 844 |
-| 12.3 | [Detalle, persistencia y sinopsis](docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png) | ES · 390 × 844 |
-| 12.4 | [Favoritos y progreso en móvil](docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png) | ES · 390 × 844 |
-| 12.5 | [Filtro de episodios vistos en tableta](docs/screenshots/entrega-2026-09-25/05-favoritos-vistos-tableta-es.png) | ES · 768 × 1024 |
-| 12.6 | [Filtro sin resultados](docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png) | ES · 768 × 1024 |
-| 12.7 | [Disponibilidad en España](docs/screenshots/entrega-2026-09-25/07-disponibilidad-espana-tableta-es.png) | ES · 768 × 1024 |
-| 12.8 | [Akte X con España seleccionada](docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png) | DE · 768 × 1024 |
-| 12.9 | [The X-Files con Alemania seleccionada](docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png) | EN · 768 × 1024 |
-| 12.10 | [Portada en escritorio](docs/screenshots/entrega-2026-09-25/10-portada-escritorio-es.png) | ES · 1440 × 900 |
-| 12.11 | [Archivo y temporada 2](docs/screenshots/entrega-2026-09-25/11-archivo-temporada2-escritorio-es.png) | ES · 1440 × 900 |
-| 12.12 | [Mulder y Scully](docs/screenshots/entrega-2026-09-25/12-personajes-escritorio-es.png) | ES · 1440 × 900 |
-| 12.13 | [Las dos películas](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png) | ES · 1440 × 900 |
-| 12.14 | [Detalle de la primera película](docs/screenshots/entrega-2026-09-25/14-detalle-pelicula-escritorio-es.png) | ES · 1440 × 900 |
-| 12.15 | [Mi historia y atribuciones](docs/screenshots/entrega-2026-09-25/15-historia-atribuciones-escritorio-es.png) | ES · 1440 × 900 |
-| 12.16 | [Ruta inexistente](docs/screenshots/entrega-2026-09-25/16-ruta-inexistente-escritorio-es.png) | ES · 1440 × 900 |
+| 12.1 | [Portada en escritorio](#121-portada-en-escritorio) | ES · 1440 × 900 |
+| 12.2 | [Archivo y temporada 2](#122-archivo-y-temporada-2) | ES · 1440 × 900 |
+| 12.3 | [Mulder y Scully](#123-mulder-y-scully) | ES · 1440 × 900 |
+| 12.4 | [Las dos películas](#124-las-dos-películas) | ES · 1440 × 900 |
+| 12.5 | [Detalle de la primera película](#125-detalle-de-la-primera-película) | ES · 1440 × 900 |
+| 12.6 | [Mi historia y atribuciones](#126-mi-historia-y-atribuciones) | ES · 1440 × 900 |
+| 12.7 | [Ruta inexistente](#127-ruta-inexistente) | ES · 1440 × 900 |
+| 12.8 | [Portada en móvil](#128-portada-en-móvil) | ES · 390 × 844 |
+| 12.9 | [Búsqueda de Anasazi](#129-búsqueda-de-anasazi) | ES · 390 × 844 |
+| 12.10 | [Detalle, persistencia y sinopsis](#1210-detalle-persistencia-y-sinopsis) | ES · 390 × 844 |
+| 12.11 | [Favoritos y progreso en móvil](#1211-favoritos-y-progreso-en-móvil) | ES · 390 × 844 |
+| 12.12 | [Filtro de episodios vistos en tableta](#1212-filtro-de-episodios-vistos-en-tableta) | ES · 768 × 1024 |
+| 12.13 | [Filtro sin resultados](#1213-filtro-sin-resultados) | ES · 768 × 1024 |
+| 12.14 | [Disponibilidad en España](#1214-disponibilidad-en-españa) | ES · 768 × 1024 |
+| 12.15 | [Akte X con España seleccionada](#1215-akte-x-con-españa-seleccionada) | DE · 768 × 1024 |
+| 12.16 | [The X-Files con Alemania seleccionada](#1216-the-x-files-con-alemania-seleccionada) | EN · 768 × 1024 |
 
-### 12.1. Portada en móvil
+### Recorrido principal en escritorio
 
-**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
+He organizado estas siete pantallas como una visita al archivo publicado, desde la portada hasta sus contenidos y la respuesta ante una ruta inexistente.
 
-He abierto la portada a tamaño móvil. La imagen principal, el título, la navegación y los accesos al archivo se distribuyen en vertical. Esta captura permite revisar la lectura de la entrada y su continuidad hasta el pie de página. La comparo con la portada de escritorio de la evidencia 12.10 para mostrar cómo cambia la composición.
-
-![Portada en móvil](docs/screenshots/entrega-2026-09-25/01-portada-movil-es.png)
-
-### 12.2. Búsqueda de Anasazi
-
-**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
-
-He escrito «Anasazi» en el buscador y he obtenido un único expediente. También he comprobado la búsqueda en minúsculas y, al borrar el texto, he recuperado los 218 episodios. La imagen recoge el resultado antes de marcarlo como favorito o visto. Esta prueba relaciona el estado del campo de búsqueda con la lista renderizada.
-
-![Búsqueda de Anasazi](docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png)
-
-### 12.3. Detalle, persistencia y sinopsis
-
-**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
-
-He abierto `/expedientes/285317`, correspondiente a Anasazi, temporada 2, episodio 25. Lo he marcado como favorito y visto y he recargado la página: ambos estados permanecen activos. Después he revelado la sinopsis que inicialmente estaba oculta; también he comprobado que puedo volver a ocultarla. La captura recoge la ficha con la sinopsis visible. El parámetro de la ruta determina el episodio consultado.
-
-![Detalle, persistencia y sinopsis](docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png)
-
-### 12.4. Favoritos y progreso en móvil
-
-**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
-
-He entrado en Favoritos después de guardar Anasazi. La tarjeta aparece en la selección y el progreso muestra 1 / 218. Reutilizo la página del archivo con la prop `onlyFavorites`, de modo que la tarjeta y los filtros mantienen el mismo comportamiento. El progreso corresponde al catálogo completo, no al número de favoritos.
-
-![Favoritos y progreso en móvil](docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png)
-
-### 12.5. Filtro de episodios vistos en tableta
-
-**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
-
-He mantenido Anasazi como favorito y visto y he seleccionado el filtro Visto. El episodio sigue apareciendo. La captura muestra la combinación de selección guardada y filtro de visionado en un ancho intermedio. Compruebo así que cambiar el filtro no elimina las preferencias guardadas.
-
-![Filtro de episodios vistos en tableta](docs/screenshots/entrega-2026-09-25/05-favoritos-vistos-tableta-es.png)
-
-### 12.6. Filtro sin resultados
-
-**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
-
-En la misma selección he cambiado a Pendientes. Como el único favorito ya estaba visto, obtengo cero resultados. Muestro un mensaje específico y no ofrezco la selección aleatoria de un conjunto vacío. Es un resultado válido de los filtros, distinto de un error al consultar la API.
-
-![Filtro sin resultados](docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png)
-
-### 12.7. Disponibilidad en España
-
-**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
-
-He consultado España en Dónde verla y he observado las ofertas agrupadas por modalidad, junto a la fuente y la fecha de consulta. Esta imagen acredita la respuesta que mostraba la aplicación el 25 de septiembre de 2026. No convierte esas ofertas en una disponibilidad permanente ni acredita reproducción, audio o subtítulos.
-
-![Disponibilidad en España](docs/screenshots/entrega-2026-09-25/07-disponibilidad-espana-tableta-es.png)
-
-### 12.8. Akte X con España seleccionada
-
-**DE · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
-
-He cambiado el idioma de español a alemán sin modificar España y he recargado. Se conservan ambas preferencias: la interfaz utiliza Akte X y la consulta sigue correspondiendo al país elegido. Esta prueba demuestra por qué he separado `language` y `country` en el contexto de preferencias.
-
-![Akte X con España seleccionada](docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png)
-
-### 12.9. The X-Files con Alemania seleccionada
-
-**EN · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
-
-Desde la interfaz alemana he seleccionado Alemania y después he cambiado a inglés. El país permanece en Alemania mientras cambian los textos de la interfaz a The X-Files. He continuado el recorrido hacia español manteniendo Alemania y, al terminar, he restablecido España. No utilizo el idioma como indicador del país de reproducción.
-
-![The X-Files con Alemania seleccionada](docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png)
-
-### 12.10. Portada en escritorio
+#### 12.1. Portada en escritorio
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
-He revisado la portada en escritorio, con la composición de imagen y texto y los accesos a las distintas secciones. La comparo con la evidencia móvil para comprobar la adaptación de la jerarquía visual. También he probado un recorrido de teclado: Tab hasta Saltar al contenido, Enter, Tab hasta Abrir el archivo y Enter para navegar; esa interacción está registrada como prueba manual, no se deduce de la imagen estática.
+He revisado la portada en escritorio, con la composición de imagen y texto y los accesos a las distintas secciones. La comparo con la evidencia móvil 12.8 para comprobar la adaptación de la jerarquía visual. También he probado un recorrido de teclado: Tab hasta Saltar al contenido, Enter, Tab hasta Abrir el archivo y Enter para navegar; esa interacción está registrada como prueba manual, no se deduce de la imagen estática.
 
 ![Portada en escritorio](docs/screenshots/entrega-2026-09-25/10-portada-escritorio-es.png)
 
-### 12.11. Archivo y temporada 2
+#### 12.2. Archivo y temporada 2
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
@@ -456,7 +405,7 @@ He seleccionado la temporada 2 y he obtenido 25 episodios. La captura completa p
 
 ![Archivo y temporada 2](docs/screenshots/entrega-2026-09-25/11-archivo-temporada2-escritorio-es.png)
 
-### 12.12. Mulder y Scully
+#### 12.3. Mulder y Scully
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
@@ -464,7 +413,7 @@ He abierto la sección de personajes y he revisado la presentación de Mulder y 
 
 ![Mulder y Scully](docs/screenshots/entrega-2026-09-25/12-personajes-escritorio-es.png)
 
-### 12.13. Las dos películas
+#### 12.4. Las dos películas
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
@@ -472,7 +421,7 @@ He abierto el listado de películas y he observado las dos fichas de 1998 y 2008
 
 ![Las dos películas](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
 
-### 12.14. Detalle de la primera película
+#### 12.5. Detalle de la primera película
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
@@ -480,7 +429,7 @@ He pulsado el enlace de la primera película y he accedido a `/peliculas/846`. H
 
 ![Detalle de la primera película](docs/screenshots/entrega-2026-09-25/14-detalle-pelicula-escritorio-es.png)
 
-### 12.15. Mi historia y atribuciones
+#### 12.6. Mi historia y atribuciones
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
@@ -488,13 +437,93 @@ He recorrido la página completa de Mi historia para revisar el relato personal,
 
 ![Mi historia y atribuciones](docs/screenshots/entrega-2026-09-25/15-historia-atribuciones-escritorio-es.png)
 
-### 12.16. Ruta inexistente
+#### 12.7. Ruta inexistente
 
 **ES · 1440 × 900 píxeles CSS · Producción · 25/09/2026.**
 
 He abierto directamente `/ruta-de-prueba-inexistente` y he observado la página de recurso no encontrado de la interfaz. La ruta comodín evita dejar una pantalla vacía y ofrece una salida de navegación. Esta evidencia corresponde al mensaje 404 de React; la reescritura de la SPA puede devolver HTTP 200 y no presento la imagen como prueba de un estado HTTP 404.
 
 ![Ruta inexistente](docs/screenshots/entrega-2026-09-25/16-ruta-inexistente-escritorio-es.png)
+
+### Comprobaciones complementarias en móvil
+
+Estas cuatro capturas muestran cómo adapto la consulta a una pantalla estrecha y cómo conservo las preferencias. Complementan la presentación principal de escritorio.
+
+#### 12.8. Portada en móvil
+
+**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
+
+He abierto la portada a tamaño móvil. La imagen principal, el título, la navegación y los accesos al archivo se distribuyen en vertical. Esta captura permite revisar la lectura de la entrada y su continuidad hasta el pie de página. La comparo con la portada de escritorio de la evidencia 12.1 para mostrar cómo cambia la composición.
+
+<a href="docs/screenshots/entrega-2026-09-25/01-portada-movil-es.png"><img src="docs/screenshots/entrega-2026-09-25/01-portada-movil-es.png" alt="Portada en móvil" width="340"></a>
+
+#### 12.9. Búsqueda de Anasazi
+
+**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
+
+He escrito «Anasazi» en el buscador y he obtenido un único expediente. También he comprobado la búsqueda en minúsculas y, al borrar el texto, he recuperado los 218 episodios. La imagen recoge el resultado antes de marcarlo como favorito o visto. Esta prueba relaciona el estado del campo de búsqueda con la lista renderizada.
+
+<a href="docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png"><img src="docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png" alt="Búsqueda de Anasazi" width="340"></a>
+
+#### 12.10. Detalle, persistencia y sinopsis
+
+**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
+
+He abierto `/expedientes/285317`, correspondiente a Anasazi, temporada 2, episodio 25. Lo he marcado como favorito y visto y he recargado la página: ambos estados permanecen activos. Después he revelado la sinopsis que inicialmente estaba oculta; también he comprobado que puedo volver a ocultarla. La captura recoge la ficha con la sinopsis visible. El parámetro de la ruta determina el episodio consultado.
+
+<a href="docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png"><img src="docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png" alt="Detalle, persistencia y sinopsis" width="340"></a>
+
+#### 12.11. Favoritos y progreso en móvil
+
+**ES · 390 × 844 píxeles CSS · Producción · 25/09/2026.**
+
+He entrado en Favoritos después de guardar Anasazi. La tarjeta aparece en la selección y el progreso muestra 1 / 218. Reutilizo la página del archivo con la prop `onlyFavorites`, de modo que la tarjeta y los filtros mantienen el mismo comportamiento. El progreso corresponde al catálogo completo, no al número de favoritos.
+
+<a href="docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png"><img src="docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png" alt="Favoritos y progreso en móvil" width="340"></a>
+
+### Comprobaciones complementarias en tableta
+
+Estas cinco capturas recogen filtros, resultados vacíos y disponibilidad en tres idiomas a un ancho intermedio.
+
+#### 12.12. Filtro de episodios vistos en tableta
+
+**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
+
+He mantenido Anasazi como favorito y visto y he seleccionado el filtro Visto. El episodio sigue apareciendo. La captura muestra la combinación de selección guardada y filtro de visionado en un ancho intermedio. Compruebo así que cambiar el filtro no elimina las preferencias guardadas.
+
+<a href="docs/screenshots/entrega-2026-09-25/05-favoritos-vistos-tableta-es.png"><img src="docs/screenshots/entrega-2026-09-25/05-favoritos-vistos-tableta-es.png" alt="Filtro de episodios vistos en tableta" width="600"></a>
+
+#### 12.13. Filtro sin resultados
+
+**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
+
+En la misma selección he cambiado a Pendientes. Como el único favorito ya estaba visto, obtengo cero resultados. Muestro un mensaje específico y no ofrezco la selección aleatoria de un conjunto vacío. Es un resultado válido de los filtros, distinto de un error al consultar la API.
+
+<a href="docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png"><img src="docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png" alt="Filtro sin resultados" width="600"></a>
+
+#### 12.14. Disponibilidad en España
+
+**ES · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
+
+He consultado España en Dónde verla y he observado las ofertas agrupadas por modalidad, junto a la fuente y la fecha de consulta. Esta imagen acredita la respuesta que mostraba la aplicación el 25 de septiembre de 2026. No convierte esas ofertas en una disponibilidad permanente ni acredita reproducción, audio o subtítulos.
+
+<a href="docs/screenshots/entrega-2026-09-25/07-disponibilidad-espana-tableta-es.png"><img src="docs/screenshots/entrega-2026-09-25/07-disponibilidad-espana-tableta-es.png" alt="Disponibilidad en España" width="600"></a>
+
+#### 12.15. Akte X con España seleccionada
+
+**DE · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
+
+He cambiado el idioma de español a alemán sin modificar España y he recargado. Se conservan ambas preferencias: la interfaz utiliza Akte X y la consulta sigue correspondiendo al país elegido. Esta prueba demuestra por qué he separado `language` y `country` en el contexto de preferencias.
+
+<a href="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png"><img src="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png" alt="Akte X con España seleccionada" width="600"></a>
+
+#### 12.16. The X-Files con Alemania seleccionada
+
+**EN · 768 × 1024 píxeles CSS · Producción · 25/09/2026.**
+
+Desde la interfaz alemana he seleccionado Alemania y después he cambiado a inglés. El país permanece en Alemania mientras cambian los textos de la interfaz a The X-Files. He continuado el recorrido hacia español manteniendo Alemania y, al terminar, he restablecido España. No utilizo el idioma como indicador del país de reproducción.
+
+<a href="docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png"><img src="docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png" alt="The X-Files con Alemania seleccionada" width="600"></a>
 
 ## 13. Dificultades y decisiones
 
