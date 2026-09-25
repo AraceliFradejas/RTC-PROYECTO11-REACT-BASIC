@@ -52,7 +52,7 @@ He diseñado la web como un archivo de investigación: carpetas, sellos, anotaci
 
 ## Estado actual
 
-He publicado un catálogo de **218 episodios y 11 temporadas**, importado de TMDB en MongoDB Atlas. He conectado favoritos y progreso persistentes, disponibilidad por país, las dos películas y una sección dedicada a Mulder y Scully. He preparado y subido 35 recursos visuales a Cloudinary, con copias WebP locales de respaldo.
+Mi archivo reúne **218 episodios y 11 temporadas**, importados de TMDB en MongoDB Atlas. Incluye favoritos, progreso de visionado, disponibilidad por país, las dos películas y una sección de Mulder y Scully. Para el diseño utilizo 35 recursos visuales alojados en Cloudinary, con copias WebP locales de respaldo.
 
 En la revisión del **25 de septiembre de 2026** he comprobado el repositorio público, la conexión a Atlas en producción, el catálogo en los tres idiomas y las consultas de plataformas para España, Alemania, Reino Unido y Estados Unidos. Las quince pruebas del backend, la compilación y el formato han pasado. He revisado manualmente los recorridos principales y conservo dieciséis capturas actuales.
 
@@ -75,7 +75,7 @@ Guardo las preferencias en este navegador; no dispongo de cuentas ni sincronizac
 
 ## Recorrido visual
 
-Presento primero la aplicación en escritorio para mostrar su diseño y sus secciones con más amplitud. He seleccionado **seis capturas de escritorio**, incluida la portada superior, y dos muestras complementarias de móvil y tableta. Reutilizo los mismos ocho archivos originales en la versión inglesa.
+He seleccionado **seis capturas de escritorio** y dos de móvil y tableta para mostrar el diseño y los principales recorridos.
 
 En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) conservo las dieciséis capturas actuales con la acción realizada, el resultado y su alcance. Las dos imágenes históricas de la memoria explican la evolución del proyecto.
 
@@ -121,13 +121,13 @@ A 768 × 1024 píxeles CSS he cambiado a Akte X sin modificar el país. Después
 
 <img src="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png" alt="Interfaz alemana en tableta con disponibilidad de España" width="600">
 
-He conservado estas capturas reales del 25/09/2026 sin retocar. Son anteriores a la corrección del contador singular: el código publicado ya muestra «1 expediente», «1 case file» y «1 Fallakte». Los PNG representan páginas completas con densidad 2; su altura no corresponde a la altura del dispositivo emulado.
+Las capturas son del 25/09/2026, anteriores al ajuste del contador singular. Explico sus dimensiones y la corrección en la [memoria](MEMORIA.md#12-evidencias).
 
 ## Accesibilidad y diseño responsive
 
 He utilizado estructura HTML semántica, etiquetas, foco visible, un enlace para saltar al contenido y estados accesibles en los botones. Adapto portada, navegación, filtros y cuadrículas con CSS y respeto la preferencia de movimiento reducido.
 
-He revisado muestras en Chrome a 390, 768 y 1440 píxeles CSS. También he comprobado el salto al contenido, el enlace al archivo y la selección de temporada por teclado. No presento estas muestras como una auditoría completa ni como pruebas en dispositivos físicos. La tira de temporadas tiene desplazamiento horizontal dentro de su propio contenedor.
+He revisado la web con la emulación de Chrome a 390, 768 y 1440 píxeles CSS, además del salto al contenido, el enlace al archivo y la selección de temporada por teclado. Quedan pendientes las pruebas en dispositivos físicos y una revisión completa de accesibilidad.
 
 ## Estructura
 
@@ -210,9 +210,9 @@ Guardo los valores privados en `backend/.env` y en la configuración del servido
 
 ## Catálogo e imágenes
 
-He importado 218 episodios de TMDB, excluyendo especiales y uniendo las traducciones por identificador. La importación valida los documentos y solo admite la base `expediente_x`; actualiza datos sin sustituir los recursos visuales propios. La escritura por lotes no es una transacción y puede completarse repitiendo el proceso si falla parcialmente.
+He importado 218 episodios de TMDB, excluyendo especiales y uniendo las traducciones por identificador. La importación valida los documentos y solo admite la base `expediente_x`; actualiza datos sin sustituir los recursos visuales propios. Explico la recuperación de una importación parcial en la [memoria](MEMORIA.md#7-datos-y-normalización).
 
-He preparado 35 imágenes generadas con IA. Las copias WebP ocupan aproximadamente 2,75 MB frente a los 67,6 MB de PNG originales. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
+He preparado 35 imágenes generadas con la herramienta de imágenes de Codex. Las copias WebP ocupan aproximadamente 2,75 MB frente a los 67,6 MB de PNG originales. Los originales permanecen fuera de Git; las copias optimizadas y el manifiesto permiten servir la web y recurrir al respaldo local. Para regenerarlas necesito mis originales locales, que no se descargan al clonar el repositorio. Explico el proceso en [Mis imágenes](docs/IMAGENES.md).
 
 ## Idiomas
 
@@ -272,7 +272,7 @@ Este trabajo continúa mi aprendizaje después de [KelseTS Talks · Proyecto 10]
 
 Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico del máster Rock The Code · The Power Tech School. He desarrollado una aplicación independiente y no oficial, sin vinculación con los titulares de Expediente X.
 
-Identifico las ilustraciones como recursos generados con IA; no son fotografías ni fotogramas oficiales. Reconozco TMDB como fuente de datos y JustWatch como fuente de disponibilidad a través de TMDB. Documento su procedencia en [Recursos y atribuciones](docs/RECURSOS.md). Mantengo el material docente `Solucion/` y sus variantes fuera de Git, GitHub y el despliegue.
+Identifico las ilustraciones como recursos generados con IA; no son fotografías ni fotogramas oficiales. Reconozco TMDB como fuente de datos y JustWatch como fuente de disponibilidad a través de TMDB. Documento su procedencia en [Recursos y atribuciones](docs/RECURSOS.md).
 
 ---
 
@@ -351,7 +351,7 @@ I store preferences in the current browser; I have not added accounts or cross-d
 
 ### Visual walkthrough
 
-I present the desktop application first to give its layout and sections more room. I have selected **six desktop screenshots**, including the homepage above, and two complementary mobile and tablet examples. Both language versions reuse the same eight original files.
+I selected **six desktop screenshots** and two mobile and tablet examples to show the design and main user journeys.
 
 My [report's evidence section](MEMORIA.md#12-evidencias) retains all sixteen current screenshots, with the action performed, result and scope. Two historical images elsewhere in the report explain the project's development. The screenshots preserve the Spanish and German interface text used during the review; their English captions do not change the language shown in the images.
 
@@ -397,13 +397,13 @@ At 768 × 1024 CSS pixels, I switched to Akte X without changing the country. Af
 
 <img src="docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png" alt="German tablet interface with availability for Spain" width="600">
 
-I have preserved these real screenshots from 25 September 2026 without retouching them. They predate the singular-counter correction: the published code now displays “1 expediente”, “1 case file” and “1 Fallakte”. The PNGs capture complete pages at a pixel density of 2; their height is not the height of the emulated device.
+The screenshots date from 25 September 2026, before the singular-counter correction. I explain their dimensions and the correction in my [report](MEMORIA.md#12-evidencias).
 
 ### Accessibility and responsive design
 
 I have used semantic HTML, labelled controls, visible focus, a skip-to-content link and accessible button states. I adapt the homepage, navigation, filters and grids with CSS and respect the reduced-motion preference.
 
-I reviewed samples in Chrome at widths of 390, 768 and 1440 CSS pixels. I also checked the skip link, archive link and season selector with the keyboard. These samples are not a complete accessibility audit or tests on physical devices. The season strip scrolls horizontally within its own container.
+I reviewed the website with Chrome emulation at widths of 390, 768 and 1440 CSS pixels, and checked the skip link, archive link and season selector with the keyboard. Tests on physical devices and a complete accessibility review remain pending.
 
 ### Project structure
 
@@ -486,9 +486,9 @@ I keep private values in `backend/.env` and the deployed server configuration. I
 
 ### Catalogue and images
 
-I imported 218 episodes from TMDB, excluding specials and joining translations by identifier. The importer validates the documents and only accepts the `expediente_x` database. It updates source data without replacing my own visual assets. The batch write is not a transaction; repeating the process can complete a partially failed import.
+I imported 218 episodes from TMDB, excluding specials and joining translations by identifier. The importer validates the documents and only accepts the `expediente_x` database. It updates source data without replacing my own visual assets. I explain recovery from a partial import in my [report](MEMORIA.md#7-datos-y-normalización).
 
-I prepared 35 AI-generated images. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
+I prepared 35 images generated with the image tool integrated into Codex. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
 
 ### Languages
 
@@ -550,6 +550,6 @@ This project continues my learning after [KelseTS Talks · Project 10](https://g
 
 I am **Araceli Fradejas Muñoz**, the author of this academic project for the Rock The Code master's programme at The Power Tech School. I have developed an independent, unofficial application with no affiliation to the rights holders of The X-Files.
 
-I identify the illustrations as AI-generated assets; they are not official photographs or frames from the series. I acknowledge TMDB as the data source and JustWatch as the availability source through TMDB. I document their provenance in [Resources and credits](docs/RECURSOS.md). I keep the teaching reference material in `Solucion/` and its spelling variants outside Git, GitHub and deployment.
+I identify the illustrations as AI-generated assets; they are not official photographs or frames from the series. I acknowledge TMDB as the data source and JustWatch as the availability source through TMDB. I document their provenance in [Resources and credits](docs/RECURSOS.md).
 
 [Volver a la versión en castellano](#versión-en-castellano) · [Back to the English version](#english-version)

@@ -4,6 +4,7 @@
 [Ss]olucíon/
 
 # Excluyo dependencias, compilaciones y archivos locales.
+AGENTS.md
 node_modules/
 dist/
 .vercel/

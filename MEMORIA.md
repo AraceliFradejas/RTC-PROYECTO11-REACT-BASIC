@@ -17,7 +17,7 @@
 | Inicio del desarrollo | 20 de septiembre de 2026 |
 | Revisión y capturas de producción | 25 de septiembre de 2026 |
 
-> En esta memoria explico el desarrollo real de mi proyecto, las decisiones que he tomado y los resultados comprobados. Distingo las pruebas automáticas, las consultas a los servicios y los recorridos manuales. Incluyo las dieciséis capturas de la revisión de producción y dos anteriores, identificadas como evolución del desarrollo.
+> En esta memoria cuento cómo he organizado el archivo, las decisiones del proyecto y las pruebas realizadas. Incluyo dieciséis capturas de la web publicada y dos de versiones anteriores para mostrar su evolución.
 
 ## Contenido
 
@@ -127,7 +127,7 @@ api/index.js    Entrada del backend en Vercel
 
 Mi flujo de datos es **React → Express → Atlas o TMDB**. Importo los episodios de TMDB en Atlas. Las películas y plataformas se consultan en TMDB con una caché temporal de una hora. Las imágenes se sirven desde Cloudinary con respaldo local.
 
-Mantengo los secretos en archivos `.env` ignorados y en variables privadas de Vercel. No utilizo variables `VITE_` para credenciales. `Solucion/` y sus variantes quedan excluidas de Git y del despliegue.
+Mantengo los secretos en archivos `.env` ignorados y en variables privadas de Vercel. No utilizo variables `VITE_` para credenciales.
 
 ### Componentes, props y páginas
 
@@ -356,7 +356,7 @@ He tomado las siguientes dieciséis capturas de la aplicación publicada el **25
 
 La [galería original](docs/screenshots/entrega-2026-09-25/README.md) conserva las dimensiones exactas de cada archivo. Aquí explico cada evidencia junto a su imagen para que pueda revisarse sin salir de la memoria.
 
-Las capturas son anteriores a la corrección de concordancia del contador. Por eso puede aparecer «1 expedientes» aunque el código publicado ya utiliza el singular. He conservado los originales y he documentado la corrección; no he alterado las imágenes para ocultarla.
+Las capturas son anteriores a la corrección de concordancia del contador. Por eso puede aparecer «1 expedientes» aunque el código publicado ya utiliza el singular. Conservo las capturas originales de esa revisión.
 
 Presento primero el recorrido de **escritorio**, con siete capturas de portada, archivo, personajes, películas, historia y ruta inexistente. Después reúno las pruebas de **móvil y tableta** como evidencias complementarias del diseño responsive, la persistencia y los idiomas.
 
@@ -541,7 +541,7 @@ Una respuesta puede llegar después de cambiar de página o idioma. En `useApi` 
 
 ### Importar sin perder recursos propios
 
-He utilizado el identificador de TMDB para actualizar episodios sin duplicarlos y he separado los campos importados de las imágenes propias. Valido la descarga antes de escribir y limito la base de destino. La escritura por lotes no es transaccional; he documentado esa limitación y la posibilidad de repetir el proceso.
+He utilizado el identificador de TMDB para actualizar episodios sin duplicarlos y he separado los campos importados de las imágenes propias. Valido la descarga antes de escribir y limito la base de destino. Si la escritura por lotes falla a medias, puedo repetir la importación para completar los registros pendientes.
 
 ### Preparar imágenes para la web
 
@@ -583,7 +583,7 @@ Finalmente, he aprendido a explicar lo que demuestra cada comprobación. Una cap
 - Valorar exportar e importar favoritos sin exigir una cuenta de usuario.
 - Repetir la consulta de disponibilidad cuando revise el proyecto, conservando su fecha.
 
-Estas propuestas amplían el alcance comprobado. La entrega en el campus sigue siendo un paso independiente: tengo preparado el enlace público, pero no registro un envío que no he realizado.
+Tengo preparado el enlace público; queda pendiente enviarlo en el campus.
 
 ## 16. Ampliación del proyecto
 
@@ -597,7 +597,7 @@ He conectado una consulta para España, Alemania, Reino Unido y Estados Unidos. 
 
 ### Recursos e identidad visual
 
-He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He incorporado 35 imágenes generadas con IA, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
+He utilizado una estética de archivo con verdes oscuros, documentos, sellos y guiños a la serie. He incorporado 35 imágenes generadas con la herramienta de imágenes de Codex, con copias WebP optimizadas y un manifiesto de dimensiones y URLs. Son interpretaciones de ficción, no fotografías ni fotogramas oficiales.
 
 Sirvo las imágenes desde Cloudinary y utilizo copias locales si falla la carga remota. Conservo los PNG originales fuera de Git y del despliegue. Documento la preparación y subida en [Mis imágenes](docs/IMAGENES.md).
 
