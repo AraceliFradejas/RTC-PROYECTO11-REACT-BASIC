@@ -250,3 +250,15 @@ He preparado un script de subida firmada a Cloudinary y una copia local de respa
 He comprobado visualmente la portada en Chrome en escritorio y en una vista móvil de 390 × 844 píxeles: en móvil sitúo la imagen encima del texto para conservar los rostros y la legibilidad. He compilado la interfaz y he comprobado que los 35 archivos del manifiesto existen.
 
 He publicado la nueva interfaz y he comprobado que `/personajes`, la imagen de portada, el retrato de Scully y la ilustración de la temporada 11 responden con HTTP 200; las imágenes se sirven como WebP. He intentado después la subida a Cloudinary, que se ha detenido con HTTP 403 por falta del permiso `create` en la clave. No he publicado credenciales ni doy la subida por completada.
+
+## 22. Mi revisión de correcciones anteriores para la entrega final
+
+Antes de cerrar la entrega he recuperado las correcciones de Jeniffer Balabuch en mis proyectos anteriores y las he contrastado con esta aplicación. Me han servido para revisar la organización del código, los recursos sin uso, los metadatos, los idiomas y la coherencia de los datos.
+
+He dividido el CSS en siete hojas por responsabilidad y eliminado los estilos de la antigua carpeta decorativa. He separado los filtros, los resultados y el selector de temporadas en componentes con props, y comparto la sinopsis entre episodios y películas. También he unificado la operación de añadir o quitar favoritos y episodios vistos.
+
+He retirado del manifiesto y de los archivos publicados 19 imágenes que no utilizaba: las 16 seleccionadas ocupan 984.500 bytes, con un ahorro de 1.761.210 bytes. Conservo los originales locales y he ajustado el script para preparar solo los recursos seleccionados. He ampliado las etiquetas SEO existentes, actualizado la descripción con el idioma y declarado los botones de acción como `type="button"`.
+
+El footer ya mostraba únicamente el idioma elegido y el importador ya rechazaba identificadores duplicados. Las observaciones sobre las tarjetas de Unsplash y `populate` no corresponden a los datos de este proyecto. Para construir esta interfaz utilizo JSX y componentes de React; la indicación de usar `createElement()` pertenecía a mis ejercicios de JavaScript sin React.
+
+Tras los ajustes han pasado las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en ES, EN y DE, las declaraciones y media queries de los 162 selectores CSS activos y las 16 imágenes de la compilación. Estos controles no sustituyen una nueva revisión visual en navegador, que queda pendiente para esta versión. Recojo también esta revisión en la [memoria](../MEMORIA.md#revisión-a-partir-de-las-correcciones-de-otros-proyectos).

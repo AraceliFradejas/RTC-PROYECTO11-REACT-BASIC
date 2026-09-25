@@ -19,6 +19,8 @@
 
 ## Mi revisión manual completada
 
+La revisión manual de esta sección corresponde a las capturas del 25/09/2026, anteriores a la reorganización final de componentes y estilos que describo más abajo.
+
 He documentado resultados y límites en [la galería de 16 capturas](screenshots/entrega-2026-09-25/README.md).
 
 | Recorrido | Resultado observado |
@@ -50,3 +52,13 @@ No he auditado todas las combinaciones de ruta, idioma y tamaño ni utilizado di
 Las respuestas HTTP 200 de la SPA no demuestran por sí solas que todos los controles funcionen. Los resultados manuales anteriores proceden de interacciones reales con el navegador.
 
 Las capturas de paneles privados son opcionales y no forman parte del enunciado. No identifico su ausencia como un bloqueo de entrega.
+
+## Correcciones anteriores aplicadas a esta entrega
+
+- [x] Reviso las observaciones de Jeniffer Balabuch en mis proyectos anteriores y distingo cuáles corresponden a esta aplicación React.
+- [x] Divido estilos y componentes, elimino CSS antiguo y comparto la lógica repetida.
+- [x] Retiro las 19 imágenes sin uso y preparo únicamente las 16 seleccionadas.
+- [x] Amplío los metadatos y reviso botones, idioma del footer y control de duplicados del importador.
+- [x] Compruebo pruebas, compilación, formato, renderizado en tres idiomas y recursos de la compilación.
+- [x] Recojo los cambios y su alcance en la [memoria](../MEMORIA.md#revisión-a-partir-de-las-correcciones-de-otros-proyectos) y en el [historial de desarrollo](HISTORIAL-DESARROLLO.md#22-mi-revisión-de-correcciones-anteriores-para-la-entrega-final).
+- [ ] Repito el recorrido visual en navegador tras la reorganización final.
