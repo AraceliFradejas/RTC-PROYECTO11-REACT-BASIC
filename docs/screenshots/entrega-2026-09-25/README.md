@@ -1,15 +1,19 @@
 # Mis capturas de revisión · 25 de septiembre de 2026
 
-He obtenido estas **16 capturas reales de la web publicada** en [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/), utilizando Chrome y su emulación responsive. No son maquetas ni imágenes generadas.
+He obtenido estas **18 capturas reales de la web publicada** en [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/), utilizando Chrome y su emulación responsive. No son maquetas ni imágenes generadas.
 
 Indico el tamaño del área de visualización en píxeles CSS. He exportado páginas completas con una densidad de dos píxeles de imagen por píxel CSS: por eso los PNG tienen el doble de ancho y una altura que depende del contenido. No interpreto esa altura como la del dispositivo. He conservado los originales, sin recortes ni alteraciones del contenido; no contienen barras del navegador, otras pestañas ni credenciales.
 
 Las pruebas representan móvil, tableta y escritorio **emulados**, no dispositivos físicos. He revisado visualmente los archivos exportados. La tira de temporadas permite desplazamiento horizontal dentro de su contenedor; no es un desbordamiento general de la página.
 
+Las capturas 17 y 18 corresponden a la revisión posterior a la reorganización final de componentes y estilos. Conservo las dieciséis anteriores como registro de la revisión inicial.
+
 ## Índice de evidencias
 
 | Captura | Idioma | Área de visualización | Archivo PNG |
 | --- | --- | --- | --- |
+| [Revisión final: detalle móvil](17-revision-final-anasazi-movil-es.png) | ES | 390 × 844 | 780 × 2858 |
+| [Revisión final: filtro vacío](18-revision-final-vacio-tableta-es.png) | ES | 768 × 1024 | 1536 × 2048 |
 | [Portada móvil](01-portada-movil-es.png) | ES | 390 × 844 | 780 × 4912 |
 | [Búsqueda de Anasazi](02-busqueda-anasazi-movil-es.png) | ES | 390 × 844 | 780 × 3400 |
 | [Detalle con persistencia y sinopsis](03-anasazi-persistencia-sinopsis-movil-es.png) | ES | 390 × 844 | 780 × 2856 |
@@ -151,3 +155,17 @@ Mi motivación personal, aviso académico y créditos de TMDB y JustWatch. Idiom
 Mensaje 404 de la interfaz al abrir una ruta inexistente y enlace de regreso al inicio. Idioma: **ES**. Área de visualización: **1440 × 900**.
 
 ![Página no encontrada](16-ruta-inexistente-escritorio-es.png)
+
+## Revisión posterior a los ajustes finales
+
+### Anasazi en móvil
+
+He recargado la ficha conservando favorito y visto y después he revelado la sinopsis. El enlace de salto al contenido aparece visible por el foco durante la captura. Área de visualización: **390 × 844**, idioma **ES**.
+
+<img src="17-revision-final-anasazi-movil-es.png" alt="Revisión final de Anasazi en móvil" width="340">
+
+### Favoritos sin episodios pendientes
+
+Mi único favorito está visto. Al seleccionar Pendientes obtengo cero resultados y no aparece el botón aleatorio. Área de visualización: **768 × 1024**, idioma **ES**.
+
+<img src="18-revision-final-vacio-tableta-es.png" alt="Revisión final del filtro vacío en tableta" width="600">

@@ -54,7 +54,7 @@ He diseñado la web como un archivo de investigación: carpetas, sellos, anotaci
 
 Mi archivo reúne **218 episodios y 11 temporadas**, importados de TMDB en MongoDB Atlas. Incluye favoritos, progreso de visionado, disponibilidad por país, las dos películas y una sección de Mulder y Scully. Para el diseño utilizo 16 recursos visuales alojados en Cloudinary, con copias WebP locales de respaldo.
 
-En la revisión del **25 de septiembre de 2026** he comprobado el repositorio público, la conexión a Atlas en producción, el catálogo en los tres idiomas y las consultas de plataformas para España, Alemania, Reino Unido y Estados Unidos. Las quince pruebas del backend, la compilación y el formato han pasado. He revisado manualmente los recorridos principales y conservo dieciséis capturas actuales.
+En la revisión del **25 de septiembre de 2026** he comprobado el repositorio público, la conexión a Atlas en producción, el catálogo en los tres idiomas y las consultas de plataformas para España, Alemania, Reino Unido y Estados Unidos. Las quince pruebas del backend, la compilación y el formato han pasado. He revisado manualmente los recorridos principales y conservo dieciséis capturas de esa revisión. Después de reorganizar componentes y estilos he repetido recorridos en Chrome y Safari y añadido dos capturas finales de móvil y tableta.
 
 Desarrollo la arquitectura, las decisiones, las pruebas, la evolución y el aprendizaje en mi [memoria técnica](MEMORIA.md). El enlace para la entrega está preparado; el envío en el campus figura como pendiente en [Revisión de entrega](docs/REVISION-ENTREGA.md).
 
@@ -77,7 +77,7 @@ Guardo las preferencias en este navegador; no dispongo de cuentas ni sincronizac
 
 He seleccionado **seis capturas de escritorio** y dos de móvil y tableta para mostrar el diseño y los principales recorridos.
 
-En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) conservo las dieciséis capturas actuales con la acción realizada, el resultado y su alcance. Las dos imágenes históricas de la memoria explican la evolución del proyecto.
+En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) conservo las dieciocho capturas de producción con la acción realizada, el resultado y su alcance. Las dos imágenes históricas de la memoria explican la evolución del proyecto.
 
 ### Explorar el archivo en escritorio
 
@@ -238,7 +238,7 @@ He declarado las páginas `/`, `/expedientes`, `/expedientes/:id`, `/favoritos`,
 
 He comprobado quince pruebas del backend y la compilación de producción. En la web he recorrido búsqueda, filtros, selección aleatoria, marcado y retirada de favoritos y vistos, persistencia, sinopsis, idiomas, países y navegación a películas. He verificado también las respuestas de la API publicada y la apertura directa de rutas.
 
-La [memoria](MEMORIA.md#9-pruebas) distingue pruebas automáticas, integraciones y revisión manual. La [galería](docs/screenshots/entrega-2026-09-25/README.md) conserva las dieciséis capturas actuales con sus dimensiones. No tengo una suite automatizada de interfaz; los fallos de red y almacenamiento no se han simulado en la revisión manual documentada.
+La [memoria](MEMORIA.md#9-pruebas) distingue pruebas automáticas, integraciones y revisión manual. La [galería](docs/screenshots/entrega-2026-09-25/README.md) conserva las dieciocho capturas de producción con sus dimensiones. No tengo una suite automatizada de interfaz; los fallos de red y almacenamiento no se han simulado en la revisión manual documentada.
 
 ## Despliegue
 
@@ -250,11 +250,11 @@ He configurado `MONGODB_URI` y `TMDB_READ_TOKEN` como variables privadas de Prod
 
 | Documento | Qué explico |
 | --- | --- |
-| [Memoria técnica](MEMORIA.md) | Motivación, arquitectura, funcionamiento, pruebas, dieciocho evidencias visuales y aprendizaje. |
+| [Memoria técnica](MEMORIA.md) | Motivación, arquitectura, funcionamiento, pruebas, veinte evidencias visuales y aprendizaje. |
 | [Comprobación del enunciado](docs/COMPROBACION-ENUNCIADO.md) | Correspondencia de cada requisito con su implementación. |
 | [Revisión de entrega](docs/REVISION-ENTREGA.md) | Publicación comprobada y envío pendiente al campus. |
 | [Configuración](docs/CONFIGURACION.md) | Desarrollo local, servicios e integración en Vercel. |
-| [Galería de producción](docs/screenshots/entrega-2026-09-25/README.md) | Dieciséis capturas, dimensiones y recorridos. |
+| [Galería de producción](docs/screenshots/entrega-2026-09-25/README.md) | Dieciocho capturas, dimensiones y recorridos. |
 | [Mis imágenes](docs/IMAGENES.md) | Optimización, Cloudinary y respaldo local. |
 | [Recursos y atribuciones](docs/RECURSOS.md) | Procedencia y créditos. |
 | [Mi historia](docs/MI-HISTORIA.md) | Mi relación personal con Expediente X. |
@@ -331,7 +331,7 @@ I designed the website as an investigation archive, with folders, stamps, notes 
 
 I have published a catalogue of **218 episodes across 11 seasons**, imported from TMDB into MongoDB Atlas. I have connected persistent favourites and viewing progress, availability by country, both films and a section dedicated to Mulder and Scully. I use 16 visual assets hosted on Cloudinary, with local WebP fallback copies.
 
-During the review on **25 September 2026**, I checked the public repository, the production Atlas connection, the catalogue in all three languages and provider queries for Spain, Germany, the United Kingdom and the United States. All fifteen backend tests, the production build and the formatting check passed. I manually reviewed the main user journeys and retained sixteen current screenshots.
+During the review on **25 September 2026**, I checked the public repository, the production Atlas connection, the catalogue in all three languages and provider queries for Spain, Germany, the United Kingdom and the United States. All fifteen backend tests, the production build and the formatting check passed. I manually reviewed the main user journeys and retained sixteen screenshots from that review. After reorganising components and styles, I repeated checks in Chrome and Safari and added two final mobile and tablet screenshots.
 
 I explain the architecture, decisions, tests, development process and lessons learned in my [technical report](MEMORIA.md), in Spanish. The submission link is ready; submission through the course platform is still pending in my [delivery review](docs/REVISION-ENTREGA.md).
 
@@ -354,7 +354,7 @@ I store preferences in the current browser; I have not added accounts or cross-d
 
 I selected **six desktop screenshots** and two mobile and tablet examples to show the design and main user journeys.
 
-My [report's evidence section](MEMORIA.md#12-evidencias) retains all sixteen current screenshots, with the action performed, result and scope. Two historical images elsewhere in the report explain the project's development. The screenshots preserve the Spanish and German interface text used during the review; their English captions do not change the language shown in the images.
+My [report's evidence section](MEMORIA.md#12-evidencias) retains all eighteen production screenshots, with the action performed, result and scope. Two historical images elsewhere in the report explain the project's development. The screenshots preserve the Spanish and German interface text used during the review; their English captions do not change the language shown in the images.
 
 #### Exploring the archive on desktop
 
@@ -515,7 +515,7 @@ I have declared `/`, `/expedientes`, `/expedientes/:id`, `/favoritos`, `/persona
 
 I checked fifteen backend tests and the production build. On the website, I tested search, filters, random selection, adding and removing favourites and watched status, persistence, summaries, languages, countries and navigation to films. I also verified production API responses and direct access to routes.
 
-My [report](MEMORIA.md#9-pruebas) distinguishes automated tests, integration checks and manual review. The [gallery](docs/screenshots/entrega-2026-09-25/README.md) retains all sixteen current screenshots and their dimensions. These documents are in Spanish. I do not have an automated frontend test suite, and I did not simulate network or storage failures during the documented manual review.
+My [report](MEMORIA.md#9-pruebas) distinguishes automated tests, integration checks and manual review. The [gallery](docs/screenshots/entrega-2026-09-25/README.md) retains all eighteen production screenshots and their dimensions. These documents are in Spanish. I do not have an automated frontend test suite, and I did not simulate network or storage failures during the documented manual review.
 
 ### Deployment
 
@@ -529,11 +529,11 @@ I maintain the following supporting documents in Spanish:
 
 | Document | What I explain |
 | --- | --- |
-| [Technical report](MEMORIA.md) | Motivation, architecture, behaviour, tests, eighteen visual records and lessons learned. |
+| [Technical report](MEMORIA.md) | Motivation, architecture, behaviour, tests, twenty visual records and lessons learned. |
 | [Assignment checklist](docs/COMPROBACION-ENUNCIADO.md) | How each requirement maps to its implementation. |
 | [Delivery review](docs/REVISION-ENTREGA.md) | Verified publication and pending course-platform submission. |
 | [Configuration](docs/CONFIGURACION.md) | Local development, services and Vercel integration. |
-| [Production gallery](docs/screenshots/entrega-2026-09-25/README.md) | Sixteen screenshots, dimensions and user journeys. |
+| [Production gallery](docs/screenshots/entrega-2026-09-25/README.md) | Eighteen screenshots, dimensions and user journeys. |
 | [My images](docs/IMAGENES.md) | Optimisation, Cloudinary and local fallbacks. |
 | [Resources and credits](docs/RECURSOS.md) | Sources and attribution. |
 | [My story](docs/MI-HISTORIA.md) | My personal connection with The X-Files. |

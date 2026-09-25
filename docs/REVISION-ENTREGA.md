@@ -21,7 +21,7 @@
 
 La revisión manual de esta sección corresponde a las capturas del 25/09/2026, anteriores a la reorganización final de componentes y estilos que describo más abajo.
 
-He documentado resultados y límites en [la galería de 16 capturas](screenshots/entrega-2026-09-25/README.md).
+He documentado resultados y límites en [la galería de capturas](screenshots/entrega-2026-09-25/README.md).
 
 | Recorrido | Resultado observado |
 | --- | --- |
@@ -39,7 +39,7 @@ No he auditado todas las combinaciones de ruta, idioma y tamaño ni utilizado di
 
 ## Evidencias y publicación
 
-- [x] Guardo 16 capturas actuales de la web publicada, incluidas portada, archivo, detalle, favoritos y disponibilidad.
+- [x] Guardo 16 capturas de la revisión inicial de la web publicada, incluidas portada, archivo, detalle, favoritos y disponibilidad.
 - [x] Identifico idioma, tamaño y fecha de cada captura.
 - [x] Reviso los PNG exportados e incorporo una galería comentada y evidencias en la memoria.
 - [x] Documento los servicios a través de la aplicación y las consultas HTTP, sin mostrar credenciales.
@@ -61,4 +61,22 @@ Las capturas de paneles privados son opcionales y no forman parte del enunciado.
 - [x] Amplío los metadatos y reviso botones, idioma del footer y control de duplicados del importador.
 - [x] Compruebo pruebas, compilación, formato, renderizado en tres idiomas y recursos de la compilación.
 - [x] Recojo los cambios y su alcance en la [memoria](../MEMORIA.md#revisión-a-partir-de-las-correcciones-de-otros-proyectos) y en el [historial de desarrollo](HISTORIAL-DESARROLLO.md#22-mi-revisión-de-correcciones-anteriores-para-la-entrega-final).
-- [ ] Repito el recorrido visual en navegador tras la reorganización final.
+- [x] Repito una revisión visual y funcional tras la reorganización final, con el alcance descrito a continuación.
+
+## Comprobación posterior a la reorganización final
+
+He revisado la compilación publicada con JavaScript `index-Bs2IgaC1.js` y CSS `index-DWymsZu0.css`, correspondientes a los últimos cambios de componentes y estilos.
+
+| Entorno | Recorrido | Resultado |
+| --- | --- | --- |
+| Chrome, escritorio | Portada, catálogo, temporada 2 y búsqueda «anasazi» | Un expediente; el caso aleatorio abre `/expedientes/285317`. |
+| Chrome, detalle | Favorito, visto, sinopsis y recarga | Las dos preferencias persisten; la sinopsis vuelve a estar oculta al recargar. |
+| Chrome, 390 × 844 | Detalle de Anasazi y sinopsis visible | Imagen, controles y texto se adaptan al ancho móvil. |
+| Chrome, 768 × 1024 | Favoritos y filtro Pendientes | El favorito visto queda excluido: cero resultados y sin botón aleatorio. |
+| Safari, escritorio | ES → DE → EN y España → Alemania | El idioma y el país cambian por separado; DE/España se conserva al recargar. |
+| Safari, escritorio | Películas, sinopsis, personajes e historia | La primera película abre por su enlace; la sinopsis se revela y oculta, y los retratos cargan. |
+| HTTP | Nueve rutas públicas y `/api/health` | Respuestas 200; Atlas figura conectado. |
+
+He añadido las capturas [17, detalle móvil](screenshots/entrega-2026-09-25/17-revision-final-anasazi-movil-es.png) y [18, filtro vacío en tableta](screenshots/entrega-2026-09-25/18-revision-final-vacio-tableta-es.png), sin sustituir las dieciséis anteriores. Son muestras de emulación, no pruebas en dispositivos físicos ni de todas las combinaciones de página y tamaño.
+
+También he revisado `backend/.env.example`: he retirado `TMDB_API_KEY`, que no utiliza el código, y actualizado las instrucciones de Cloudinary. La aplicación utiliza `TMDB_READ_TOKEN`; la plantilla pública conserva vacíos los valores de credenciales.

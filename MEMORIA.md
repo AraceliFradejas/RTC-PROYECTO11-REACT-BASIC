@@ -17,7 +17,7 @@
 | Inicio del desarrollo | 20 de septiembre de 2026 |
 | Revisión y capturas de producción | 25 de septiembre de 2026 |
 
-> En esta memoria cuento cómo he organizado el archivo, las decisiones del proyecto y las pruebas realizadas. Incluyo dieciséis capturas de la web publicada y dos de versiones anteriores para mostrar su evolución.
+> En esta memoria cuento cómo he organizado el archivo, las decisiones del proyecto y las pruebas realizadas. Incluyo dieciocho capturas de la web publicada y dos de versiones anteriores para mostrar su evolución.
 
 ## Contenido
 
@@ -80,7 +80,7 @@ Como objetivos técnicos me propuse separar responsabilidades, compartir los est
 | React Router y enlaces | Utilizo `BrowserRouter`, `Routes`, `Link` y `NavLink`. | `main.jsx` y `Layout`. |
 | Parámetro de ruta utilizado | Leo `id` con `useParams` y consulto `/api/episodes/:id`. | `/expedientes/283988` corresponde a «Piloto». |
 | HTML semántico y accesibilidad | Utilizo `header`, `nav`, `main`, `footer`, etiquetas y enlace para saltar al contenido. | Implementado; he comprobado salto al contenido, enlace al archivo y selector por teclado. No es una auditoría completa. |
-| Diseño responsive | Adapto portada, navegación, filtros y cuadrículas con CSS. | 16 capturas actuales con muestras a 390, 768 y 1440 píxeles; alcance en la galería. |
+| Diseño responsive | Adapto portada, navegación, filtros y cuadrículas con CSS. | 18 capturas de producción con muestras a 390, 768 y 1440 píxeles; alcance en la galería. |
 | GitHub público y Vercel | Publico interfaz y API bajo el mismo dominio. | Visibilidad y respuestas HTTP comprobadas el 25/09/2026. |
 
 La correspondencia detallada con el enunciado está en [Mi comprobación del enunciado](docs/COMPROBACION-ENUNCIADO.md). La entrega académica solicita el enlace al repositorio público; la web y esta memoria permiten revisar el resultado y su funcionamiento.
@@ -315,7 +315,7 @@ He comprobado muestras en Chrome mediante emulación responsive, no en dispositi
 | Imágenes | 35 recursos subidos a Cloudinary | Copias WebP y respaldo local documentados. |
 | Publicación | GitHub público y web/API en Vercel | Conexión a Atlas y rutas comprobadas. |
 | Validación | 15 pruebas, compilación y formato correctos | Backend automatizado; interfaz revisada manualmente. |
-| Documentación visual | 16 capturas actuales y 2 históricas | Incluidas y comentadas en esta memoria. |
+| Documentación visual | 18 capturas de producción y 2 históricas | Incluidas y comentadas en esta memoria. |
 | Entrega en campus | Pendiente de enviar el enlace | No la doy por realizada. |
 
 ## 11. Evolución del desarrollo
@@ -353,11 +353,11 @@ Conservo la ficha móvil de Piloto, con favorito y visionado, anterior a la inte
 
 ## 12. Evidencias
 
-He tomado las siguientes dieciséis capturas de la aplicación publicada el **25 de septiembre de 2026**. Son páginas completas exportadas desde Chrome, sin retocar su contenido. Indico el área de visualización en píxeles CSS; los PNG tienen densidad 2 y una altura variable según la longitud de la página. Por ejemplo, el área de escritorio de 1440 × 900 píxeles CSS produce un PNG de 2880 píxeles de ancho y una altura que recoge toda la página.
+He tomado dieciséis capturas de la aplicación publicada el **25 de septiembre de 2026** y he añadido dos más tras la revisión final de componentes y estilos. Son páginas completas exportadas desde Chrome, sin retocar su contenido. Indico el área de visualización en píxeles CSS; los PNG tienen densidad 2 y una altura variable según la longitud de la página. Por ejemplo, el área de escritorio de 1440 × 900 píxeles CSS produce un PNG de 2880 píxeles de ancho y una altura que recoge toda la página.
 
 La [galería original](docs/screenshots/entrega-2026-09-25/README.md) conserva las dimensiones exactas de cada archivo. Aquí explico cada evidencia junto a su imagen para que pueda revisarse sin salir de la memoria.
 
-Las capturas son anteriores a la corrección de concordancia del contador. Por eso puede aparecer «1 expedientes» aunque el código publicado ya utiliza el singular. Conservo las capturas originales de esa revisión.
+Las primeras dieciséis capturas son anteriores a la corrección de concordancia del contador. Por eso puede aparecer «1 expedientes» aunque el código publicado ya utiliza el singular. Conservo las capturas originales de esa revisión.
 
 Presento primero el recorrido de **escritorio**, con siete capturas de portada, archivo, personajes, películas, historia y ruta inexistente. Después reúno las pruebas de **móvil y tableta** como evidencias complementarias del diseño responsive, la persistencia y los idiomas.
 
@@ -526,6 +526,18 @@ Desde la interfaz alemana he seleccionado Alemania y después he cambiado a ingl
 
 <a href="docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png"><img src="docs/screenshots/entrega-2026-09-25/09-ingles-pais-alemania-tableta.png" alt="The X-Files con Alemania seleccionada" width="600"></a>
 
+### 12.17. Revisión final del detalle móvil
+
+Después de reorganizar componentes y estilos he vuelto a abrir Anasazi en la web publicada. He confirmado la persistencia del favorito y del visionado tras recargar y he revelado de nuevo la sinopsis. La captura corresponde a **390 × 844 píxeles CSS**. El enlace «Saltar al contenido» aparece visible por el foco durante la captura.
+
+<a href="docs/screenshots/entrega-2026-09-25/17-revision-final-anasazi-movil-es.png"><img src="docs/screenshots/entrega-2026-09-25/17-revision-final-anasazi-movil-es.png" alt="Revisión final de Anasazi en móvil con sinopsis visible" width="340"></a>
+
+### 12.18. Revisión final del filtro sin resultados
+
+A **768 × 1024 píxeles CSS**, he abierto favoritos y seleccionado Pendientes. Anasazi era mi único favorito y estaba visto: obtengo cero expedientes y el botón aleatorio desaparece. La captura muestra el resultado después de separar filtros y resultados en componentes.
+
+<a href="docs/screenshots/entrega-2026-09-25/18-revision-final-vacio-tableta-es.png"><img src="docs/screenshots/entrega-2026-09-25/18-revision-final-vacio-tableta-es.png" alt="Revisión final del filtro Pendientes sin resultados en tableta" width="600"></a>
+
 ## 13. Dificultades y decisiones
 
 ### Compartir preferencias sin duplicar lógica
@@ -585,7 +597,7 @@ He aplicado las observaciones que también afectan a este archivo:
 - He añadido autoría y etiquetas Open Graph a las etiquetas SEO existentes. El título y la descripción se actualizan con el idioma elegido.
 - He declarado los botones de acción como `type="button"`. Mantengo JSX para construir la interfaz y el foco visible para navegar con teclado.
 
-Tras estos ajustes pasan las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en los tres idiomas: footer, temporada seleccionada, filtros, resultados vacíos y singulares, enlaces y sinopsis inicialmente oculta. También he comparado las declaraciones y media queries de los 162 selectores CSS activos y comprobado las 16 imágenes de la compilación. Estas comprobaciones de renderizado no simulan clics ni sustituyen una revisión visual en navegador, que queda pendiente para esta versión.
+Tras estos ajustes pasan las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en los tres idiomas: footer, temporada seleccionada, filtros, resultados vacíos y singulares, enlaces y sinopsis inicialmente oculta. También he comparado las declaraciones y media queries de los 162 selectores CSS activos y comprobado las 16 imágenes de la compilación. Después he completado una revisión visual y funcional en Chrome y Safari, con muestras móviles y de tableta y dos capturas nuevas. Detallo el alcance en la [revisión de entrega](docs/REVISION-ENTREGA.md#comprobación-posterior-a-la-reorganización-final).
 
 Las observaciones sobre Unsplash y `populate` pertenecen a aplicaciones con otros datos. Aquí no utilizo Unsplash ni relaciones de documentos que necesiten `populate`. El importador ya rechaza identificadores de episodio duplicados y actualiza por identificador de TMDB.
 

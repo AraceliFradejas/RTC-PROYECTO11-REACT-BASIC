@@ -261,4 +261,12 @@ He retirado del manifiesto y de los archivos publicados 19 imágenes que no util
 
 El footer ya mostraba únicamente el idioma elegido y el importador ya rechazaba identificadores duplicados. Las observaciones sobre las tarjetas de Unsplash y `populate` no corresponden a los datos de este proyecto. Para construir esta interfaz utilizo JSX y componentes de React; la indicación de usar `createElement()` pertenecía a mis ejercicios de JavaScript sin React.
 
-Tras los ajustes han pasado las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en ES, EN y DE, las declaraciones y media queries de los 162 selectores CSS activos y las 16 imágenes de la compilación. Estos controles no sustituyen una nueva revisión visual en navegador, que queda pendiente para esta versión. Recojo también esta revisión en la [memoria](../MEMORIA.md#revisión-a-partir-de-las-correcciones-de-otros-proyectos).
+Tras los ajustes han pasado las 15 pruebas del backend, la compilación y el formato. He comprobado el renderizado de los componentes extraídos en ES, EN y DE, las declaraciones y media queries de los 162 selectores CSS activos y las 16 imágenes de la compilación. En ese momento quedaba pendiente repetir la revisión visual en navegador; la he completado después, como recojo en la siguiente entrada. Recojo también esta revisión en la [memoria](../MEMORIA.md#revisión-a-partir-de-las-correcciones-de-otros-proyectos).
+
+## 23. Mi comprobación final en navegador y de la configuración
+
+He completado la revisión posterior a los ajustes de entrega en Chrome y Safari. En Chrome he recorrido búsqueda, temporada, caso aleatorio, favorito, visionado, sinopsis y persistencia. He revisado Anasazi a 390 × 844 píxeles CSS y el estado vacío de favoritos a 768 × 1024. En Safari he comprobado los idiomas, su independencia del país, las películas, los personajes y mi historia. He restablecido español y España en Safari.
+
+Conservo dos capturas adicionales de esta revisión, numeradas 17 y 18 en la galería. Las nueve rutas públicas consultadas responden con HTTP 200 y `/api/health` confirma la conexión con Atlas. Recojo el alcance en [Revisión de entrega](REVISION-ENTREGA.md#comprobación-posterior-a-la-reorganización-final).
+
+He ajustado la plantilla `backend/.env.example` al código real: utilizo el token de lectura de TMDB y elimino la variable de API Key que no se consume. También he sustituido el comentario antiguo de Cloudinary por las instrucciones del script de subida ya implementado. No incluyo credenciales en esta plantilla.
