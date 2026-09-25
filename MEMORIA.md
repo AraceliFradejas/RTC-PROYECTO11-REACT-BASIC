@@ -186,10 +186,12 @@ Conservo las capturas anteriores de [Piloto en móvil](docs/screenshots/detalle-
 
 He corregido después de las capturas la concordancia del contador: utilizo «1 expediente», «1 case file» y «1 Fallakte» para un resultado, y mantengo el plural para cero o varios. El cambio se aplica tanto al archivo como a favoritos. Conservo las capturas originales como evidencia del estado observado antes de esa corrección.
 
-## 12. Pendientes antes de entregar
+## 12. Mi cierre frente al enunciado
 
-- Si incorporo capturas de paneles privados de Atlas, Cloudinary o Vercel, obtenerlas sin credenciales; esta revisión acredita los servicios mediante la aplicación y las consultas técnicas, no mediante esos paneles.
-- Publicar la documentación y las capturas revisadas en GitHub, y comprobar el despliegue asociado a la versión final.
-- Entregar los enlaces del repositorio, web y memoria en el campus.
+He contrastado los requisitos exactos con el código y las evidencias en [Mi comprobación del enunciado](docs/COMPROBACION-ENUNCIADO.md). He encontrado implementación para todos: responsive, HTML y CSS, tres estados útiles, efectos, petición a una API y React Router con enlaces y un parámetro utilizado en el detalle.
+
+He publicado la corrección del contador, la documentación y las 16 capturas en el commit `0d41192`. He comprobado que Vercel sirve la nueva compilación, la ruta de detalle responde y Atlas continúa conectado.
+
+El enunciado pide únicamente el enlace al repositorio público. La web, la memoria y las capturas complementan mi entrega; las capturas de paneles privados no son un requisito. Mi siguiente paso es enviar el enlace de GitHub en el campus. No doy esa entrega por realizada.
 
 Mantengo el seguimiento en [Revisión de entrega](docs/REVISION-ENTREGA.md).

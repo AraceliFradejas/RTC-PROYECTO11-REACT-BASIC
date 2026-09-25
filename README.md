@@ -106,6 +106,8 @@ He desplegado la interfaz en **Vercel**, vinculada a `main`, con el proyecto `xf
 
 ## Documentación
 
+- En [Mi comprobación del enunciado](docs/COMPROBACION-ENUNCIADO.md) relaciono cada requisito de entrega con su implementación y evidencia.
+
 - En mi [memoria](MEMORIA.md) explico la motivación, los requisitos, las decisiones y el plan de validación.
 - En [Mis imágenes](docs/IMAGENES.md) explico mi selección visual y la preparación de los archivos.
 - En mi [registro de recursos](docs/RECURSOS.md) identifico fuentes y atribuciones.

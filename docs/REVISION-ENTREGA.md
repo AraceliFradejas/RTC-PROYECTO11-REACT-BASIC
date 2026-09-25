@@ -43,8 +43,10 @@ No he auditado todas las combinaciones de ruta, idioma y tamaño ni utilizado di
 - [x] Documento los servicios a través de la aplicación y las consultas HTTP, sin mostrar credenciales.
 - [x] Reviso los enlaces locales de README, memoria, revisión y galería.
 - [x] Corrijo el singular del contador en español, inglés y alemán; conservo el plural para cero y varios resultados. Las capturas son anteriores a este ajuste.
-- [ ] Si añado evidencias de los paneles privados de Atlas, Cloudinary o Vercel, las preparo sin credenciales. Esta sesión no incluye nuevas capturas de esos paneles.
-- [ ] Publico los cambios de documentación en GitHub y compruebo la versión final de Vercel.
-- [ ] Entrego los enlaces de repositorio, web y memoria en el campus.
+- [x] Publico la corrección, documentación y 16 capturas en el commit `0d41192`; compruebo la nueva compilación de Vercel, la ruta de detalle y la conexión con Atlas.
+- [x] Contrasto los requisitos del enunciado con el código y las evidencias en [Mi comprobación del enunciado](COMPROBACION-ENUNCIADO.md).
+- [ ] Entrego el enlace del repositorio público en el campus. La web es un enlace adicional opcional.
 
 Las respuestas HTTP 200 de la SPA no demuestran por sí solas que todos los controles funcionen. Los resultados manuales anteriores proceden de interacciones reales con el navegador.
+
+Las capturas de paneles privados son opcionales y no forman parte del enunciado. No identifico su ausencia como un bloqueo de entrega.
