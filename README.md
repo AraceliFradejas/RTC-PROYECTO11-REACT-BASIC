@@ -8,7 +8,7 @@ Desarrollo este proyecto para el **Módulo 7: Frontend con React** del máster *
 
 - [Una historia personal](#una-historia-personal)
 - [Estado actual](#estado-actual)
-- [Qué quiero construir](#qué-quiero-construir)
+- [Funcionalidades](#funcionalidades)
 - [Tecnologías y fuentes](#tecnologías-y-fuentes)
 - [Idiomas](#idiomas)
 - [Desarrollo local y despliegue](#desarrollo-local-y-despliegue)
@@ -31,32 +31,32 @@ Imagino la web como un archivo de investigación: carpetas, sellos, anotaciones 
 
 He comprobado en desarrollo la lectura del catálogo, el detalle, la búsqueda, la persistencia del progreso y la consulta real de plataformas. La compilación y las quince pruebas del backend pasan. He conectado el backend en producción. He integrado mis imágenes generadas con IA y una sección de Mulder y Scully. He subido las 35 imágenes a Cloudinary y conservo copias optimizadas de respaldo.
 
-Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). He comprobado en producción la conexión a Atlas, los 218 episodios, el detalle y las plataformas de TMDB.
+Mi repositorio es [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC). Mi interfaz pública está en [XFiles Archive](https://xfiles-archive.vercel.app/). En la revisión del 25 de septiembre he vuelto a comprobar el repositorio público, las 15 pruebas, la compilación, el formato, el catálogo en los tres idiomas y las respuestas de plataformas para los cuatro países. He comprobado en producción la conexión a Atlas, los 218 episodios, el detalle y las plataformas de TMDB.
 
-## Qué quiero construir
+## Funcionalidades
 
-- Exploraré el catálogo de episodios con búsqueda y filtro por temporada.
-- Consultaré cada expediente en una página con su identificador en la ruta.
-- Guardaré favoritos y progreso de visionado en el navegador.
-- Podré ocultar o revelar las sinopsis para evitar spoilers.
-- Descubriré un episodio al azar.
-- Consultaré dónde ver la serie según el país seleccionado.
-- Exploraré como extra las dos películas, con sus fichas en tres idiomas.
-- Utilizaré la web en móvil, tableta y escritorio, con navegación por teclado y controles accesibles.
+- Exploro el catálogo de episodios con búsqueda y filtro por temporada.
+- Consulto cada expediente en una página con su identificador en la ruta.
+- Guardo favoritos y progreso de visionado en el navegador.
+- Puedo ocultar o revelar las sinopsis para evitar spoilers.
+- Descubro un episodio al azar.
+- Consulto dónde ver la serie según el país seleccionado.
+- Exploro como extra las dos películas, con sus fichas en tres idiomas.
+- Utilizo la web en móvil, tableta y escritorio, con navegación por teclado y controles accesibles.
 
-He implementado estas funciones. Guardo favoritos y episodios vistos en este navegador; no los sincronizo entre dispositivos. El caso aleatorio respeta mi búsqueda y los filtros de temporada y visionado. Continúo revisando la experiencia responsive antes de la entrega.
+He implementado estas funciones. Guardo favoritos y episodios vistos en este navegador; no los sincronizo entre dispositivos. El caso aleatorio respeta mi búsqueda y los filtros de temporada y visionado. He comprobado los recorridos principales y he documentado muestras responsive de móvil, tableta y escritorio con [16 capturas actuales](docs/screenshots/entrega-2026-09-25/README.md). Reúno las comprobaciones y los pendientes en [Mi revisión de entrega](docs/REVISION-ENTREGA.md).
 
 ## Tecnologías y fuentes
 
-| Tecnología | Para qué la utilizaré |
+| Tecnología | Para qué la utilizo |
 | --- | --- |
-| React y Vite | Construiré la interfaz con componentes, props, estados y efectos. |
-| React Router | Organizaré las páginas y la navegación, incluida la ruta `/expedientes/:id`. |
-| CSS | Daré forma al archivo y adaptaré las pantallas a distintos tamaños. |
-| Node.js y Express | Crearé mi API y centralizaré las consultas externas. |
-| MongoDB Atlas y Mongoose | Guardaré mi catálogo y contenido editorial con sus fuentes. |
-| Cloudinary | Alojaré recursos visuales propios o con permiso de reutilización. |
-| TMDB | Consultaré el catálogo, las traducciones disponibles y las plataformas. |
+| React y Vite | Construyo la interfaz con componentes, props, estados y efectos. |
+| React Router | Organizo las páginas y la navegación, incluida la ruta `/expedientes/:id`. |
+| CSS | Doy forma al archivo y adaptaré las pantallas a distintos tamaños. |
+| Node.js y Express | Creo mi API y centralizo las consultas externas. |
+| MongoDB Atlas y Mongoose | Guardo mi catálogo y contenido editorial con sus fuentes. |
+| Cloudinary | Alojo recursos visuales propios o con permiso de reutilización. |
+| TMDB | Consulto el catálogo, las traducciones disponibles y las plataformas. |
 
 Utilizo **TMDB como fuente principal** y sus datos de JustWatch para consultar plataformas. Muestro país, modalidad y fecha de consulta, e incluyo las atribuciones en «Mi historia». He comprobado las respuestas reales para España, Alemania, Reino Unido y Estados Unidos.
 
@@ -68,9 +68,9 @@ He añadido `/peliculas` y `/peliculas/:id` para las películas de 1998 y 2008. 
 
 ## Idiomas
 
-Prepararé las versiones **Expediente X**, **The X-Files** y **Akte X**. Traduciré navegación, controles, errores y textos accesibles. Revisaré la cobertura de títulos y sinopsis; identificaré los contenidos que solo estén disponibles en otro idioma.
+He preparado las versiones **Expediente X**, **The X-Files** y **Akte X**, con navegación, controles, errores y textos accesibles traducidos. Identifico el idioma disponible cuando falta una traducción del catálogo; he comprobado el cambio de idioma y su independencia del país, sin presentar esa comprobación como una revisión lingüística exhaustiva.
 
-Separaré el idioma del país de reproducción: podré leer la web en alemán y consultar la disponibilidad en España. No daré por confirmado el doblaje, los subtítulos o todas las temporadas a partir de la disponibilidad general de la serie.
+Mantengo separado el idioma del país de reproducción: puedo leer la web en alemán y consultar la disponibilidad en España. No doy por confirmado el doblaje, los subtítulos o todas las temporadas a partir de la disponibilidad general de la serie.
 
 ## Desarrollo local y despliegue
 
@@ -117,17 +117,13 @@ Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico, independien
 
 Registraré la procedencia, autoría y licencia de los recursos utilizados. Alojar una imagen en Cloudinary no sustituye su permiso de uso. Mantengo el material docente de referencia fuera de Git y GitHub.
 
-### Mi detalle móvil con datos reales
+### Mi revisión visual y funcional
 
-He comprobado la ficha de «Piloto» en una vista de 390 × 844 píxeles. En esta captura mantengo la sinopsis oculta y el episodio marcado como favorito y visto.
+He comprobado búsqueda, filtros, selección aleatoria, favoritos, progreso, sinopsis e independencia entre idioma y país. He revisado muestras a 390, 768 y 1440 píxeles de ancho en Chrome y conservo [16 capturas reales con fecha, tamaño y explicación](docs/screenshots/entrega-2026-09-25/README.md). La galería distingue observaciones, pruebas de teclado y límites de la revisión.
 
-![Mi expediente de Piloto en móvil](docs/screenshots/detalle-piloto.png)
+![Mi portada actual en escritorio](docs/screenshots/entrega-2026-09-25/10-portada-escritorio-es.png)
 
-### Primera evidencia visual
-
-He revisado la pantalla del archivo en alemán en una vista móvil de 390 × 844 píxeles. La captura refleja el estado real de esta fase: todavía tengo pendiente la conexión del catálogo.
-
-![Mi archivo móvil en alemán, todavía sin conexión al catálogo](docs/screenshots/inicio/archivo-movil-de.png)
+He corregido la concordancia del contador para mostrar «1 expediente», «1 case file» y «1 Fallakte». Las capturas conservan el estado anterior a esta corrección. El seguimiento de publicación y entrega está en [Mi revisión de entrega](docs/REVISION-ENTREGA.md).
 
 ### Fuentes técnicas
 

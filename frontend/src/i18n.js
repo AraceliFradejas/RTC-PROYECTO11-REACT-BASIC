@@ -60,6 +60,7 @@ export const messages = {
     searchPlaceholder: 'Título o palabra clave…',
     season: 'Temporada',
     all: 'Todas las temporadas',
+    result: 'expediente',
     results: 'expedientes',
     loading: 'Estoy abriendo el archivo…',
     unavailable:
@@ -162,6 +163,7 @@ export const messages = {
     searchPlaceholder: 'Title or keyword…',
     season: 'Season',
     all: 'All seasons',
+    result: 'case file',
     results: 'case files',
     loading: 'Opening the archive…',
     unavailable:
@@ -264,6 +266,7 @@ export const messages = {
     searchPlaceholder: 'Titel oder Stichwort…',
     season: 'Staffel',
     all: 'Alle Staffeln',
+    result: 'Fallakte',
     results: 'Fallakten',
     loading: 'Ich öffne das Archiv…',
     unavailable:

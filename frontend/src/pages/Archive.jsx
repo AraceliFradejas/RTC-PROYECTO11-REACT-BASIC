@@ -134,7 +134,7 @@ export default function Archive({ onlyFavorites = false }) {
                 </button>
               )}
               <p className="result-count" role="status">
-                {filtered.length} {t.results}
+                {filtered.length} {filtered.length === 1 ? t.result : t.results}
               </p>
               {filtered.length ? (
                 <div className="episode-grid">
