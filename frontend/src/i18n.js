@@ -99,6 +99,14 @@ export const messages = {
     missingPage: 'Esta pista no lleva a ninguna parte.',
     missingText: 'La página que busco no existe o ha cambiado de dirección.',
     footer: 'Mi archivo personal · Proyecto académico',
+    footerExplore: 'Explora el archivo',
+    footerConnect: 'Conecta conmigo',
+    footerProject: 'Mi proyecto',
+    footerRepository: 'Código en GitHub',
+    footerAcademic:
+      'He creado esta web como proyecto del máster Rock The Code de',
+    footerPurpose:
+      'Con este archivo practico React y el desarrollo full stack. Tiene fines educativos y no está afiliado a los titulares de los derechos de Expediente X.',
     storage:
       'No puedo guardar mis preferencias en este navegador. Los cambios durarán mientras mantenga abierta la página.',
   },
@@ -201,6 +209,14 @@ export const messages = {
     missingPage: 'This clue leads nowhere.',
     missingText: 'The page I am looking for does not exist or has moved.',
     footer: 'My personal archive · Academic project',
+    footerExplore: 'Explore the archive',
+    footerConnect: 'Connect with me',
+    footerProject: 'My project',
+    footerRepository: 'Code on GitHub',
+    footerAcademic:
+      "I created this website as a project for the Rock The Code master's programme at",
+    footerPurpose:
+      'I use this archive to practise React and full-stack development. It is educational and is not affiliated with the rights holders of The X-Files.',
     storage:
       'I cannot save preferences in this browser. Changes will last while this page stays open.',
   },
@@ -305,6 +321,15 @@ export const messages = {
     missingPage: 'Diese Spur führt ins Leere.',
     missingText: 'Die gesuchte Seite existiert nicht oder wurde verschoben.',
     footer: 'Mein persönliches Archiv · Studienprojekt',
+    footerExplore: 'Das Archiv erkunden',
+    footerConnect: 'Mit mir vernetzen',
+    footerProject: 'Mein Projekt',
+    footerRepository: 'Code auf GitHub',
+    footerAcademic:
+      'Ich habe diese Website als Projekt für das Masterprogramm Rock The Code an der',
+    footerAcademicEnd: ' erstellt.',
+    footerPurpose:
+      'Mit diesem Archiv übe ich React und Full-Stack-Entwicklung. Es dient Bildungszwecken und steht in keiner Verbindung zu den Rechteinhabern von Akte X.',
     storage:
       'Ich kann in diesem Browser keine Einstellungen speichern. Änderungen bleiben erhalten, solange die Seite geöffnet ist.',
   },

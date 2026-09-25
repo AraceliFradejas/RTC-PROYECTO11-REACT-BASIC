@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router';
+import Footer from './Footer';
 import { usePreferences } from '../context/Preferences';
 
 export default function Layout() {
@@ -56,17 +57,7 @@ export default function Layout() {
       <main id="main" ref={main} tabIndex={-1}>
         <Outlet />
       </main>
-      <footer>
-        <span>
-          {t.footer}
-          <br />
-          <small>© {t.author}</small>
-        </span>
-        <Link to="/mi-historia">{t.about}</Link>
-        <span className="footer-x" aria-hidden="true">
-          X
-        </span>
-      </footer>
+      <Footer />
     </>
   );
 }
