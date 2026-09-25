@@ -2,6 +2,10 @@
 
 Proyecto de React del máster **Rock The Code** de **The Power Tech School**.
 
+[Versión en castellano](#versión-en-castellano) · [English version](#english-version)
+
+## Versión en castellano
+
 > Mi forma de reunir mis recuerdos de Expediente X y volver a sentir las ganas de abrir otro expediente. Porque la verdad está ahí fuera.
 
 He creado un archivo de episodios con búsqueda, filtros, favoritos y progreso de visionado. La aplicación reúne **Expediente X**, **The X-Files** y **Akte X** en una interfaz en español, inglés y alemán, con una API propia y datos reales.
@@ -70,7 +74,7 @@ Guardo las preferencias en este navegador; no dispongo de cuentas ni sincronizac
 
 ## Recorrido visual
 
-He seleccionado ocho capturas para este README, incluida la portada superior. En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) incluyo las dieciséis actuales con la acción realizada, el resultado y su alcance; también conservo dos imágenes históricas para explicar la evolución.
+He seleccionado ocho capturas para cada versión de este README, incluida la portada superior; reutilizo los mismos archivos originales en castellano e inglés. En la [sección de evidencias de mi memoria](MEMORIA.md#12-evidencias) incluyo las dieciséis actuales con la acción realizada, el resultado y su alcance; también conservo dos imágenes históricas para explicar la evolución.
 
 ### Buscar un expediente desde el móvil
 
@@ -262,3 +266,278 @@ Este trabajo continúa mi aprendizaje después de [KelseTS Talks · Proyecto 10]
 Soy **Araceli Fradejas Muñoz**, autora de este proyecto académico del máster Rock The Code · The Power Tech School. He desarrollado una aplicación independiente y no oficial, sin vinculación con los titulares de Expediente X.
 
 Identifico las ilustraciones como recursos generados con IA; no son fotografías ni fotogramas oficiales. Reconozco TMDB como fuente de datos y JustWatch como fuente de disponibilidad a través de TMDB. Documento su procedencia en [Recursos y atribuciones](docs/RECURSOS.md). Mantengo el material docente `Solucion/` y sus variantes fuera de Git, GitHub y el despliegue.
+
+---
+
+## English version
+
+### The X-Files · My case archive
+
+A React project for the **Rock The Code** master's programme at **The Power Tech School**.
+
+> My way of bringing together my memories of The X-Files and rediscovering the excitement of opening another case file. Because the truth is out there.
+
+I have built an episode archive with search, filters, favourites and viewing progress. The application brings together **Expediente X**, **The X-Files** and **Akte X** in a Spanish, English and German interface, using my own API and real data.
+
+**Live website:** [My X-Files archive](https://xfiles-archive.vercel.app/).
+
+**API:** [Health check](https://xfiles-archive.vercel.app/api/health).
+
+**Submission repository:** [RTC-PROYECTO11-REACT-BASIC](https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC).
+
+![My desktop homepage, with the interface in Spanish](docs/screenshots/entrega-2026-09-25/10-portada-escritorio-es.png)
+
+### Contents
+
+- [A personal story](#a-personal-story)
+- [Current status](#current-status)
+- [Features](#features)
+- [Visual walkthrough](#visual-walkthrough)
+- [Accessibility and responsive design](#accessibility-and-responsive-design)
+- [Project structure](#project-structure)
+- [Technologies](#technologies)
+- [Local setup](#local-setup)
+- [Environment variables](#environment-variables)
+- [Available commands](#available-commands)
+- [Catalogue and images](#catalogue-and-images)
+- [Languages](#languages)
+- [API endpoints and routes](#api-endpoints-and-routes)
+- [Validation and evidence](#validation-and-evidence)
+- [Deployment](#deployment)
+- [Documentation](#documentation)
+- [My other projects](#my-other-projects)
+- [Academic notice and author](#academic-notice-and-author)
+
+### A personal story
+
+I have always loved The X-Files. After dedicating several backend projects to the Swiftie universe, I wanted to explore another of my interests and give it a visual identity of its own.
+
+My brother introduced me to Anasazi one summer. VHS tapes, my first Internet searches at the Complutense University of Madrid and many other memories followed. I have brought them together in [my story](docs/MI-HISTORIA.md), written in Spanish.
+
+I remember watching season nine on a German channel, where the series was called **Akte X**. That memory inspired me to build the application in Spanish, English and German.
+
+I designed the website as an investigation archive, with folders, stamps, notes and small references to the series. I wanted to give equal care to the browsing experience and my learning of React.
+
+### Current status
+
+I have published a catalogue of **218 episodes across 11 seasons**, imported from TMDB into MongoDB Atlas. I have connected persistent favourites and viewing progress, availability by country, both films and a section dedicated to Mulder and Scully. I have prepared and uploaded 35 visual assets to Cloudinary, with local WebP fallback copies.
+
+During the review on **25 September 2026**, I checked the public repository, the production Atlas connection, the catalogue in all three languages and provider queries for Spain, Germany, the United Kingdom and the United States. All fifteen backend tests, the production build and the formatting check passed. I manually reviewed the main user journeys and retained sixteen current screenshots.
+
+I explain the architecture, decisions, tests, development process and lessons learned in my [technical report](MEMORIA.md), in Spanish. The submission link is ready; submission through the course platform is still pending in my [delivery review](docs/REVISION-ENTREGA.md).
+
+### Features
+
+- I can browse and search episodes by title, regardless of case or accents.
+- I can combine season and viewing-status filters.
+- I can open an episode using its identifier in the route.
+- I can save favourites and watched episodes and retain them after reloading.
+- I can track progress across the episode catalogue.
+- I can reveal or hide summaries to control spoilers.
+- I can open a random case from the filtered results.
+- I can check where to watch the series by country, with a source and query date.
+- I can explore both films and their details in three languages.
+- I can visit the characters, personal story and credits pages.
+
+I store preferences in the current browser; I have not added accounts or cross-device synchronisation. Provider availability describes a particular query and does not confirm audio languages, subtitles or access to every season.
+
+### Visual walkthrough
+
+I have selected eight screenshots for each language version of this README, including the homepage above. Both versions use the same original files. My [report's evidence section](MEMORIA.md#12-evidencias) includes all sixteen current screenshots, with the action performed, result and scope, plus two historical images elsewhere in the report to explain development.
+
+The screenshots preserve the interface languages used during the review: Spanish and German in this selection. The English captions do not imply that the screenshots themselves show the English interface.
+
+#### Searching for a case on mobile
+
+Searching for Anasazi returns one result. I also checked the lowercase title and restored the full catalogue by clearing the field. The viewport was 390 × 844 CSS pixels.
+
+![Mobile search for Anasazi, in Spanish](docs/screenshots/entrega-2026-09-25/02-busqueda-anasazi-movil-es.png)
+
+#### Opening the detail and retaining preferences
+
+I marked the episode as a favourite and watched, reloaded the page and confirmed that both settings remained active. I then revealed the summary. The detail page uses the route identifier `285317` to request the episode.
+
+![Anasazi detail with saved preferences and visible summary, in Spanish](docs/screenshots/entrega-2026-09-25/03-anasazi-persistencia-sinopsis-movil-es.png)
+
+#### Checking favourites and progress
+
+The saved selection shows Anasazi and progress of 1 / 218. I reuse the archive page to display favourites and apply filters. After testing, I removed the test selections and confirmed a return to 0 / 218.
+
+![Mobile favourites and viewing progress, in Spanish](docs/screenshots/entrega-2026-09-25/04-favoritos-progreso-movil-es.png)
+
+#### Understanding an empty result
+
+Within Favourites, the unwatched filter excludes the only episode because it has already been watched. I display a specific message and do not offer random selection from an empty set. I captured this state with a tablet viewport of 768 × 1024 CSS pixels.
+
+![Tablet filter with no results, in Spanish](docs/screenshots/entrega-2026-09-25/06-filtro-sin-resultados-tableta-es.png)
+
+#### Reading in German while checking Spain
+
+I switched to Akte X without changing the country. After reloading, the interface remained in German and the query still referred to Spain. I display the source and query date alongside the offers.
+
+![German interface with availability for Spain](docs/screenshots/entrega-2026-09-25/08-aleman-pais-espana-tableta.png)
+
+#### Exploring a season on desktop
+
+Selecting season two returns 25 episodes. The full-page capture shows the filters, illustrations and cards with a viewport of 1440 × 900 CSS pixels.
+
+![Season two archive on desktop, in Spanish](docs/screenshots/entrega-2026-09-25/11-archivo-temporada2-escritorio-es.png)
+
+#### Expanding the archive with films
+
+I added the 1998 and 2008 films using TMDB data. Their links open separate detail pages, and I keep them outside episode viewing progress.
+
+![Both films listed in the Spanish interface](docs/screenshots/entrega-2026-09-25/13-peliculas-escritorio-es.png)
+
+I have preserved these real screenshots from 25 September 2026 without retouching them. They predate the singular-counter correction: the published code now displays “1 expediente”, “1 case file” and “1 Fallakte”. The PNGs capture complete pages at a pixel density of 2; their height is not the height of the emulated device.
+
+### Accessibility and responsive design
+
+I have used semantic HTML, labelled controls, visible focus, a skip-to-content link and accessible button states. I adapt the homepage, navigation, filters and grids with CSS and respect the reduced-motion preference.
+
+I reviewed samples in Chrome at widths of 390, 768 and 1440 CSS pixels. I also checked the skip link, archive link and season selector with the keyboard. These samples are not a complete accessibility audit or tests on physical devices. The season strip scrolls horizontally within its own container.
+
+### Project structure
+
+```text
+frontend/src/
+  components/   # Cards, artwork, layout and request states
+  pages/        # Homepage, archive, details and editorial pages
+  context/      # Language, country, favourites and watched episodes
+  hooks/        # Requests, cancellation and retries
+  content/      # Personal story and image manifest
+  i18n.js       # Interface text in ES, EN and DE
+  styles.css    # Styles and responsive layout
+backend/src/
+  models/       # Episodes and translations
+  services/     # Catalogue, TMDB, films and providers
+  app.js        # Express API
+  db.js         # MongoDB Atlas connection
+  server.js     # Local startup
+backend/test/   # Isolated server tests
+api/index.js    # Vercel API entry point
+scripts/        # Image preparation and upload
+docs/           # Guides, resources and screenshots
+```
+
+### Technologies
+
+| Area | What I use | Purpose |
+| --- | --- | --- |
+| Interface | React, React Router and Vite | Components, state, effects, navigation and builds. |
+| Design | Semantic HTML and CSS | Archive identity and responsive layout. |
+| Server | Node.js and Express | My own API and server-side external requests. |
+| Data | MongoDB Atlas and Mongoose | Persistent catalogue and episode model. |
+| Images | Cloudinary and WebP | Optimised assets with local fallbacks. |
+| Sources | TMDB and JustWatch data | Episodes, translations, films and providers. |
+| Verification | node:test, Supertest and Prettier | Backend contracts and code formatting. |
+| Publishing | GitHub and Vercel | Public repository and website with a same-origin API. |
+
+### Local setup
+
+I use **Node.js 22.12 or later**. To reproduce the project from a fresh clone:
+
+```bash
+git clone https://github.com/AraceliFradejas/RTC-PROYECTO11-REACT-BASIC.git
+cd RTC-PROYECTO11-REACT-BASIC
+npm ci
+cp -n backend/.env.example backend/.env
+npm run dev
+```
+
+I fill in the server variables before querying real services. The interface runs at `http://127.0.0.1:5173` and the API health endpoint at `http://127.0.0.1:3001/api/health`. During development, Vite proxies `/api` to the backend. If I change the backend port, I also update `frontend/vite.config.js`.
+
+The application can start without credentials, but the catalogue requires Atlas and external queries require TMDB. My [local configuration guide](docs/CONFIGURACION.md), in Spanish, explains the services, database and import process.
+
+### Environment variables
+
+| Variable | Where I use it | Purpose |
+| --- | --- | --- |
+| `PORT` | Local backend | Server port; defaults to 3001. |
+| `MONGODB_URI` | Local backend and Vercel | Connection to the `expediente_x` database. |
+| `TMDB_READ_TOKEN` | Backend and importer | TMDB read access token. |
+| `CLOUDINARY_CLOUD_NAME` | Local upload script | Cloudinary asset environment. |
+| `CLOUDINARY_API_KEY` | Local upload script | Cloudinary API identifier. |
+| `CLOUDINARY_API_SECRET` | Local upload script | Signature for authorised uploads. |
+
+I keep private values in `backend/.env` and the deployed server configuration. I do not commit them or place them in `VITE_` variables. Displaying public Cloudinary images does not require exposing upload credentials.
+
+### Available commands
+
+| Command from the repository root | Purpose |
+| --- | --- |
+| `npm run dev` | Start frontend and backend together. |
+| `npm run build` | Generate `frontend/dist`. |
+| `npm test` | Run backend tests. |
+| `npm run format:check` | Check formatting in the configured code directories. |
+| `npm run catalog:preview` | Retrieve and validate the catalogue without writing to Atlas. |
+| `npm run catalog:import` | Import or update the catalogue in `expediente_x`. |
+| `npm run images:prepare` | Prepare WebP copies from my local originals. |
+| `npm run images:upload` | Review planned uploads without uploading. |
+| `npm run images:upload -- --apply` | Upload assets with configured credentials and permissions. |
+
+### Catalogue and images
+
+I imported 218 episodes from TMDB, excluding specials and joining translations by identifier. The importer validates the documents and only accepts the `expediente_x` database. It updates source data without replacing my own visual assets. The batch write is not a transaction; repeating the process can complete a partially failed import.
+
+I prepared 35 AI-generated images. Their WebP copies occupy approximately 2.75 MB, compared with 67.6 MB for the original PNGs. I keep the originals outside Git; the optimised copies and manifest support image delivery and local fallback. Regenerating them requires my local originals, which are not included when cloning the repository. I explain the process in [My images](docs/IMAGENES.md), in Spanish.
+
+### Languages
+
+I have prepared navigation, controls, request states and error messages in **Spanish, English and German**. I request the catalogue in the selected language and identify the available language when a translation is missing. I checked that responses contained titles and summaries; that is not an exhaustive linguistic review.
+
+I keep language and country independent: I can read Akte X while checking Spain, or The X-Files while checking Germany. Both preferences persist in the browser. Availability data does not establish audio or subtitle languages.
+
+### API endpoints and routes
+
+| GET request | What I query |
+| --- | --- |
+| `/api/health` | Server status and Atlas connection. |
+| `/api/episodes?lang=en` | Catalogue in `es`, `en` or `de`. |
+| `/api/episodes/:id?lang=en` | Episode by TMDB identifier. |
+| `/api/movies?lang=en` | Films `846` and `8836`. |
+| `/api/movies/:id?lang=en` | Details of one of the two films. |
+| `/api/watch-providers?country=GB` | Availability in `ES`, `DE`, `GB` or `US`. |
+
+I have declared `/`, `/expedientes`, `/expedientes/:id`, `/favoritos`, `/personajes`, `/peliculas`, `/peliculas/:id`, `/donde-ver` and `/mi-historia`. I use `Link` and `NavLink` for navigation and `useParams` to request each detail resource. The wildcard route displays the not-found page. Route paths remain the same when I change the interface language.
+
+### Validation and evidence
+
+I checked fifteen backend tests and the production build. On the website, I tested search, filters, random selection, adding and removing favourites and watched status, persistence, summaries, languages, countries and navigation to films. I also verified production API responses and direct access to routes.
+
+My [report](MEMORIA.md#9-pruebas) distinguishes automated tests, integration checks and manual review. The [gallery](docs/screenshots/entrega-2026-09-25/README.md) retains all sixteen current screenshots and their dimensions. These documents are in Spanish. I do not have an automated frontend test suite, and I did not simulate network or storage failures during the documented manual review.
+
+### Deployment
+
+I connected the `main` branch to the `xfiles` project on Vercel and the [xfiles-archive.vercel.app](https://xfiles-archive.vercel.app/) domain. I build with `npm run build` and publish `frontend/dist`. The rewrites in `vercel.json` serve React routes and the `api/index.js` function under the same domain.
+
+I configured `MONGODB_URI` and `TMDB_READ_TOKEN` as private Production variables. The server reuses its Atlas connection. The documented Atlas configuration allows connections from `0.0.0.0/0` to support Vercel, while still requiring authentication. I checked service health, the catalogue, providers and deployed routes. Details are in the [configuration guide](docs/CONFIGURACION.md#mi-backend-en-vercel).
+
+### Documentation
+
+I maintain the following supporting documents in Spanish:
+
+| Document | What I explain |
+| --- | --- |
+| [Technical report](MEMORIA.md) | Motivation, architecture, behaviour, tests, eighteen visual records and lessons learned. |
+| [Assignment checklist](docs/COMPROBACION-ENUNCIADO.md) | How each requirement maps to its implementation. |
+| [Delivery review](docs/REVISION-ENTREGA.md) | Verified publication and pending course-platform submission. |
+| [Configuration](docs/CONFIGURACION.md) | Local development, services and Vercel integration. |
+| [Production gallery](docs/screenshots/entrega-2026-09-25/README.md) | Sixteen screenshots, dimensions and user journeys. |
+| [My images](docs/IMAGENES.md) | Optimisation, Cloudinary and local fallbacks. |
+| [Resources and credits](docs/RECURSOS.md) | Sources and attribution. |
+| [My story](docs/MI-HISTORIA.md) | My personal connection with The X-Files. |
+| [Development history](docs/HISTORIAL-DESARROLLO.md) | Earlier development stages and checks. |
+| [Initial concept](docs/CONCEPTO.md) | Initial exploration and scope. |
+
+### My other projects
+
+This project continues my learning after [KelseTS Talks · Project 10](https://github.com/AraceliFradejas/RTC-PROYECTO10-FULL-STACK-JAVASCRIPT). I follow the same approach to presenting my work: personal motivation, application behaviour, setup instructions and a technical report with tests and annotated screenshots.
+
+### Academic notice and author
+
+I am **Araceli Fradejas Muñoz**, the author of this academic project for the Rock The Code master's programme at The Power Tech School. I have developed an independent, unofficial application with no affiliation to the rights holders of The X-Files.
+
+I identify the illustrations as AI-generated assets; they are not official photographs or frames from the series. I acknowledge TMDB as the data source and JustWatch as the availability source through TMDB. I document their provenance in [Resources and credits](docs/RECURSOS.md). I keep the teaching reference material in `Solucion/` and its spelling variants outside Git, GitHub and deployment.
+
+[Volver a la versión en castellano](#versión-en-castellano) · [Back to the English version](#english-version)
